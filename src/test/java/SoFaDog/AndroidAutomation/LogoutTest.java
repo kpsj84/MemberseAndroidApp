@@ -15,4 +15,5 @@ public class LogoutTest extends Base {
 	//Click on Yes for Popup message
 	driver.findElementById("android:id/button2").click();
 	}
+	
 }

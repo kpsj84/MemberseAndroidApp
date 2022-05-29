@@ -142,7 +142,7 @@ public class EndToEndTest extends Base {
 Utilities u = new Utilities(driver);			
 driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
 driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").click();						
-//Step6 Search for some video in New Channels List and in Popular section on Explore Page
+//Step6 Search for some audio / video content in New Channels List and in Popular section on Explore Page respectively
 			Thread.sleep(3000);
 			u.swipeScreen(Utilities.Direction.DOWN);
 			u.swipeScreen(Utilities.Direction.DOWN);
@@ -168,7 +168,7 @@ driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").cl
 			Thread.sleep(28000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));			
 			
-//Step7 Decided to Become a Creator
+//Step7 Become a Creator
 			driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[4]").click();
 			Thread.sleep(5000);
 			driver.findElementByXPath("(//android.widget.Switch[1]").click();
@@ -208,7 +208,7 @@ driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").cl
 			driver.findElementById("android:id/button1").click();
 			
 //Step9 Checks the uploaded content on Own Channel	
-			driver.findElementByXPath("//*[@content-desc=', tab, 1 out of 4']").click();
+			driver.findElementByXPath("//*[@content-desc=', tab, 1 out of 5']").click();
 			driver.findElementByXPath("//android.widget.TextView[@text='AutoUser2']").click();
 			driver.findElementByXPath("//android.widget.TextView[@text='Auto Test Audio']").click();
 			driver.findElementByXPath("//android.widget.TextView[@text='Play']").click();
@@ -222,9 +222,4 @@ driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").cl
 			lgt.LogoutTestCase();
 		}
 
-		private WaitOptions waitOptiopns(Duration ofMillis) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
 }

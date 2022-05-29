@@ -15,14 +15,14 @@ public class ProfilePage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 4 out of 4']") 
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 5 out of 5']") 
 	private WebElement profileButton;
 	
 	public WebElement profileButton(){    
 		return profileButton;
 	}
 	
-	@AndroidFindBy(xpath="(//android.widget.TextView[@text='Logout']") 
+	@AndroidFindBy(xpath="(//android.widget.TextView[@text='Log out']") 
 	private WebElement Logout;
 	
 	public WebElement Logout(){    
