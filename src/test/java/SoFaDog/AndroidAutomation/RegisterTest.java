@@ -1,7 +1,9 @@
 package SoFaDog.AndroidAutomation;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.LoginOptionPage;
@@ -11,25 +13,12 @@ import PageObjects.RegisterPage;
 public class RegisterTest extends Base {
 	
 	@Test
-	public void registerUser() throws InterruptedException {
+	public void registerUser() throws InterruptedException, IOException {
 	
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				
-		Utilities u = new Utilities(driver);
-		System.out.println("Wait for application to load");
-		Thread.sleep(20000);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("1st Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("2nd Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("3rd Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("Last Swipe Executed");
-		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		WidgetSwipeTest wst = new WidgetSwipeTest();
+		wst.WidgetSwipeTestCase();
 				
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.signinWithEmail().click();
@@ -38,9 +27,9 @@ public class RegisterTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the user credentials every time while running this test to fill fresh detail in Register Form or Delete the user at the end of Test to keep this detail same
-		String firstName = "AutoUser23";
-		String lastName = "QATest23";
-		String emailId = "autouser23";
+		String firstName = "AutoUser39";
+		String lastName = "QATest39";
+		String emailId = "autouser39";
 		
 		String userName = firstName;
 		String emailDomain = "@yopmail.com";
@@ -56,7 +45,12 @@ public class RegisterTest extends Base {
 		
 		RegisterPage rp = new RegisterPage(driver);
 		rp.createAccountButton2().click();
-		Thread.sleep(15000);		
+		Thread.sleep(25000);
+		
+		//Verify User Name display on screen
+		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
+		System.out.println(uName);
+		Assert.assertEquals(firstName, uName);
 	}
 	
 }

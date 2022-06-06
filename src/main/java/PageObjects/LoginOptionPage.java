@@ -16,6 +16,20 @@ public class LoginOptionPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this); //this here means local
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Sign in with Google']") 
+	private WebElement SigninwithGoogle;
+		
+	public WebElement SigninwithGoogle(){    
+		return SigninwithGoogle;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Sign in with Facebook']") 
+	private WebElement SigninwithFacebook;
+		
+	public WebElement SigninwithFacebook(){    
+		return SigninwithFacebook;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Sign in with Email']") 
 	private WebElement signinWithEmail;
 		

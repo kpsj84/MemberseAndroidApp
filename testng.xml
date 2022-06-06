@@ -10,8 +10,15 @@
     <!-- Give Reference to Test Classes-->
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.SoFaDogSmokeTest"/>
-      <class name="SoFaDog.AndroidAutomation.RegisterTest"/>
+      <class name="SoFaDog.AndroidAutomation.WidgetSwipeTest"/>
+      <class name="SoFaDog.AndroidAutomation.SmokeTest"/>
+      <class name="SoFaDog.AndroidAutomation.LoginTest"/>
+      <class name="SoFaDog.AndroidAutomation.LogoutTest"/>
+      <class name="SoFaDog.AndroidAutomation.EndToEndTest"/>
+      
+ <!-- Regsiter and Delete A/c Test can only be run on Demand Only -->     
+ <!-- <class name="SoFaDog.AndroidAutomation.RegisterTest"/> -->
+ <!-- <class name="SoFaDog.AndroidAutomation.DeleteAccountTest"/> -->
     </classes>
   </test> <!-- Test -->
   

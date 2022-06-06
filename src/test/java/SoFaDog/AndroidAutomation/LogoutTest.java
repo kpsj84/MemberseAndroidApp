@@ -1,19 +1,30 @@
 package SoFaDog.AndroidAutomation;
 
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
 import PageObjects.ProfilePage;
 
 public class LogoutTest extends Base {
 	
-	public void LogoutTestCase() {
+	@Test
+	public void LogoutTestCase() throws InterruptedException, IOException {
+	
+		LoginTest lt = new LoginTest();
+		lt.LoginTestCase();
 		
-	ProfilePage pp = new ProfilePage(driver);
-	pp.profileButton().click();
+		ProfilePage pp = new ProfilePage(driver);
+		pp.profileButton().click();
+		Thread.sleep(2000);
 	
-	Utilities u = new Utilities(driver);
-	u.swipeScreen(Utilities.Direction.UP);
+		Utilities u = new Utilities(driver);
+		u.swipeScreen(Utilities.Direction.UP);
+		Thread.sleep(5000);
 	
-	//Click on Yes for Popup message
-	driver.findElementById("android:id/button2").click();
+		pp.Logout().click();
+		//Click on Yes for Popup message
+		driver.findElementByXPath("//*[@resource-id='android:id/button2']").click();
 	}
 	
 }

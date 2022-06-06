@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 import PageObjects.ExplorePage;
 import PageObjects.HomePage;
 import PageObjects.LoginOptionPage;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -16,28 +18,24 @@ public class SmokeTest extends Base {
 	@Test
 	public void SmokeTestCase() throws IOException, InterruptedException {
 		
-		//Wait for next element to available and will execute immediately once it appear
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-		//Create object of Utilities class for Swipe Action
-		Utilities u = new Utilities(driver);
-		System.out.println("Wait for application to load");
-		Thread.sleep(20000);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("1st Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("2nd Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("3rd Widget Swipe Executed");
-		Thread.sleep(3500);
-		u.swipeScreen(Utilities.Direction.LEFT);
-		System.out.println("Last Swipe Executed");
-		Thread.sleep(1000);
+		WidgetSwipeTest wst = new WidgetSwipeTest();
+		wst.WidgetSwipeTestCase();
 		
 		//Click on Maybe later Button by calling Web Element thru LoginOptionPage Object
 		LoginOptionPage lop = new LoginOptionPage(driver);
+		lop.SigninwithGoogle().click();
+		Thread.sleep(5000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		Thread.sleep(6000);
+		driver.findElementById("android:id/button1").click();
+		lop.SigninwithFacebook().click();
+		Thread.sleep(5000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		lop.signinWithEmail().click();
+		Thread.sleep(2000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		lop.maybeLater().click();
 		
 		//Verify Text from Explore Page
@@ -47,6 +45,9 @@ public class SmokeTest extends Base {
 		String suggestedChannels = ep.SuggestedChannels().getText();
 		Assert.assertEquals(suggestedChannels, "Suggested Channels");
 		System.out.println("Checked, Mobile Elements are available on Screen");		
+		
+		//Swipe Action performed on screen
+		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);
 		Thread.sleep(3000);
 		

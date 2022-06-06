@@ -19,38 +19,29 @@ public class EndToEndTest extends Base {
 		public void EndToEndTestCase() throws IOException, InterruptedException {
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-/* 			
-//Step1 Checks for UI is Responsive
-			SmokeTest st = new SmokeTest();
-			st.SmokeTestCase();
-			Thread.sleep(3000);		//This lands on Login Options Screen
-*/
-
-/* 			
-//Step2 Register a User
+						
+//Step1 Register a User
 			RegisterTest rt = new RegisterTest();
 			rt.registerUser();
-			Thread.sleep(10000);	//This lands on Home Page Screen	
-*/			
-
-/* */			
+			Thread.sleep(10000);
+			
+/* 			
 //Step Login User directly with Bypass Register Process
 			LoginTest lt = new LoginTest();
 			lt.LoginTestCase();
-			Thread.sleep(10000);		//This lands on Home Page Screen	
-
-/*			
-//Step3 Subscribe a Free Channel
+			driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS);
+*/
+			
+//Step2 Subscribe a Free Channel
 			//Click on Explore Channels Button
 			driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 			driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
 			
 			//Click in Search at some tag
-			Thread.sleep(10000);
+			Thread.sleep(12000);
 			driver.findElementByXPath("//*[@text='tag1']").click();
 			driver.findElementByXPath("//android.widget.TextView[@text='Channels']").click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.EditText[@text='Search...']").sendKeys("kqacd2");
 			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.TextView[@text='kqacd2 Test Channel']").click();
@@ -59,14 +50,14 @@ public class EndToEndTest extends Base {
 			driver.findElementById("android:id/button2").click();
 			Thread.sleep(20000);
 			
-//Step4 Watch a Video			
+//Step3 Watch a Video			
 			driver.findElementByXPath("//android.widget.TextView[@text='VR Glasses']").click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.TextView[@text='Play']").click();
 			Thread.sleep(30000);
 			TouchAction t = new TouchAction(driver);
 			t.tap(PointOption.point(1280,2000)).perform();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			Thread.sleep(6000);
 			t.tap(PointOption.point(98,196)).perform();
@@ -76,10 +67,9 @@ public class EndToEndTest extends Base {
 			
 			//Back to Search Page
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-*/
 
-/* no end tag for this, just remove this			
-//Step5 Search for Other Creator Channel & Subscribe a Paid Channel			
+/*			
+//Step4 Search for Other Creator Channel & Subscribe a Paid Channel			
 			//Click on View All Button for New Channels on Explore Page
 			Thread.sleep(5000);
 			driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
@@ -90,15 +80,12 @@ public class EndToEndTest extends Base {
 			Utilities u = new Utilities(driver);
 			u.swipeScreen(Utilities.Direction.UP);
 			u.swipeScreen(Utilities.Direction.UP);
-			u.swipeScreen(Utilities.Direction.UP);
-			//TouchAction t = new TouchAction(driver);
-			//t.longPress(PointOption.point(1200, 2000)).waitAction(waitOptiopns(Duration.ofMillis(800))).moveTo(PointOption.point(1200, 400)).release().perform();
-			Thread.sleep(5000);
-			driver.findElementByXPath("//android.widget.TextView[@text='kqacd Test Channel']").click();
+/*			Thread.sleep(25000);
+			driver.findElementByXPath("//*[@text='Suri's Stripe Demo']").click();
 			Thread.sleep(10000);
 			
 			//Subscribe Button
-			driver.findElementByXPath("//android.widget.TextView[@text='Subscribe for € 9 p/m']").click();
+			driver.findElementByXPath("//android.widget.TextView[@text='Subscribe for € 3 p/m']").click();
 			Thread.sleep(25000);
 			
 /*			//Stripe Form
@@ -133,19 +120,12 @@ public class EndToEndTest extends Base {
 			driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 			driver.context("NATIVE_APP");
 			System.out.println("Shifting context from WEBVIEW to NATIVE APP");
-*/
-//			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-//			Thread.sleep(2000);
-//			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-//			Thread.sleep(5000);
+*/			
 
-Utilities u = new Utilities(driver);			
-driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
-driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").click();						
-//Step6 Search for some audio / video content in New Channels List and in Popular section on Explore Page respectively
+//Step5 Search for audio content on other Channel
 			Thread.sleep(3000);
-			u.swipeScreen(Utilities.Direction.DOWN);
-			u.swipeScreen(Utilities.Direction.DOWN);
+			driver.findElementByXPath("//android.widget.EditText[@text='kqacd2']").sendKeys("MakFreeChannel");
+			Thread.sleep(5000);
 			driver.findElementByXPath("//android.widget.TextView[@text='MakFreeChannel']").click();
 			Thread.sleep(6000);
 			driver.findElementByXPath("//android.widget.TextView[@text='test']").click();
@@ -156,70 +136,105 @@ driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[2]").cl
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			
-			//Watching content in Popular Section of Explore Page
+//Step6 Watching Video content in Popular Section of Explore Page
 			Thread.sleep(3000);
+			Utilities u = new Utilities(driver);	
 			u.swipeScreen(Utilities.Direction.UP);
 			Thread.sleep(3000);
 			TouchAction t2 = new TouchAction(driver);
 			t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
 			t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
-			t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
 			driver.findElementByXPath("//android.widget.TextView[@text='Party time']").click();
 			Thread.sleep(28000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));			
-			
+		
 //Step7 Become a Creator
-			driver.findElementByXPath("(//android.widget.TextView[@text='View All'])[4]").click();
+			driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
 			Thread.sleep(5000);
-			driver.findElementByXPath("(//android.widget.Switch[1]").click();
-			Thread.sleep(2000);
-			driver.findElementById("(//android:id/button2").click();
-			Thread.sleep(2000);
-			driver.findElementById("android:id/button1").click();
-			driver.findElementByXPath("(//android.widget.EditText[@text='A description of my channel, this is a new channel and hasn't yet been created.']").click();
+			driver.findElementByXPath("(//android.widget.Switch)[1]").click();
+			Thread.sleep(5000);
+			driver.findElementByXPath("//android.widget.Button").click();
+			Thread.sleep(20000);
+			driver.findElementByXPath("//android.widget.Button").click();
+			Thread.sleep(10000);
+			driver.findElementByXPath("//*[@text='Pricing']").click();
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.EditText").sendKeys("100");
 			driver.hideKeyboard();
-			driver.findElementByXPath("(//android.widget.EditText[@text='Pricing']").click();
-			driver.findElementByXPath("(//android.widget.TextView[@text='|']").sendKeys("100");
-			driver.hideKeyboard();
-			driver.findElementByXPath("(//android.widget.TextView[@text='Set']").click();
-			Thread.sleep(2000);
-			driver.findElementByXPath("(//android.widget.TextView[@text='SAVE']").click();
+			driver.findElementByXPath("//*[@text='Set']").click();
+			Thread.sleep(5000);
+			driver.findElementByXPath("//*[@text='SAVE']").click();
+			Thread.sleep(10000);
 			driver.findElementById("android:id/button1").click();
-						
+			Thread.sleep(5000);			
+/*
 //Step8 Upload a Video
 			driver.findElementByXPath("//android.widget.TextView[@text='My Posts']").click();
+			Thread.sleep(4000);
 			driver.findElementByXPath("//android.widget.TextView[@text='UPLOAD']").click();
+			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.TextView[@text='Select a file to upload']").click();
-			driver.findElementByXPath("//android.widget.TextView[@text='Upload Audio']").click();
-			driver.findElementByXPath("//android.widget.ImageButton").click();
-			driver.findElementByXPath("//android.widget.ImageButton[@text='Downloads']").click();
-			driver.findElementByXPath("//android.widget.ImageButton[@text='file_example_MP3_700KB.mp3']").click();
-			driver.findElementByXPath("//android.widget.TextView[@text='Select a thumbnail image']").click();
-			driver.findElementById("com.android.camera2:id/shutter_button").click();
-			Thread.sleep(1000);
-			driver.findElementById("com.android.camera2:id/done_button").click();
-			Thread.sleep(1000);
-			driver.findElementByXPath("//android.widget.EditText").sendKeys("Auto Test Audio");
-			driver.findElementByXPath("(//android.widget.EditText)[2]").sendKeys("Auto Test Description");
-			u.swipeScreen(Utilities.Direction.UP);
-			driver.findElementByXPath("//android.widget.Switch").click();
-			driver.findElementByXPath("//android.widget.TextView[@text='SAVE']").click();
-			Thread.sleep(5000);
-			driver.findElementById("android:id/button1").click();
+			Thread.sleep(3000);
+			//driver.findElementByXPath("//android.widget.TextView[@text='Upload Audio']").click();
+			//Thread.sleep(2000);
+			//driver.findElementByXPath("//android.widget.ImageButton").click();
+			//Thread.sleep(3000);
+			//driver.findElementByXPath("//android.widget.TextView[@text='Downloads']").click();
+			//Thread.sleep(4000);
+			//driver.findElementByXPath("//*[@text='file_example_MP3_700KB.mp3']").click();
+			//Thread.sleep(2000);
 			
+			//Take Video Button
+			driver.findElementByXPath("//android.widget.TextView[@text='Take Video']").click();
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.ImageView[@resource-id='com.android.camera2:id/shutter_button']").click();
+			Thread.sleep(5000);
+			driver.findElementByXPath("//android.widget.ImageView[@resource-id='com.android.camera2:id/shutter_button']").click();
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.ImageButton[@resource-id='com.android.camera2:id/done_button']").click();
+			Thread.sleep(3000);
+			
+			//driver.findElementByXPath("//android.widget.TextView[@text='Select a thumbnail image']").click();
+			//Thread.sleep(2000);
+			//driver.findElementByXPath("//android.widget.ImageView[@resource-id='com.android.camera2:id/shutter_button']").click();
+			//Thread.sleep(1000);
+			//driver.findElementByXPath("//android.widget.ImageButton[@resource-id='com.android.camera2:id/done_button']").click();
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.EditText").sendKeys("Auto Test Audio");
+			Thread.sleep(3000);
+			driver.findElementByXPath("(//android.widget.EditText)[2]").sendKeys("Auto Test Description");
+			Thread.sleep(3000);
+			u.swipeScreen(Utilities.Direction.UP);
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.Switch").click();
+			Thread.sleep(3000);
+			driver.findElementByXPath("//android.widget.TextView[@text='SAVE']").click();
+			Thread.sleep(60000);
+			//driver.findElementByXPath("//*[@resource-id='android:id/button1']").click();
+			//driver.pressKey(new KeyEvent(AndroidKey.BACK));	
+			Thread.sleep(5000);
+*/
+			
+/*			
 //Step9 Checks the uploaded content on Own Channel	
 			driver.findElementByXPath("//*[@content-desc=', tab, 1 out of 5']").click();
+			Thread.sleep(2000);
 			driver.findElementByXPath("//android.widget.TextView[@text='AutoUser2']").click();
+			Thread.sleep(2000);
 			driver.findElementByXPath("//android.widget.TextView[@text='Auto Test Audio']").click();
+			Thread.sleep(2000);
 			driver.findElementByXPath("//android.widget.TextView[@text='Play']").click();
 			Thread.sleep(25000);
 			System.out.println("Yeppee uploaded content availabe for public");
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			driver.pressKey(new KeyEvent(AndroidKey.BACK));			
-			
+			Thread.sleep(2000);
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));	
+			Thread.sleep(2000);
+*/
+	
 //Step10 Signout from App
-			LogoutTest lgt = new LogoutTest();
-			lgt.LogoutTestCase();
+			LogoutUser lgtu = new LogoutUser();
+			lgtu.LogoutUserCase();
 		}
 
 }

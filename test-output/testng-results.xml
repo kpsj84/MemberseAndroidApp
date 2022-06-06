@@ -2,67 +2,36 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-29T16:43:04 IST" name="Default suite" finished-at="2022-05-29T16:44:48 IST" duration-ms="104443">
+  <suite started-at="2022-06-06T12:10:50 IST" name="Default suite" finished-at="2022-06-06T12:13:08 IST" duration-ms="137664">
     <groups>
     </groups>
-    <test started-at="2022-05-29T16:43:04 IST" name="Default test" finished-at="2022-05-29T16:44:48 IST" duration-ms="104443">
-      <class name="SoFaDog.AndroidAutomation.EndToEndTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:43:04 IST" name="startService" finished-at="2022-05-29T16:43:16 IST" duration-ms="12095" status="PASS">
+    <test started-at="2022-06-06T12:10:50 IST" name="Default test" finished-at="2022-06-06T12:13:08 IST" duration-ms="137664">
+      <class name="SoFaDog.AndroidAutomation.DeleteAccountTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:10:50 IST" name="startService" finished-at="2022-06-06T12:11:03 IST" duration-ms="12530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:43:16 IST" name="startDriver" finished-at="2022-05-29T16:43:31 IST" duration-ms="15081" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:11:03 IST" name="startDriver" finished-at="2022-06-06T12:11:35 IST" duration-ms="32589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:43:31 IST" name="beforeMethod" finished-at="2022-05-29T16:43:31 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:11:35 IST" name="beforeMethod" finished-at="2022-06-06T12:11:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="EndToEndTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:43:31 IST" name="EndToEndTestCase" finished-at="2022-05-29T16:44:46 IST" duration-ms="75133" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="DeleteAccountTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:11:35 IST" name="DeleteAccountTestCase" finished-at="2022-06-06T12:13:06 IST" duration-ms="90386" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:599c:45fa:c04b:22c1:606c:81b5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/kamaljhinjer/Documen..., appPackage: dog.fa.so.app, automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., databaseEnabled: false, desired: {app: /Users/kamaljhinjer/Documen..., automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., deviceName: Emulator_Pixel2XL, newCommandTimeout: 300, platformName: android}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2880, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 98, takesScreenshot: true, viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: b1f97033-bffc-4431-8739-da727a3bc2ca
-*** Element info: {Using=xpath, value=//*[@content-desc=', tab, 2 out of 4']}]]>
+              <![CDATA[expected [User already exists] but found [AutoUser50]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:599c:45fa:c04b:22c1:606c:81b5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/kamaljhinjer/Documen..., appPackage: dog.fa.so.app, automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., databaseEnabled: false, desired: {app: /Users/kamaljhinjer/Documen..., automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., deviceName: Emulator_Pixel2XL, newCommandTimeout: 300, platformName: android}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2880, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 98, takesScreenshot: true, viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: b1f97033-bffc-4431-8739-da727a3bc2ca
-*** Element info: {Using=xpath, value=//*[@content-desc=', tab, 2 out of 4']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at SoFaDog.AndroidAutomation.EndToEndTest.EndToEndTestCase(EndToEndTest.java:143)
+              <![CDATA[java.lang.AssertionError: expected [User already exists] but found [AutoUser50]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at SoFaDog.AndroidAutomation.DeleteAccountTest.DeleteAccountTestCase(DeleteAccountTest.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,23 +62,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EndToEndTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:44:46 IST" name="afterMethod" finished-at="2022-05-29T16:44:46 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- DeleteAccountTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:13:06 IST" name="afterMethod" finished-at="2022-06-06T12:13:06 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:44:46 IST" name="afterClass" finished-at="2022-05-29T16:44:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:13:06 IST" name="afterClass" finished-at="2022-06-06T12:13:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@10feca44]" started-at="2022-05-29T16:44:46 IST" name="stopService" finished-at="2022-05-29T16:44:48 IST" duration-ms="2086" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.DeleteAccountTest@6babf3bf]" started-at="2022-06-06T12:13:06 IST" name="stopService" finished-at="2022-06-06T12:13:08 IST" duration-ms="2082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- SoFaDog.AndroidAutomation.EndToEndTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.DeleteAccountTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

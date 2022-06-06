@@ -44,6 +44,10 @@ public class Base {
 					  .usingDriverExecutable(new File("/usr/local/bin/node"))
 					  .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
 					  .withIPAddress("127.0.0.1").usingPort(4723));
+			
+			//For Server, Active the respective path of node and main.js
+			//service = 
+			
 			service.start();
 		}
 		return service;
@@ -72,6 +76,10 @@ public class Base {
 	public static void startEmulator() throws IOException, InterruptedException {
 		
 			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
+			
+			//For Server, Active the respective path of Emulator
+			//Runtime.getRuntime().exec(" ");
+			
 			Thread.sleep(10000);
 	}
 	

@@ -21,5 +21,13 @@ public class ExplorePage {
 		public WebElement SuggestedChannels(){    
 			return SuggestedChannels;
 		}
+		
+		@AndroidFindBy(xpath="(//android.view.ViewGroup[17]") 
+		private WebElement PopularSection;
+		
+		public WebElement PopularSection(){    
+			return PopularSection;
+		}
+
 
 }

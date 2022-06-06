@@ -22,7 +22,7 @@ public class ProfilePage {
 		return profileButton;
 	}
 	
-	@AndroidFindBy(xpath="(//android.widget.TextView[@text='Log out']") 
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out of your current session']") 
 	private WebElement Logout;
 	
 	public WebElement Logout(){    
