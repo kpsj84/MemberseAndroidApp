@@ -1,2 +1,9 @@
-SoFaDog/AndroidAutomation/SoFaDogSmokeTest.class
+SoFaDog/AndroidAutomation/LogoutTest.class
+SoFaDog/AndroidAutomation/LogoutUser.class
+SoFaDog/AndroidAutomation/DeleteAccountTest.class
+SoFaDog/AndroidAutomation/SmokeTest.class
+SoFaDog/AndroidAutomation/LoginTest.class
+SoFaDog/AndroidAutomation/WidgetSwipeTest.class
+SoFaDog/AndroidAutomation/EndToEndTest.class
+SoFaDog/AndroidAutomation/RegisterTest.class
 SoFaDog/AndroidAutomation/SampleTest.class

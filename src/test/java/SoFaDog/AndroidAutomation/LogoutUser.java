@@ -12,9 +12,11 @@ public class LogoutUser extends Base {
 	
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);
-		Thread.sleep(5000);
+		u.swipeScreen(Utilities.Direction.UP);
+		Thread.sleep(2000);
 	
 		pp.Logout().click();
+		Thread.sleep(4000);
 		//Click on Yes for Popup message
 		driver.findElementByXPath("//*[@resource-id='android:id/button2']").click();
 		}

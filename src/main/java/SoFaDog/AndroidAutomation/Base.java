@@ -27,6 +27,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Base {
 	
+	//Flag use to run Sample Test
 	public boolean sampleTest = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
@@ -36,7 +37,6 @@ public class Base {
 	
 	//Starts the Appium Server by checking that Server is already running or not by calling other Method
 	public AppiumDriverLocalService startServer() {
-		
 		boolean flag = checkIfServerIsRunnning(4723);
 		if(!flag)
 		{	
@@ -45,8 +45,7 @@ public class Base {
 					  .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
 					  .withIPAddress("127.0.0.1").usingPort(4723));
 			
-			//For Server, Active the respective path of node and main.js
-			//service = 
+			//For Server, Active the respective path of node and main.js 
 			
 			service.start();
 		}
@@ -54,8 +53,7 @@ public class Base {
 	}
 	
 	//Checks the Server running status and return boolean value to startServer Method
-	public static boolean checkIfServerIsRunnning(int port) {
-		
+	public static boolean checkIfServerIsRunnning(int port) {	
 		boolean isServerRunning = false;
 		ServerSocket serverSocket;
 		try {
@@ -73,19 +71,16 @@ public class Base {
 	}
 	
 	//Path for Emulator with Terminal command
-	public static void startEmulator() throws IOException, InterruptedException {
-		
+	public static void startEmulator() throws IOException, InterruptedException {		
 			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 			
 			//For Server, Active the respective path of Emulator
-			//Runtime.getRuntime().exec(" ");
 			
 			Thread.sleep(10000);
 	}
 	
 	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName here from Test Class & name of String Argument can be different in this Method and in Test Class
-	public static void capabilities(String appName) throws IOException, InterruptedException{
-		
+	public static void capabilities(String appName) throws IOException, InterruptedException{		
 		//Path for global properties file
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/global.properties");
 		Properties prop = new Properties();		//Create object of Properties class  
@@ -115,13 +110,12 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());			//Get Application Path
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator to perform action in application
 		cap.setCapability("chromedriverExecutable", chromeDriver);					//Get the Path of Chrome Driver
-		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300); 			//Set time in seconds to wait for next action, means timeout
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 			//Set time in seconds to wait for next action, means timeout
 	}
 	
 	@BeforeTest
-	public void startService() throws IOException, InterruptedException {
-	
-		System.out.println("Enter Before Test, Starting Server & Launching App");
+	public void startService() throws IOException, InterruptedException {	
+		System.out.println("Entered Before Test, Starting Server & Launching App");
 		
 		//Starts the Server before to <test> tag execution in xml file i.e. before to all classes given in xml file
 		service=startServer();
@@ -139,9 +133,8 @@ public class Base {
 	}
 	
 	@AfterTest
-	public void stopService() {
-		
-		System.out.println("Enter After Test & Stoping Server");
+	public void stopService() {		
+		System.out.println("Entered After Test & Stoping Server");
 		
 		//Stop the service after executing Tests in all Test Classes
 		service.stop();
@@ -149,7 +142,6 @@ public class Base {
 	
 	@BeforeClass
 	public AndroidDriver<AndroidElement> startDriver() throws MalformedURLException {
-
 		System.out.println("Execute Before Class & passing capabilities to driver every time the Test's Start in New Class");
 		
 		//Tell AndroidDriver where the Appium Server is listening to it
@@ -162,19 +154,19 @@ public class Base {
 	}
 	
 	@AfterClass
-	public void afterClass() {
+	public void afterClass() throws InterruptedException {	
+		Thread.sleep(10000);
 		System.out.println("Execute After Class");
 	}
 	
 	@BeforeMethod
-	public void beforeMethod() throws IOException, InterruptedException {
-		
-		System.out.println("Execute Before Method");
+	public void beforeMethod() throws IOException, InterruptedException {	
+		System.out.println("Executing Before Method, Starting Test");
 	}
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("Execute After Method and Confirming the Test was executed");
+		System.out.println("Executing After Method and Confirming the Test was executed");
 	}
 	
 	//Method for creating screenshot by getting the argument from Listener class which get the detail from ITestResult class

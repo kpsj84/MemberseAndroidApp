@@ -14,7 +14,6 @@ public class DeleteAccountTest extends Base {
 	
 	@Test
 	public void DeleteAccountTestCase() throws InterruptedException, IOException {
-	
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
@@ -26,10 +25,11 @@ public class DeleteAccountTest extends Base {
 		LoginPage lp = new LoginPage(driver);
 		lp.createAccount().click();
 		
-		//Change the user credentials every time while running this test to fill fresh detail in Register Form or Delete the user at the end of Test to keep this detail same
-		String firstName = "AutoUser100";
-		String lastName = "QATest100";
-		String emailId = "autouser100";
+		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
+		String userNumber = "109";
+		String firstName = "AutoUser"+userNumber;
+		String lastName = "QATest"+userNumber;
+		String emailId = "autouser"+userNumber;
 		
 		String userName = firstName;
 		String emailDomain = "@yopmail.com";
@@ -45,23 +45,22 @@ public class DeleteAccountTest extends Base {
 		
 		RegisterPage rp = new RegisterPage(driver);
 		rp.createAccountButton2().click();
-		Thread.sleep(25000);
+		Thread.sleep(30000);
 		
 		//Delete Account
 		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
 		System.out.println(uName);
-		Assert.assertEquals(firstName, uName);
+		Assert.assertEquals(uName, firstName);
 		
 		driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
+		Thread.sleep(2000);
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		driver.findElementByXPath("//*[@text='Delete Account']").click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.findElementById("android:id/button2").click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 	}
-	
-	
 
 }

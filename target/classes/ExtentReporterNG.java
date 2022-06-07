@@ -18,9 +18,9 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
  
-public class ExtentReporterNG implements IReporter {
-	
-    private ExtentReports extent;
+public class ExtentReporterNG implements IReporter {	
+    
+	private ExtentReports extent;
     ExtentHtmlReporter htmlReporter;
  
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -42,8 +42,7 @@ public class ExtentReporterNG implements IReporter {
         extent.flush(); 
     }
  
-    private void buildTestNodes(IResultMap tests, Status status) {
-        
+    private void buildTestNodes(IResultMap tests, Status status) {        
     	ExtentTest test;
  
         if (tests.size() > 0) {

@@ -28,8 +28,7 @@ public class Utilities {
 	
 	//Method to Swipe the Screen Widget
 	@SuppressWarnings("rawtypes")
-	public void swipeScreen(Direction dir) {
-		   
+	public void swipeScreen(Direction dir) {		   
 			System.out.println("swipeScreen() Method : dir: '" + dir + "'"); // always log your actions
 		    // Animation default time:
 		    //  - Android: 300 ms

@@ -6,17 +6,39 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.SampleTest">
+      <class name="SoFaDog.AndroidAutomation.LoginTest">
         <methods>
           <include name="stopService"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
-          <include name="FirstTest"/>
+          <include name="LoginTestCase"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.SampleTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.LoginTest -->
+      <class name="SoFaDog.AndroidAutomation.LogoutTest">
+        <methods>
+          <include name="stopService"/>
+          <include name="afterClass"/>
+          <include name="LogoutTestCase"/>
+          <include name="afterMethod"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- SoFaDog.AndroidAutomation.LogoutTest -->
+      <class name="SoFaDog.AndroidAutomation.EndToEndTest">
+        <methods>
+          <include name="EndToEndTestCase"/>
+          <include name="stopService"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- SoFaDog.AndroidAutomation.EndToEndTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

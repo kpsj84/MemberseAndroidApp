@@ -12,8 +12,7 @@ public class WidgetSwipeTest extends Base {
 	
 	//Represents as one Test Case
 		@Test
-		public void WidgetSwipeTestCase() throws IOException, InterruptedException {
-			
+		public void WidgetSwipeTestCase() throws IOException, InterruptedException {	
 			//Wait upto for next element to available and will execute immediately once element appear
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
@@ -23,16 +22,16 @@ public class WidgetSwipeTest extends Base {
 			Thread.sleep(25000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("1st Widget Swipe Executed");
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("2nd Widget Swipe Executed");
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("3rd Widget Swipe Executed");
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("Last Swipe Executed");
-			Thread.sleep(2000);
+			Thread.sleep(6000);
 			
 			LoginOptionPage lop = new LoginOptionPage(driver);
 			String A = lop.maybeLater().getText();

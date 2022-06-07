@@ -21,8 +21,7 @@ public class Listeners implements ITestListener {
 	}
 	
 	@Override
-	public void onTestFailure(ITestResult result) {
-		
+	public void onTestFailure(ITestResult result) {		
 		String s = result.getName();
 		try {
 			Base.getScreenshot(s);
@@ -49,7 +48,6 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 	}
 	

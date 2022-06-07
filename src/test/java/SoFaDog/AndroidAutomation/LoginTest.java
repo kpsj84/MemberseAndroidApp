@@ -12,8 +12,7 @@ import PageObjects.LoginPage;
 public class LoginTest extends Base {
 	
 	@Test
-	public void LoginTestCase() throws IOException, InterruptedException {
-		
+	public void LoginTestCase() throws IOException, InterruptedException {	
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
@@ -23,8 +22,9 @@ public class LoginTest extends Base {
 		lop.signinWithEmail().click();
 		
 		//Change these Credentials according to the User to be Login 
-		String userName = "AutoUser40";
-		String emailId = "autouser40";
+		String userNumber = "40";
+		String userName = "AutoUser"+userNumber;
+		String emailId = "autouser"+userNumber;
 		String emailDomain = "@yopmail.com";
 		String email = emailId+emailDomain;
 		String password = emailId;
@@ -34,12 +34,14 @@ public class LoginTest extends Base {
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.loginButton().click();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		
 		//Verify User Name display on screen
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
 		System.out.println(uName);
-		Assert.assertEquals(userName, uName);
+		System.out.println(userName);
+		Assert.assertEquals(uName, userName);
 	}
 
 }

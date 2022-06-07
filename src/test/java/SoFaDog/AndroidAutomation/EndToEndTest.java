@@ -17,38 +17,37 @@ public class EndToEndTest extends Base {
 		@SuppressWarnings("rawtypes")
 		@Test
 		public void EndToEndTestCase() throws IOException, InterruptedException {
-			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-						
+
+/*
 //Step1 Register a User
 			RegisterTest rt = new RegisterTest();
 			rt.registerUser();
 			Thread.sleep(10000);
+*/		
 			
-/* 			
-//Step Login User directly with Bypass Register Process
+//Step Login User directly to Bypass Register Process
 			LoginTest lt = new LoginTest();
 			lt.LoginTestCase();
-			driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS);
-*/
 			
 //Step2 Subscribe a Free Channel
 			//Click on Explore Channels Button
-			driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-			driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
+			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+			driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 5']").click();
 			
 			//Click in Search at some tag
 			Thread.sleep(12000);
 			driver.findElementByXPath("//*[@text='tag1']").click();
+			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.TextView[@text='Channels']").click();
 			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.EditText[@text='Search...']").sendKeys("kqacd2");
 			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.TextView[@text='kqacd2 Test Channel']").click();
 			Thread.sleep(3000);
-			driver.findElementByXPath("//android.widget.TextView[@text='Subscribe for FREE                                  }']").click();
-			driver.findElementById("android:id/button2").click();
-			Thread.sleep(20000);
+			//driver.findElementByXPath("//android.widget.TextView[@text='Subscribe for FREE                                  }']").click();
+			//driver.findElementById("android:id/button2").click();
+			//Thread.sleep(20000);
 			
 //Step3 Watch a Video			
 			driver.findElementByXPath("//android.widget.TextView[@text='VR Glasses']").click();
@@ -63,10 +62,7 @@ public class EndToEndTest extends Base {
 			t.tap(PointOption.point(98,196)).perform();
 			Thread.sleep(6000);
 			t.tap(PointOption.point(1307,231)).perform();
-			Thread.sleep(3000);
-			
-			//Back to Search Page
-			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			Thread.sleep(6000);
 
 /*			
 //Step4 Search for Other Creator Channel & Subscribe a Paid Channel			
@@ -123,9 +119,8 @@ public class EndToEndTest extends Base {
 */			
 
 //Step5 Search for audio content on other Channel
-			Thread.sleep(3000);
 			driver.findElementByXPath("//android.widget.EditText[@text='kqacd2']").sendKeys("MakFreeChannel");
-			Thread.sleep(5000);
+			Thread.sleep(6000);
 			driver.findElementByXPath("//android.widget.TextView[@text='MakFreeChannel']").click();
 			Thread.sleep(6000);
 			driver.findElementByXPath("//android.widget.TextView[@text='test']").click();
@@ -143,11 +138,13 @@ public class EndToEndTest extends Base {
 			Thread.sleep(3000);
 			TouchAction t2 = new TouchAction(driver);
 			t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
-			t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
+			//t2.press(PointOption.point(1400, 2203)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(PointOption.point(10, 2203)).release().perform();	
 			driver.findElementByXPath("//android.widget.TextView[@text='Party time']").click();
 			Thread.sleep(28000);
-			driver.pressKey(new KeyEvent(AndroidKey.BACK));			
-		
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));	
+			Thread.sleep(3000);
+
+/*
 //Step7 Become a Creator
 			driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
 			Thread.sleep(5000);
@@ -166,7 +163,9 @@ public class EndToEndTest extends Base {
 			driver.findElementByXPath("//*[@text='SAVE']").click();
 			Thread.sleep(10000);
 			driver.findElementById("android:id/button1").click();
-			Thread.sleep(5000);			
+			Thread.sleep(5000);	
+*/	
+			
 /*
 //Step8 Upload a Video
 			driver.findElementByXPath("//android.widget.TextView[@text='My Posts']").click();
@@ -233,6 +232,7 @@ public class EndToEndTest extends Base {
 */
 	
 //Step10 Signout from App
+			driver.findElementByXPath("//*[@content-desc=', tab, 5 out of 5']").click();
 			LogoutUser lgtu = new LogoutUser();
 			lgtu.LogoutUserCase();
 		}

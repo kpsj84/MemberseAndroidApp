@@ -1,8 +1,42 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.141 s <<< FAILURE! - in TestSuite
-SoFaDog.AndroidAutomation.SoFaDogSmokeTest.FirstTest  Time elapsed: 27.303 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at SoFaDog.AndroidAutomation.SoFaDogSmokeTest.FirstTest(SoFaDogSmokeTest.java:24)
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 966.94 s <<< FAILURE! - in TestSuite
+SoFaDog.AndroidAutomation.LoginTest.LoginTestCase  Time elapsed: 68.967 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Maybe later']})
+	at SoFaDog.AndroidAutomation.LoginTest.LoginTestCase(LoginTest.java:19)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3381b4fc (tried for 1 second(s) with 500 milliseconds interval)
+	at SoFaDog.AndroidAutomation.LoginTest.LoginTestCase(LoginTest.java:19)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Maybe later']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:4707:863b:7d87:a931:d239:a3d2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at SoFaDog.AndroidAutomation.LoginTest.LoginTestCase(LoginTest.java:19)
+
+SoFaDog.AndroidAutomation.LogoutTest.LogoutTestCase  Time elapsed: 75.581 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:4707:863b:7d87:a931:d239:a3d2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/kamaljhinjer/Documen..., appPackage: dog.fa.so.app, automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., databaseEnabled: false, desired: {app: /Users/kamaljhinjer/Documen..., automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., deviceName: Emulator_Pixel2XL, newCommandTimeout: 180, platformName: android}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2880, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 180, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 98, takesScreenshot: true, viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 45b62214-294b-41c0-a0cc-db2656f2ad87
+*** Element info: {Using=xpath, value=//android.widget.EditText[@text='john.doe@email.com']}
+	at SoFaDog.AndroidAutomation.LogoutTest.LogoutTestCase(LogoutTest.java:14)
+
+SoFaDog.AndroidAutomation.DeleteAccountTest.DeleteAccountTestCase  Time elapsed: 69.335 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Maybe later']})
+	at SoFaDog.AndroidAutomation.DeleteAccountTest.DeleteAccountTestCase(DeleteAccountTest.java:20)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@102d92c4 (tried for 1 second(s) with 500 milliseconds interval)
+	at SoFaDog.AndroidAutomation.DeleteAccountTest.DeleteAccountTestCase(DeleteAccountTest.java:20)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Maybe later']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:4707:863b:7d87:a931:d239:a3d2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: driver.version: AndroidDriver
+	at SoFaDog.AndroidAutomation.DeleteAccountTest.DeleteAccountTestCase(DeleteAccountTest.java:20)
 
