@@ -37,7 +37,7 @@ public class LoginTest extends Base {
 		Thread.sleep(20000);
 		
 		//Verify User Name display on screen
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		Thread.sleep(10000);
 		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
 		System.out.println(uName);
 		System.out.println(userName);
