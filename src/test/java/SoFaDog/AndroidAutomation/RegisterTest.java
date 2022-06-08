@@ -27,7 +27,7 @@ public class RegisterTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the user credentials every time while running this test to fill fresh detail in Register Form or Delete the user at the end of Test to keep this detail same
-		String userNumber = "48";
+		String userNumber = "49";
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;

@@ -29,6 +29,8 @@ public class Base {
 	
 	//Flag use to run Sample Test
 	public boolean sampleTest = false;
+	public boolean SoFaDogCS = false;
+	public boolean SoFaDogCloud = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
 	public static AndroidDriver<AndroidElement> driver;
@@ -44,9 +46,6 @@ public class Base {
 					  .usingDriverExecutable(new File("/usr/local/bin/node"))
 					  .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
 					  .withIPAddress("127.0.0.1").usingPort(4723));
-			
-			//For Server, Active the respective path of node and main.js 
-			
 			service.start();
 		}
 		return service;
@@ -72,9 +71,10 @@ public class Base {
 	
 	//Path for Emulator with Terminal command
 	public static void startEmulator() throws IOException, InterruptedException {		
-			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
+			//Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 			
 			//For Server, Active the respective path of Emulator
+			Runtime.getRuntime().exec("/Users/mobile/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 			
 			Thread.sleep(10000);
 	}
