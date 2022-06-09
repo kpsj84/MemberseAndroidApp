@@ -19,19 +19,19 @@ public class WidgetSwipeTest extends Base {
 			//Create object of Utilities class for Swipe Action
 			Utilities u = new Utilities(driver);
 			System.out.println("Wait for application to load");
-			Thread.sleep(30000);
+			Thread.sleep(25000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("1st Widget Swipe Executed");
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("2nd Widget Swipe Executed");
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("3rd Widget Swipe Executed");
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("Last Swipe Executed");
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 			
 			LoginOptionPage lop = new LoginOptionPage(driver);
 			String A = lop.maybeLater().getText();

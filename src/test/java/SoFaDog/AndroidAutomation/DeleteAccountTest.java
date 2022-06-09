@@ -3,7 +3,6 @@ package SoFaDog.AndroidAutomation;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.LoginOptionPage;

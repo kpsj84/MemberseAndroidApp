@@ -56,7 +56,7 @@ public class EndToEndTest extends Base {
 			Thread.sleep(30000);
 			TouchAction t = new TouchAction(driver);
 			t.tap(PointOption.point(1280,2000)).perform();
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			Thread.sleep(6000);
 			t.tap(PointOption.point(98,196)).perform();
