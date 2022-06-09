@@ -26,7 +26,7 @@ public class DeleteAccountTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "109";
+		String userNumber = "111";
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -48,10 +48,6 @@ public class DeleteAccountTest extends Base {
 		Thread.sleep(30000);
 		
 		//Delete Account
-		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
-		System.out.println(uName);
-		Assert.assertEquals(uName, firstName);
-		
 		driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
 		Thread.sleep(2000);
 		Utilities u = new Utilities(driver);

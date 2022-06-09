@@ -29,8 +29,8 @@ public class Base {
 	
 	//Flag use to run Sample Test
 	public boolean sampleTest = false;
-	public boolean SoFaDogCS = false;
-	public boolean SoFaDogCloud = false;
+	public static boolean SoFaDogCS = false;
+	public static boolean SoFaDogCloud = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
 	public static AndroidDriver<AndroidElement> driver;
@@ -71,11 +71,15 @@ public class Base {
 	
 	//Path for Emulator with Terminal command
 	public static void startEmulator() throws IOException, InterruptedException {		
-			//Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
-			
+		if(SoFaDogCS == false) 
+		{	
+			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
+		}
+		else if(SoFaDogCS == true) 
+		{
 			//For Server, Active the respective path of Emulator
 			Runtime.getRuntime().exec("/Users/mobile/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
-			
+		}	
 			Thread.sleep(10000);
 	}
 	
@@ -124,10 +128,12 @@ public class Base {
 		//sampleTest = true;
 		
 		//Launch the desired Application by fetching the appName from Global Properties according which is according to string argument passed
-		if(sampleTest == true) {
+		if(sampleTest == true) 
+		{
 			capabilities("sampleApp");	
 		} 
-		else {
+		else 
+		{
 			capabilities("SoFaDogApp");
 		}
 	}

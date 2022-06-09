@@ -27,7 +27,7 @@ public class RegisterTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the user credentials every time while running this test to fill fresh detail in Register Form or Delete the user at the end of Test to keep this detail same
-		String userNumber = "49";
+		String userNumber = "52";
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -49,6 +49,7 @@ public class RegisterTest extends Base {
 		Thread.sleep(30000);
 		
 		//Verify User Name display on screen
+		Thread.sleep(10000);
 		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
 		System.out.println(uName);
 		Assert.assertEquals(uName, firstName);
