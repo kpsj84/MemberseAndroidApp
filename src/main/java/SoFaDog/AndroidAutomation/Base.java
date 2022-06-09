@@ -29,7 +29,7 @@ public class Base {
 	
 	//Flag use to run Sample Test
 	public boolean sampleTest = false;
-	public static boolean SoFaDogCS = false;
+	public static boolean SoFaDogCS = true;
 	public static boolean SoFaDogCloud = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
