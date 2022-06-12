@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -27,10 +28,11 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Base {
 	
-	//Flag use to run Sample Test
-	public boolean sampleTest = false;
-	public static boolean SoFaDogCS = true;
-	public static boolean SoFaDogCloud = false;
+	//Flags use to run Test on different environment, make it true where to run
+	public static boolean sampleTest   = false;
+	public static boolean SoFaDogReal  = false;
+	public static boolean SoFaDogCloud = true;
+	public static boolean SoFaDogCS    = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
 	public static AndroidDriver<AndroidElement> driver;
@@ -71,15 +73,24 @@ public class Base {
 	
 	//Path for Emulator with Terminal command
 	public static void startEmulator() throws IOException, InterruptedException {		
-		if(SoFaDogCS == false) 
-		{	
-			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
+		if(SoFaDogReal == true)
+		{
+			System.out.println("Test are running on Real device");
+		}
+		else if(SoFaDogCloud == true)
+		{
+			System.out.println("Emulator is running on cloud");
 		}
 		else if(SoFaDogCS == true) 
-		{
-			//For Server, Active the respective path of Emulator
+		{	
+			//For CS Server, Active following path of Emulator
 			Runtime.getRuntime().exec("/Users/mobile/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
-		}	
+		}
+		else 
+		{
+			//Path to run test on local machine
+			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
+		}
 			Thread.sleep(10000);
 	}
 	
@@ -100,38 +111,70 @@ public class Base {
 		{
 			startEmulator();
 		}
-		else 
-		{
-			System.out.print("Emulator not started through code");
-		}
 		
-		//Path of Chrome Driver for WEBVIEW
+		//Path of Chrome Driver for WEBVIEW on local machine
 		String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		
 		//Set Desired Capabilities
 		cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);				//Get Device Name
+		if(SoFaDogReal == true)
+		{
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");	//Keyword used to run test on real device	
+		}
+		else
+		{
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);			//Get Device Name
+		}
+		
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());			//Get Application Path
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator to perform action in application
 		cap.setCapability("chromedriverExecutable", chromeDriver);					//Get the Path of Chrome Driver
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 			//Set time in seconds to wait for next action, means timeout
 	}
 	
+	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName here from Test Class & name of String Argument can be different in this Method and in Test Class
+		public static void cloudCapabilities(String appName) throws IOException, InterruptedException{		
+			//This method called just to print the message written in startEmulator()
+			startEmulator();
+			
+			//Path of Chrome Driver for WEBVIEW on local machine
+			String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
+			
+			//Set Desired Capabilities
+			cap = new DesiredCapabilities();
+			cap.setCapability("browserstack.user", "kamaljhinjer_lcJIEw");				//Browserstack User Key
+			cap.setCapability("browserstack.key", "ZJUNqNZ3K6N6XV3U3DNR");				//Browserstack Password Key
+			cap.setCapability("app", "bs://d83d36943131ea7d8c0cc5b273639fd0b49284ab");	//Browserstack uploaded App reference
+			cap.setCapability("device", "Google Pixel 3");								//Browserstack Emulator Name
+			cap.setCapability("os_version", "9.0");										//Browserstack Emulator OS info
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+			cap.setCapability("chromedriverExecutable", chromeDriver);	
+			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 
+		}
+	
 	@BeforeTest
 	public void startService() throws IOException, InterruptedException {	
 		System.out.println("Entered Before Test, Starting Server & Launching App");
 		
-		//Starts the Server before to <test> tag execution in xml file i.e. before to all classes given in xml file
-		service=startServer();
-		
-		//This flag is to run the Sample Test and make it uncomment to run sampleApp
-		//sampleTest = true;
+		if(SoFaDogCloud == true)
+		{
+			System.out.println("Server is running on cloud, so start server manage by cloud itself");
+		}
+		else
+		{
+			//Starts the Server before to <test> tag execution in xml file i.e. before to all classes given in xml file
+			service=startServer();
+		}
 		
 		//Launch the desired Application by fetching the appName from Global Properties according which is according to string argument passed
 		if(sampleTest == true) 
 		{
 			capabilities("sampleApp");	
-		} 
+		}
+		else if(SoFaDogCloud == true)
+		{
+			cloudCapabilities("SoFaDogApp");
+		}
 		else 
 		{
 			capabilities("SoFaDogApp");
@@ -142,19 +185,36 @@ public class Base {
 	public void stopService() {		
 		System.out.println("Entered After Test & Stoping Server");
 		
-		//Stop the service after executing Tests in all Test Classes
-		service.stop();
+		if(SoFaDogCloud == true)
+		{
+			System.out.println("Server is running on cloud, so stop server manage by cloud only");
+		}
+		else
+		{
+			//Stop the service after executing Tests in all Test Classes
+			service.stop();
+		}
 	}
 	
 	@BeforeClass
 	public AndroidDriver<AndroidElement> startDriver() throws MalformedURLException {
 		System.out.println("Execute Before Class & passing capabilities to driver every time the Test's Start in New Class");
 		
-		//Tell AndroidDriver where the Appium Server is listening to it
-		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
-		if(driver == null) 
+		if(SoFaDogCloud == true)
 		{
-			System.out.println("Driver is Null");
+			//Android Driver is redirect to cloud Service (Browserstack)
+			driver = new AndroidDriver<>(new URL("http://hub.browserstack.com/wd/hub"),cap);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		}
+		else
+		{
+			//Tell AndroidDriver where the Appium Server is listening to it
+			driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			if(driver == null) 
+			{
+				System.out.println("Driver is Null");
+			}
 		}
 		return driver;	
 	}

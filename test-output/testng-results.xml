@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-09T16:40:24 IST" name="Default suite" finished-at="2022-06-09T16:42:58 IST" duration-ms="153386">
+  <suite started-at="2022-06-12T12:59:10 IST" name="Default suite" finished-at="2022-06-12T13:00:57 IST" duration-ms="106474">
     <groups>
     </groups>
-    <test started-at="2022-06-09T16:40:24 IST" name="Default test" finished-at="2022-06-09T16:42:58 IST" duration-ms="153386">
-      <class name="SoFaDog.AndroidAutomation.LoginTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:40:24 IST" name="startService" finished-at="2022-06-09T16:40:34 IST" duration-ms="10137" status="PASS">
+    <test started-at="2022-06-12T12:59:10 IST" name="Default test" finished-at="2022-06-12T13:00:57 IST" duration-ms="106474">
+      <class name="SoFaDog.AndroidAutomation.WidgetSwipeTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T12:59:10 IST" name="startService" finished-at="2022-06-12T12:59:20 IST" duration-ms="10050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:40:34 IST" name="startDriver" finished-at="2022-06-09T16:41:06 IST" duration-ms="31897" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T12:59:20 IST" name="startDriver" finished-at="2022-06-12T12:59:55 IST" duration-ms="34635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:41:06 IST" name="beforeMethod" finished-at="2022-06-09T16:41:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T12:59:55 IST" name="beforeMethod" finished-at="2022-06-12T12:59:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LoginTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:41:06 IST" name="LoginTestCase" finished-at="2022-06-09T16:42:47 IST" duration-ms="101178" status="PASS">
+        <test-method signature="WidgetSwipeTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T12:59:55 IST" name="WidgetSwipeTestCase" finished-at="2022-06-12T13:00:47 IST" duration-ms="51740" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:42:48 IST" name="afterMethod" finished-at="2022-06-09T16:42:48 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- WidgetSwipeTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T13:00:47 IST" name="afterMethod" finished-at="2022-06-12T13:00:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:42:48 IST" name="afterClass" finished-at="2022-06-09T16:42:58 IST" duration-ms="10002" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T13:00:47 IST" name="afterClass" finished-at="2022-06-12T13:00:57 IST" duration-ms="10005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@6babf3bf]" started-at="2022-06-09T16:42:58 IST" name="stopService" finished-at="2022-06-09T16:42:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.WidgetSwipeTest@3059cbc]" started-at="2022-06-12T13:00:57 IST" name="stopService" finished-at="2022-06-12T13:00:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- SoFaDog.AndroidAutomation.LoginTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.WidgetSwipeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
