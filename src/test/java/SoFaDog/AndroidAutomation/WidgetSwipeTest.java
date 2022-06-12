@@ -14,12 +14,12 @@ public class WidgetSwipeTest extends Base {
 		@Test
 		public void WidgetSwipeTestCase() throws IOException, InterruptedException {	
 			//Wait upto for next element to available and will execute immediately once element appear
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 			//Create object of Utilities class for Swipe Action
 			Utilities u = new Utilities(driver);
 			System.out.println("Wait for application to load");
-			Thread.sleep(25000);
+			Thread.sleep(20000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("1st Widget Swipe Executed");
 			Thread.sleep(5000);

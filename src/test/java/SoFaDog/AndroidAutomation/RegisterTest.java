@@ -14,8 +14,7 @@ public class RegisterTest extends Base {
 	
 	@Test
 	public void registerUser() throws InterruptedException, IOException {
-	
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
 		wst.WidgetSwipeTestCase();
@@ -27,7 +26,7 @@ public class RegisterTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the user credentials every time while running this test to fill fresh detail in Register Form or Delete the user at the end of Test to keep this detail same
-		String userNumber = "52";
+		String userNumber = "53";
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;

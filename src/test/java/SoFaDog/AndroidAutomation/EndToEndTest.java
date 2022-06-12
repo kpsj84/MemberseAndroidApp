@@ -32,7 +32,7 @@ public class EndToEndTest extends Base {
 			
 //Step2 Subscribe a Free Channel
 			//Click on Explore Channels Button
-			driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 			driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 5']").click();
 			
 			//Click in Search at some tag
