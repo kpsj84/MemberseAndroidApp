@@ -14,7 +14,6 @@
       <class name="SoFaDog.AndroidAutomation.SmokeTest"/>
       <class name="SoFaDog.AndroidAutomation.LoginTest"/>
       <class name="SoFaDog.AndroidAutomation.LogoutTest"/>
-      <class name="SoFaDog.AndroidAutomation.EndToEndTest"/>
       
  <!-- Regsiter and Delete A/c Test can only be run on Demand Only -->     
  		<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
