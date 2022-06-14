@@ -30,8 +30,8 @@ public class Base {
 	
 	//Flags use to run Test on different environment, make it true where to run
 	public static boolean sampleTest   = false;
-	public static boolean SoFaDogReal  = false;
-	public static boolean SoFaDogCloud = true;
+	public static boolean SoFaDogReal  = true;
+	public static boolean SoFaDogCloud = false;
 	public static boolean SoFaDogCS    = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
@@ -57,15 +57,19 @@ public class Base {
 	public static boolean checkIfServerIsRunnning(int port) {	
 		boolean isServerRunning = false;
 		ServerSocket serverSocket;
-		try {
+		
+		try 
+		{
 			serverSocket = new ServerSocket(port);		
 			serverSocket.close();
 		} 
-		catch (IOException e) {
+		catch (IOException e) 
+		{
 			//If control comes here, then it means that the port is in use
 			isServerRunning = true;
 		} 
-		finally {
+		finally 
+		{
 			serverSocket = null;
 		}
 		return isServerRunning;
@@ -91,7 +95,6 @@ public class Base {
 			//Path to run test on local machine
 			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 		}
-			Thread.sleep(10000);
 	}
 	
 	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName here from Test Class & name of String Argument can be different in this Method and in Test Class
@@ -125,7 +128,6 @@ public class Base {
 		{
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);			//Get Device Name
 		}
-		
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());			//Get Application Path
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator to perform action in application
 		cap.setCapability("chromedriverExecutable", chromeDriver);					//Get the Path of Chrome Driver
@@ -144,7 +146,7 @@ public class Base {
 			cap = new DesiredCapabilities();
 			cap.setCapability("browserstack.user", "kamaljhinjer_lcJIEw");				//Browserstack User Key
 			cap.setCapability("browserstack.key", "ZJUNqNZ3K6N6XV3U3DNR");				//Browserstack Password Key
-			cap.setCapability("app", "bs://d83d36943131ea7d8c0cc5b273639fd0b49284ab");	//Browserstack uploaded App reference
+			cap.setCapability("app", "bs://d83d36943131ea7d8c0cc5b273639fd0b49284ab");	//Browserstack uploaded App reference, this capability not required if custom Id given
 			cap.setCapability("custom_id", "SoFaDogAndroidApp");						//Custom Id for App which remains the same for all build uploads
 			cap.setCapability("device", "Google Pixel 3");								//Browserstack Emulator Name
 			cap.setCapability("os_version", "9.0");										//Browserstack Emulator OS info
@@ -221,9 +223,9 @@ public class Base {
 	}
 	
 	@AfterClass
-	public void afterClass() throws InterruptedException {	
-		Thread.sleep(10000);
-		System.out.println("Execute After Class");
+	public void quitDriver() throws InterruptedException {	
+		System.out.println("Execute quiting Driver");
+		driver.quit();
 	}
 	
 	@BeforeMethod

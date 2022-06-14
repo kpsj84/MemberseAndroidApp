@@ -23,18 +23,21 @@ public class SmokeTest extends Base {
 		//Click on Maybe later Button by calling Web Element thru LoginOptionPage Object
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithGoogle().click();
-		Thread.sleep(30000);
+		Thread.sleep(5000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementById("android:id/button1").click();
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		lop.SigninwithFacebook().click();
-		Thread.sleep(15000);
+		Thread.sleep(5000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		lop.signinWithEmail().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		lop.maybeLater().click();
 		
@@ -49,16 +52,14 @@ public class SmokeTest extends Base {
 		//Swipe Action performed on screen
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);
-		Thread.sleep(3000);
 		
 		//Click on Home Button
 		HomePage hp = new HomePage(driver);
 		hp.homeButton().click();
-		Thread.sleep(3000);
 		
 		//Click on Sign up Button
 		hp.signup().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		System.out.println("I am in SoFaDog App at Sign-In Options Page. This Build is Responsive");
 	}
 	

@@ -23,10 +23,13 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {		
 		String s = result.getName();
-		try {
+		
+		try 
+		{
 			Base.getScreenshot(s);
 		} 
-		catch (IOException e) {
+		catch (IOException e) 
+		{
 			e.printStackTrace();
 		}	
 	}

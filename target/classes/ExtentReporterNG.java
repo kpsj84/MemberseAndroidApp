@@ -24,15 +24,16 @@ public class ExtentReporterNG implements IReporter {
     ExtentHtmlReporter htmlReporter;
  
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-    	
        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/htmlreport.html");
        extent = new ExtentReports();
        extent.attachReporter(htmlReporter);
        
-       for (ISuite suite : suites) {
+       for (ISuite suite : suites) 
+       {
             Map<String, ISuiteResult> result = suite.getResults();
  
-            for (ISuiteResult r : result.values()) {
+            for (ISuiteResult r : result.values()) 
+            {
                 ITestContext context = r.getTestContext();
                 buildTestNodes(context.getPassedTests(), Status.PASS);
                 buildTestNodes(context.getFailedTests(), Status.FAIL);
@@ -45,8 +46,10 @@ public class ExtentReporterNG implements IReporter {
     private void buildTestNodes(IResultMap tests, Status status) {        
     	ExtentTest test;
  
-        if (tests.size() > 0) {
-            for (ITestResult result : tests.getAllResults()) {
+        if (tests.size() > 0) 
+        {
+            for (ITestResult result : tests.getAllResults()) 
+            {
                 test = extent.createTest(result.getMethod().getMethodName());
  
                 for (String group : result.getMethod().getGroups())

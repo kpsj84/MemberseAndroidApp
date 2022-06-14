@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.WidgetSwipeTest">
+      <class name="SoFaDog.AndroidAutomation.UploadVideoTest">
         <methods>
-          <include name="WidgetSwipeTestCase"/>
           <include name="stopService"/>
-          <include name="afterClass"/>
+          <include name="UploadVideoTestCase"/>
           <include name="afterMethod"/>
+          <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.WidgetSwipeTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.UploadVideoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

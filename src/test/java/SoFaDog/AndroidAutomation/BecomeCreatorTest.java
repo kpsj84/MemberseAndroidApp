@@ -9,10 +9,10 @@ import PageObjects.LoginOptionPage;
 import PageObjects.LoginPage;
 import PageObjects.RegisterPage;
 
-public class DeleteAccountTest extends Base {
+public class BecomeCreatorTest extends Base {
 	
 	@Test
-	public void DeleteAccountTestCase() throws InterruptedException, IOException {
+	public void BecomeCreatorTestCase() throws IOException, InterruptedException {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
@@ -25,7 +25,7 @@ public class DeleteAccountTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "116";
+		String userNumber = "204";
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -44,18 +44,27 @@ public class DeleteAccountTest extends Base {
 		
 		RegisterPage rp = new RegisterPage(driver);
 		rp.createAccountButton2().click();
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		
-		//Delete Account
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
 		Thread.sleep(2000);
-		Utilities u = new Utilities(driver);
-		u.swipeScreen(Utilities.Direction.UP);
-		driver.findElementByXPath("//*[@text='Delete Account']").click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElementById("android:id/button2").click();
-		Thread.sleep(7000);
+		driver.findElementByXPath("(//android.widget.Switch)[1]").click();
+		Thread.sleep(5000);
+		driver.findElementByXPath("//android.widget.Button").click();
+		Thread.sleep(10000);
+		driver.findElementByXPath("//android.widget.Button").click();
+		Thread.sleep(10000);
+		driver.findElementByXPath("//*[@text='Pricing']").click();
+		Thread.sleep(3000);
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("100");
+		driver.hideKeyboard();
+		driver.findElementByXPath("//*[@text='Set']").click();
+		Thread.sleep(5000);
+		driver.findElementByXPath("//*[@text='SAVE']").click();
+		Thread.sleep(10000);
+		driver.findElementById("android:id/button1").click();
+		Thread.sleep(5000);	
+		System.out.println("Content Creater created Successfully and set the channel price");
 	}
 
 }

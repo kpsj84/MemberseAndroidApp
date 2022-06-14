@@ -13,8 +13,6 @@ public class LoginTest extends Base {
 	
 	@Test
 	public void LoginTestCase() throws IOException, InterruptedException {	
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
 		wst.WidgetSwipeTestCase();
 		
@@ -34,10 +32,10 @@ public class LoginTest extends Base {
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.loginButton().click();
-		Thread.sleep(20000);
+		Thread.sleep(15000);
 		
 		//Verify User Name display on screen
-		Thread.sleep(10000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String uName = driver.findElementByXPath("//android.widget.TextView").getText();
 		System.out.println(uName);
 		System.out.println(userName);
