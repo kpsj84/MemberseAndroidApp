@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Dimension;
 import org.testng.annotations.Test;
 
+import PageObjects.ExplorePage;
+import PageObjects.SearchPage;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -19,17 +21,23 @@ public class WatchVideoTest extends Base {
 		LoginTest lt = new LoginTest();
 		lt.LoginTestCase();
 		
+		//Menu Item - Explore Page
 		driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 5']").click();
+		
 		//Click in Search at some tag
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElementByXPath("//*[@text='tag1']").click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElementByXPath("//android.widget.TextView[@text='Channels']").click();
-		driver.findElementByXPath("//android.widget.EditText[@text='Search...']").sendKeys("kqacd2");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		ExplorePage ep = new ExplorePage(driver);
+		ep.Searchtag1().click();
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		SearchPage sp = new SearchPage(driver);
+		sp.Channels().click();
+		sp.SearchField().sendKeys("kqacd2");
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementByXPath("//android.widget.TextView[@text='kqacd2 Test Channel']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='VR Glasses']").click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementByXPath("//android.widget.TextView[@text='Play']").click();
 		Thread.sleep(15000);
 		
@@ -37,7 +45,9 @@ public class WatchVideoTest extends Base {
 		TouchAction t = new TouchAction(driver);
 		//t.tap(PointOption.point(1280,2000)).perform();
 		t.tap(PointOption.point(dim1.width/2,dim1.height/2)).perform();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		t.tap(PointOption.point(dim1.width/2,dim1.height/2)).perform();
+		Thread.sleep(1000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		Thread.sleep(1000);
 		//t.tap(PointOption.point(98,196)).perform();
@@ -46,7 +56,7 @@ public class WatchVideoTest extends Base {
 		//t.tap(PointOption.point(1307,231)).perform();
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		Thread.sleep(1000);
-		System.out.println("Test end");
+		System.out.println("Video Test ends");
 	}
 
 }

@@ -16,7 +16,7 @@ public class LogoutTest extends Base {
 		
 		ProfilePage pp = new ProfilePage(driver);
 		pp.profileButton().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);

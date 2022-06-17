@@ -15,6 +15,14 @@ public class ExplorePage {
 			PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 		}
 		
+		//Search tag with name tag1
+		@AndroidFindBy(xpath="//*[@text='tag1']") 
+		private WebElement Searchtag1;
+		
+		public WebElement Searchtag1(){    
+			return Searchtag1;
+		}
+		
 		@AndroidFindBy(xpath="//android.widget.TextView[@text='Suggested Channels']") 
 		private WebElement SuggestedChannels;
 		

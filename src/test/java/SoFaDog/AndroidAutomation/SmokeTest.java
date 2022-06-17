@@ -43,8 +43,8 @@ public class SmokeTest extends Base {
 		
 		//Verify Text from Explore Page
 		System.out.println("Waiting for UI to load");
-		Thread.sleep(10000);
 		ExplorePage ep = new ExplorePage(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String suggestedChannels = ep.SuggestedChannels().getText();
 		Assert.assertEquals(suggestedChannels, "Suggested Channels");
 		System.out.println("Checked, Mobile Elements are available on Screen");		
@@ -59,7 +59,9 @@ public class SmokeTest extends Base {
 		
 		//Click on Sign up Button
 		hp.signup().click();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		String B = lop.maybeLater().getText();
+		Assert.assertEquals(B, "Maybe later");
 		System.out.println("I am in SoFaDog App at Sign-In Options Page. This Build is Responsive");
 	}
 	

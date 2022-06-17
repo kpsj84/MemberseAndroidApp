@@ -19,7 +19,7 @@ public class WidgetSwipeTest extends Base {
 			//Create object of Utilities class for Swipe Action
 			Utilities u = new Utilities(driver);
 			System.out.println("Wait for application to load");
-			Thread.sleep(22000);
+			Thread.sleep(21000);
 			u.swipeScreen(Utilities.Direction.LEFT);
 			System.out.println("1st Widget Swipe Executed");
 			Thread.sleep(3000);

@@ -29,26 +29,27 @@ public class Utilities {
 	//Method to Swipe the whole Screen
 	@SuppressWarnings("rawtypes")
 	public void swipeScreen(Direction dir) {		   
-			System.out.println("swipeScreen() Method : dir: '" + dir + "'");
-		    //Animation default time:
-		    //- Android: 300 ms
-		    //- iOS: 200 ms
-		    //final value depends on your app and could be greater
+		System.out.println("Swipe direction input to Swipe Method is : '" + dir + "'");
+		
+		//Animation default time:-
+		//- Android: 300 ms
+		//- iOS: 200 ms
+		//Final value depends on your app and could be greater
 		    
-			final int ANIMATION_TIME = 200; //milliseconds
-		    final int PRESS_TIME = 200;     //millisecods
-		    int edgeBorder = 10; 			//better avoid edges
+		final int ANIMATION_TIME = 200; //milliseconds
+		final int PRESS_TIME = 200;     //millisecods
+		int edgeBorder = 10; 			//better avoid edges
 		    
-		    PointOption pointOptionStart, pointOptionEnd;
-		    //init screen variables
-		    Dimension dims = localdriver.manage().window().getSize();
+		PointOption pointOptionStart, pointOptionEnd;
+		//init screen variables
+		Dimension dims = localdriver.manage().window().getSize();
 
-		    //init start point = center of screen
-		    pointOptionStart = PointOption.point(dims.width - 40, dims.height / 2);
-		    System.out.println("The Screen Width is : "+dims.getWidth());
+		//init start point = center of screen
+		pointOptionStart = PointOption.point(dims.width - 40, dims.height / 2);
+		System.out.println("The Screen Width is : "+dims.getWidth());
 
-		    switch (dir) {
-		        case DOWN:  //center of footer
+			switch (dir) {
+		    	case DOWN:  //center of footer
 		            pointOptionEnd = PointOption.point(dims.width / 2, dims.height - edgeBorder);
 		            break;
 		        case UP: 	//center of header
