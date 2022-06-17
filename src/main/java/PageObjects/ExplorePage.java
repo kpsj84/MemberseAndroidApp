@@ -30,6 +30,14 @@ public class ExplorePage {
 			return SuggestedChannels;
 		}
 		
+		//Viewall Button of New Channels
+		@AndroidFindBy(xpath="(//*[@text='View All'])[2]")
+		private WebElement NewChannelsViewall;
+		
+		public WebElement NewChannelsViewall(){    
+			return NewChannelsViewall;
+		}
+		
 		@AndroidFindBy(xpath="(//android.view.ViewGroup[17]") 
 		private WebElement PopularSection;
 		
