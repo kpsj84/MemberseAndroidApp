@@ -23,7 +23,7 @@ public class SmokeTest extends Base {
 		//Click on Maybe later Button by calling Web Element thru LoginOptionPage Object
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithGoogle().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementById("android:id/button1").click();

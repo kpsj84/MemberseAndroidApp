@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.WatchVideoTest">
+      <class name="SoFaDog.AndroidAutomation.DeleteAccountTest">
         <methods>
-          <include name="WatchVideoTestCase"/>
+          <include name="DeleteAccountTestCase"/>
           <include name="stopService"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
@@ -13,7 +13,7 @@
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.WatchVideoTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.DeleteAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,5 +28,12 @@ public class ProfilePage {
 	public WebElement Logout(){    
 		return Logout;
 	}
+	
+	@AndroidFindBy(xpath="//*[@text='Delete Account']") 
+	private WebElement DeleteAccount;
+	
+	public WebElement DeleteAccount(){    
+		return DeleteAccount;
+	}
 
 }

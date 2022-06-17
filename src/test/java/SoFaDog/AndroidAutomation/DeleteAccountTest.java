@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.LoginOptionPage;
 import PageObjects.LoginPage;
+import PageObjects.ProfilePage;
 import PageObjects.RegisterPage;
 
 public class DeleteAccountTest extends Base {
@@ -25,7 +26,7 @@ public class DeleteAccountTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "116";
+		String userNumber = UsersDetail.DeleteAccountTestNumber;
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -49,13 +50,15 @@ public class DeleteAccountTest extends Base {
 		//Delete Account
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);
-		driver.findElementByXPath("//*[@text='Delete Account']").click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		ProfilePage pp = new ProfilePage(driver);
+		pp.DeleteAccount().click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementById("android:id/button2").click();
-		Thread.sleep(7000);
+		Thread.sleep(5000);
 	}
 
 }
