@@ -5,8 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
+import PageObjects.CreatorEditInfoPage;
+import PageObjects.CreatorPage;
 import PageObjects.LoginOptionPage;
 import PageObjects.LoginPage;
+import PageObjects.ProfilePage;
 import PageObjects.RegisterPage;
 
 public class BecomeCreatorTest extends Base {
@@ -25,7 +28,7 @@ public class BecomeCreatorTest extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "204";
+		String userNumber = UsersDetail.BecomeCreatorTestNumber;
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -44,26 +47,31 @@ public class BecomeCreatorTest extends Base {
 		
 		RegisterPage rp = new RegisterPage(driver);
 		rp.createAccountButton2().click();
-		Thread.sleep(20000);
+		Thread.sleep(15000);
 		
 		driver.findElementByXPath("//*[@content-desc=', tab, 4 out of 4']").click();
-		Thread.sleep(2000);
-		driver.findElementByXPath("(//android.widget.Switch)[1]").click();
+		Thread.sleep(1000);
+		ProfilePage pp = new ProfilePage(driver);
+		pp.BecomeCreatorSwitch().click();
 		Thread.sleep(5000);
-		driver.findElementByXPath("//android.widget.Button").click();
+		pp.BecomeCreatorConfirmation().click();
 		Thread.sleep(10000);
-		driver.findElementByXPath("//android.widget.Button").click();
+		
+		CreatorPage cp = new CreatorPage(driver);
+		cp.CreatorWelcomeMessage().click();
 		Thread.sleep(10000);
-		driver.findElementByXPath("//*[@text='Pricing']").click();
+		
+		CreatorEditInfoPage ceip = new CreatorEditInfoPage(driver);
+		ceip.PricingTab().click();
 		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.EditText").sendKeys("100");
+		ceip.PriceInput().sendKeys("100");
 		driver.hideKeyboard();
-		driver.findElementByXPath("//*[@text='Set']").click();
+		ceip.PriceSet().click();
 		Thread.sleep(5000);
-		driver.findElementByXPath("//*[@text='SAVE']").click();
-		Thread.sleep(10000);
+		ceip.EditInfoSaveButton().click();
 		driver.findElementById("android:id/button1").click();
 		Thread.sleep(5000);	
+		
 		System.out.println("Content Creater created Successfully and set the channel price");
 	}
 

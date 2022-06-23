@@ -76,6 +76,7 @@ public class EndToEndTest extends Base {
 //Step4 Watching Video content from Popular Section of Explore Page
 			Thread.sleep(1000);
 			u.swipeScreen(Utilities.Direction.UP);
+			u.swipeScreen(Utilities.Direction.UP);
 			TouchAction t2 = new TouchAction(driver);
 			Dimension dim = driver.manage().window().getSize();
 			int startX = dim.width-10;

@@ -25,7 +25,7 @@ public class SubscribePaidChannel extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "116";
+		String userNumber = UsersDetail.SubscribePaidChannelTestNumber;
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;

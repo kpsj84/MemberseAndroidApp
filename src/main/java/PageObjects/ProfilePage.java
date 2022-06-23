@@ -22,6 +22,20 @@ public class ProfilePage {
 		return profileButton;
 	}
 	
+	@AndroidFindBy(xpath="(//android.widget.Switch)[1]")
+	private WebElement BecomeCreatorSwitch;
+	
+	public WebElement BecomeCreatorSwitch() {
+		return BecomeCreatorSwitch;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.Button")
+	private WebElement BecomeCreatorConfirmation;
+	
+	public WebElement BecomeCreatorConfirmation() {
+		return BecomeCreatorConfirmation;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out of your current session']") 
 	private WebElement Logout;
 	

@@ -3,14 +3,19 @@ package SoFaDog.AndroidAutomation;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.annotations.Test;
+
+import PageObjects.ChannelPage;
 import PageObjects.LoginOptionPage;
 import PageObjects.LoginPage;
 import PageObjects.RegisterPage;
+import PageObjects.SearchPage;
 
 public class SubscribeFreeChannel extends Base {
 	
+	@Test
 	public void SubscribeFreeChannelTestCase() throws IOException, InterruptedException {
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WidgetSwipeTest wst = new WidgetSwipeTest();
 		wst.WidgetSwipeTestCase();
@@ -22,7 +27,7 @@ public class SubscribeFreeChannel extends Base {
 		lp.createAccount().click();
 		
 		//Change the User Number every time while running this test to fill new detail in Register Form or Delete that user at the end of Test
-		String userNumber = "116";
+		String userNumber = UsersDetail.SubscribeFreeChannelTestNumber;
 		String firstName = "AutoUser"+userNumber;
 		String lastName = "QATest"+userNumber;
 		String emailId = "autouser"+userNumber;
@@ -46,20 +51,20 @@ public class SubscribeFreeChannel extends Base {
 		//Step2 Subscribe a Free Channel
 		//Click on Explore Channels Button
 		driver.findElementByXPath("//*[@content-desc=', tab, 2 out of 4']").click();
+		Thread.sleep(1000);
 		
 		//Click in Search at some tag
-		Thread.sleep(12000);
 		driver.findElementByXPath("//*[@text='tag1']").click();
-		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.TextView[@text='Channels']").click();
-		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.EditText[@text='Search...']").sendKeys("kqacd2");
-		Thread.sleep(3000);
+		SearchPage sp = new SearchPage(driver);
+		sp.Channels().click();
+		sp.SearchField().sendKeys("kqacd2");
 		driver.findElementByXPath("//android.widget.TextView[@text='kqacd2 Test Channel']").click();
-		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.TextView[@text='Subscribe for FREE                                  }']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		ChannelPage cp = new ChannelPage(driver);
+		cp.SubscribeFreeButton().click();
 		driver.findElementById("android:id/button2").click();
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 	}
 
 }

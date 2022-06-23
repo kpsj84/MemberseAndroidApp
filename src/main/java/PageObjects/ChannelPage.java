@@ -15,12 +15,21 @@ public class ChannelPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	//Subscribe for Free Button
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Subscribe for FREE                                  }']") 
+	private WebElement SubscribeFreeButton;
+	
+	public WebElement SubscribeFreeButton(){    
+		return SubscribeFreeButton;
+	}
+	
+	
 	//About Tab
-			@AndroidFindBy(xpath="//*[@text='About']") 
-			private WebElement AboutTab;
+	@AndroidFindBy(xpath="//*[@text='About']") 
+	private WebElement AboutTab;
 			
-			public WebElement AboutTab(){    
-				return AboutTab;
-			}
+	public WebElement AboutTab(){    
+		return AboutTab;
+	}
 
 }
