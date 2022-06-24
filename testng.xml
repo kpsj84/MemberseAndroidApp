@@ -18,6 +18,8 @@
       <class name="SoFaDog.AndroidAutomation.ListenAudioTest"/>
       <class name="SoFaDog.AndroidAutomation.EndToEndTest"/>
       <class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
+      <class name="SoFaDog.AndroidAutomation.CreatePaidServiceTest"/>
+      <class name="SoFaDog.AndroidAutomation.CreateFreeServiceTest"/>
       
  <!-- Test which required to register a user can be run on Demand -->   
  		<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 

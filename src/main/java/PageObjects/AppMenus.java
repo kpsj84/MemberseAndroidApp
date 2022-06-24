@@ -8,26 +8,18 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class CreatorPage {
+public class AppMenus {
 	
-	public CreatorPage(AppiumDriver<AndroidElement>driver)
+	public AppMenus(AppiumDriver<AndroidElement> driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//android.widget.Button")
-	private WebElement CreatorWelcomeMessage;
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 3 out of 5']")
+	private WebElement CreatorMenu;
 	
-	public WebElement CreatorWelcomeMessage() {
-		return CreatorWelcomeMessage;
+	public WebElement CreatorMenu() {
+		return CreatorMenu;
 	}
-	
-	@AndroidFindBy(xpath="//*[@text='Services']")
-	private WebElement ServicesSubMenu;
-	
-	public WebElement ServicesSubMenu() {
-		return ServicesSubMenu;
-	}
-
 
 }
