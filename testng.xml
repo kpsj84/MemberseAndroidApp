@@ -34,7 +34,6 @@
  -->		 
  
   <class name="SoFaDog.AndroidAutomation.LoginTest"/>
-  <class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
   	 
     </classes>
   </test> <!-- Test -->
