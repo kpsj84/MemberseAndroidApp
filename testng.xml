@@ -21,7 +21,7 @@
       <class name="SoFaDog.AndroidAutomation.CreatePaidServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.CreateFreeServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.EditServiceTest"/>
-      <class name="SoFaDog.AndroidAutomation.DeleteFreeServiceTest"/>
+      <class name="SoFaDog.AndroidAutomation.DeleteServiceTest"/>
       
  <!-- Test which required to register a user can be run on Demand -->   
  		<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
