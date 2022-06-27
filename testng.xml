@@ -10,7 +10,7 @@
     <!-- Give Reference to Test Classes-->
   <test thread-count="5" name="Test">
     <classes>
- <!--      <class name="SoFaDog.AndroidAutomation.WidgetSwipeTest"/>
+      <class name="SoFaDog.AndroidAutomation.WidgetSwipeTest"/>
       <class name="SoFaDog.AndroidAutomation.SmokeTest"/>
       <class name="SoFaDog.AndroidAutomation.LoginTest"/>
       <class name="SoFaDog.AndroidAutomation.LogoutTest"/>
@@ -20,21 +20,18 @@
       <class name="SoFaDog.AndroidAutomation.CreatePaidServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.CreateFreeServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.EditServiceTest"/>
-      <class name="SoFaDog.AndroidAutomation.DeleteServiceTest"/> 								-->
+      <class name="SoFaDog.AndroidAutomation.DeleteServiceTest"/> 							
       
  <!-- Test which required to register a user can be run on Demand -->   
- <!--		<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
+ 		<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
 		<class name="SoFaDog.AndroidAutomation.DeleteAccountTest"/>
   		<class name="SoFaDog.AndroidAutomation.BecomeCreatorTest"/>
- 		<class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/> 							-->  
- 		
+ 		<class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/> 							
+ 				
 <!-- 		
  	<class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
  	<class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>
  -->		 
- 
-  <class name="SoFaDog.AndroidAutomation.LoginTest"/>
-  	 
     </classes>
   </test> <!-- Test -->
   
