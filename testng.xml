@@ -17,7 +17,6 @@
       <class name="SoFaDog.AndroidAutomation.WatchVideoTest"/>
       <class name="SoFaDog.AndroidAutomation.ListenAudioTest"/>
       <class name="SoFaDog.AndroidAutomation.EndToEndTest"/>
-      <class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
       <class name="SoFaDog.AndroidAutomation.CreatePaidServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.CreateFreeServiceTest"/>
       <class name="SoFaDog.AndroidAutomation.EditServiceTest"/>
@@ -28,7 +27,9 @@
 		<class name="SoFaDog.AndroidAutomation.DeleteAccountTest"/>
   		<class name="SoFaDog.AndroidAutomation.BecomeCreatorTest"/>
  		<class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/>
+ 		
 <!-- 		
+ 	<class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
  	<class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>
  -->		  	 
     </classes>
