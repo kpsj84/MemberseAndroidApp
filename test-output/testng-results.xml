@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T11:25:08 IST" name="Default suite" finished-at="2022-06-27T11:28:08 IST" duration-ms="180155">
+  <suite started-at="2022-06-28T14:19:25 IST" name="Default suite" finished-at="2022-06-28T14:22:12 IST" duration-ms="167357">
     <groups>
     </groups>
-    <test started-at="2022-06-27T11:25:08 IST" name="Default test" finished-at="2022-06-27T11:28:08 IST" duration-ms="180155">
-      <class name="SoFaDog.AndroidAutomation.EndToEndTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:25:08 IST" name="startService" finished-at="2022-06-27T11:25:08 IST" duration-ms="73" status="PASS">
+    <test started-at="2022-06-28T14:19:25 IST" name="Default test" finished-at="2022-06-28T14:22:12 IST" duration-ms="167357">
+      <class name="SoFaDog.AndroidAutomation.DonationPaidTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:19:25 IST" name="startService" finished-at="2022-06-28T14:19:25 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:25:08 IST" name="startDriver" finished-at="2022-06-27T11:25:41 IST" duration-ms="32751" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:19:25 IST" name="startDriver" finished-at="2022-06-28T14:20:24 IST" duration-ms="58982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:25:41 IST" name="beforeMethod" finished-at="2022-06-27T11:25:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:20:24 IST" name="beforeMethod" finished-at="2022-06-28T14:20:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="EndToEndTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:25:41 IST" name="EndToEndTestCase" finished-at="2022-06-27T11:28:07 IST" duration-ms="145924" status="PASS">
+        <test-method signature="DonationPaidTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:20:24 IST" name="DonationPaidTestCase" finished-at="2022-06-28T14:22:11 IST" duration-ms="107014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EndToEndTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:28:07 IST" name="afterMethod" finished-at="2022-06-27T11:28:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- DonationPaidTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:22:11 IST" name="afterMethod" finished-at="2022-06-28T14:22:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:28:07 IST" name="quitDriver" finished-at="2022-06-27T11:28:08 IST" duration-ms="1350" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:22:11 IST" name="quitDriver" finished-at="2022-06-28T14:22:12 IST" duration-ms="1285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.EndToEndTest@3059cbc]" started-at="2022-06-27T11:28:08 IST" name="stopService" finished-at="2022-06-27T11:28:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.DonationPaidTest@3059cbc]" started-at="2022-06-28T14:22:12 IST" name="stopService" finished-at="2022-06-28T14:22:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- SoFaDog.AndroidAutomation.EndToEndTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.DonationPaidTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

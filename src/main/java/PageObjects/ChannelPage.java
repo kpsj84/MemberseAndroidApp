@@ -23,6 +23,27 @@ public class ChannelPage {
 		return SubscribeFreeButton;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Donate']") 
+	private WebElement DonateButton;
+	
+	public WebElement DonateButton(){    
+		return DonateButton;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='€2']") 
+	private WebElement DonatePrice;
+	
+	public WebElement DonatePrice(){    
+		return DonatePrice;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Donate €2']") 
+	private WebElement FinalDonateButton;
+	
+	public WebElement FinalDonateButton(){    
+		return FinalDonateButton;
+	}
+	
 	
 	//About Tab
 	@AndroidFindBy(xpath="//*[@text='About']") 

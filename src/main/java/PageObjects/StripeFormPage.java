@@ -8,25 +8,18 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class AppMenus {
+public class StripeFormPage {
 	
-	public AppMenus(AppiumDriver<AndroidElement> driver)
+	public StripeFormPage(AppiumDriver<AndroidElement> driver) 
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 2 out of 5']")
-	private WebElement ExploreMenu;
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Pay']") 
+	private WebElement DonationPayButton;
 	
-	public WebElement ExploreMenu() {
-		return ExploreMenu;
-	}
-	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 3 out of 5']")
-	private WebElement CreatorMenu;
-	
-	public WebElement CreatorMenu() {
-		return CreatorMenu;
+	public WebElement DonationPayButton(){    
+		return DonationPayButton;
 	}
 
 }
