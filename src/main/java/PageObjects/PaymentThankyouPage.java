@@ -15,12 +15,20 @@ public class PaymentThankyouPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	//Subscribe for Free Button
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Back to channel']")
 	private WebElement BackToChannel;
 	
 	public WebElement BackToChannel(){    
 		return BackToChannel;
 	}
+	
+	
+		@AndroidFindBy(xpath="//android.widget.TextView[@text='Continue to channel']")
+		private WebElement ContinueToChannel;
+		
+		public WebElement ContinueToChannel(){    
+			return ContinueToChannel;
+		}
 
 }

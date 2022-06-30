@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.DonationPaidTest">
+      <class name="SoFaDog.AndroidAutomation.SubscribePaidChannel">
         <methods>
+          <include name="SubscribePaidChannelTestCase"/>
           <include name="stopService"/>
-          <include name="DonationPaidTestCase"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.DonationPaidTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.SubscribePaidChannel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
