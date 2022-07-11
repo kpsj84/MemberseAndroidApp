@@ -22,6 +22,13 @@ public class ProfilePage {
 		return profileButton;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Services']") 
+	private WebElement ServicesSubMenu;
+	
+	public WebElement ServicesSubMenu(){    
+		return ServicesSubMenu;
+	}
+	
 	@AndroidFindBy(xpath="(//android.widget.Switch)[1]")
 	private WebElement BecomeCreatorSwitch;
 	

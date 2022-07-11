@@ -43,7 +43,14 @@ public class ChannelPage {
 	public WebElement FinalDonateButton(){    
 		return FinalDonateButton;
 	}
-	
+
+	//About Tab
+		@AndroidFindBy(xpath="//*[@text='Services']") 
+		private WebElement ServicesTab;
+				
+		public WebElement ServicesTab(){    
+			return ServicesTab;
+		}
 	
 	//About Tab
 	@AndroidFindBy(xpath="//*[@text='About']") 

@@ -29,5 +29,10 @@ public class CreatorServicesPage {
 			return CreateServiceSaveButton;
 		}
 	
-	
+		@AndroidFindBy(xpath="//android.widget.TextView[@text='Active Services']")
+		private WebElement ActiveServicesTab;
+		
+		public WebElement ActiveServicesTab() {
+			return ActiveServicesTab;
+		}
 }

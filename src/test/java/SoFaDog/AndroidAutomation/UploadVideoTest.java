@@ -1,5 +1,6 @@
 package SoFaDog.AndroidAutomation;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 import PageObjects.CreatorMyPostsPage;
 import PageObjects.LoginOptionPage;
 import PageObjects.LoginPage;
-
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -47,26 +47,25 @@ public class UploadVideoTest extends Base {
 		driver.findElementByXPath("//*[@content-desc=', tab, 3 out of 5']").click();
 		CreatorMyPostsPage cmpp = new CreatorMyPostsPage(driver);
 		cmpp.MyPostsSubMenu().click();
+		Thread.sleep(3000);
 		cmpp.Upload().click();
 		cmpp.SelectFileToUpload().click();
-		cmpp.UploadVideo().click();
-		cmpp.CameraFolder().click();
 		
-		//Very first video selected
-		driver.findElementByXPath("//android.view.View").click();		
-/*		
-		//Take Video Button
-		driver.findElementByXPath("//android.widget.TextView[@text='Take Video']").click();
-		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.ImageView[@resource-id='com.android.camera2:id/shutter_button']").click();
+		//Push a file
+		driver.pushFile("/sdcard/Download/SampleVideo_2MB.mp4", new File(System.getProperty("user.dir")+"/src/uploadfiles/SampleVideo_2MB.mp4"));
 		Thread.sleep(5000);
-		driver.findElementByXPath("//android.widget.ImageView[@resource-id='com.android.camera2:id/shutter_button']").click();
-		Thread.sleep(3000);
-		driver.findElementByXPath("//android.widget.ImageButton[@resource-id='com.android.camera2:id/done_button']").click();
-		Thread.sleep(3000);
-*/
-		driver.findElementByXPath("//android.widget.EditText").sendKeys("Auto Test Audio");
-		driver.findElementByXPath("(//android.widget.EditText)[2]").sendKeys("Auto Test Description");
+
+		//Pull file
+		//byte[] fileBase64 = (driver.pullFile("/sdcard/Download/SampleVideo_2MB.mp4"));
+		
+		cmpp.UploadVideo().click();
+		driver.findElementByXPath("//*[@text='Download']").click();
+		Thread.sleep(5000);
+		//Very first video selected
+		driver.findElementByXPath("//android.view.ViewGroup[2]").click();
+		Thread.sleep(5000);
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("Automation Test Video");
+		driver.findElementByXPath("(//android.widget.EditText)[2]").sendKeys("Automation Test Description");
 		
 		Utilities u = new Utilities(driver);
 		u.swipeScreen(Utilities.Direction.UP);

@@ -43,6 +43,13 @@ public class CreatorMyPostsPage {
 		return SelectFileToUpload;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Upload Audio']")
+	private WebElement UploadAudio;
+	
+	public WebElement UploadAudio() {
+		return UploadAudio;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Upload Video']")
 	private WebElement UploadVideo;
 	

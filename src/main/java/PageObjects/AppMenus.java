@@ -28,5 +28,12 @@ public class AppMenus {
 	public WebElement CreatorMenu() {
 		return CreatorMenu;
 	}
+	
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 5 out of 5']")
+	private WebElement ProfileMenu;
+	
+	public WebElement ProfileMenu() {
+		return ProfileMenu;
+	}
 
 }
