@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-05T15:11:35 IST" name="Default suite" finished-at="2022-07-05T15:14:07 IST" duration-ms="151387">
+  <suite started-at="2022-07-13T10:29:32 IST" name="Default suite" finished-at="2022-07-13T10:31:16 IST" duration-ms="104165">
     <groups>
     </groups>
-    <test started-at="2022-07-05T15:11:35 IST" name="Default test" finished-at="2022-07-05T15:14:07 IST" duration-ms="151387">
-      <class name="SoFaDog.AndroidAutomation.UploadVideoTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:11:35 IST" name="startService" finished-at="2022-07-05T15:11:40 IST" duration-ms="4538" status="PASS">
+    <test started-at="2022-07-13T10:29:32 IST" name="Default test" finished-at="2022-07-13T10:31:16 IST" duration-ms="104165">
+      <class name="SoFaDog.AndroidAutomation.LoginTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:29:32 IST" name="startService" finished-at="2022-07-13T10:29:34 IST" duration-ms="2430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:11:40 IST" name="startDriver" finished-at="2022-07-05T15:12:01 IST" duration-ms="21195" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:29:34 IST" name="startDriver" finished-at="2022-07-13T10:30:11 IST" duration-ms="36689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:12:01 IST" name="beforeMethod" finished-at="2022-07-05T15:12:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:30:11 IST" name="beforeMethod" finished-at="2022-07-13T10:30:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UploadVideoTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:12:01 IST" name="UploadVideoTestCase" finished-at="2022-07-05T15:14:04 IST" duration-ms="122793" status="PASS">
+        <test-method signature="LoginTestCase()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:30:11 IST" name="LoginTestCase" finished-at="2022-07-13T10:31:14 IST" duration-ms="62549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UploadVideoTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:14:04 IST" name="afterMethod" finished-at="2022-07-05T15:14:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- LoginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:31:14 IST" name="afterMethod" finished-at="2022-07-13T10:31:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:14:04 IST" name="quitDriver" finished-at="2022-07-05T15:14:05 IST" duration-ms="709" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:31:14 IST" name="quitDriver" finished-at="2022-07-13T10:31:14 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.UploadVideoTest@3059cbc]" started-at="2022-07-05T15:14:05 IST" name="stopService" finished-at="2022-07-05T15:14:07 IST" duration-ms="2088" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:SoFaDog.AndroidAutomation.LoginTest@3059cbc]" started-at="2022-07-13T10:31:14 IST" name="stopService" finished-at="2022-07-13T10:31:16 IST" duration-ms="2094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- SoFaDog.AndroidAutomation.UploadVideoTest -->
+      </class> <!-- SoFaDog.AndroidAutomation.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

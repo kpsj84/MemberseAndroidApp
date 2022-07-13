@@ -52,7 +52,7 @@ public class UploadVideoTest extends Base {
 		cmpp.SelectFileToUpload().click();
 		
 		//Push a file
-		driver.pushFile("/sdcard/Download/SampleVideo_2MB.mp4", new File(System.getProperty("user.dir")+"/src/uploadfiles/SampleVideo_2MB.mp4"));
+		driver.pushFile("/sdcard/Download/SampleVideo_100MB.mp4", new File(System.getProperty("user.dir")+"/src/uploadfiles/SampleVideo_100MB.mp4"));
 		Thread.sleep(5000);
 
 		//Pull file
@@ -63,7 +63,7 @@ public class UploadVideoTest extends Base {
 		Thread.sleep(5000);
 		//Very first video selected
 		driver.findElementByXPath("//android.view.ViewGroup[2]").click();
-		Thread.sleep(5000);
+		Thread.sleep(500000000);
 		driver.findElementByXPath("//android.widget.EditText").sendKeys("Automation Test Video");
 		driver.findElementByXPath("(//android.widget.EditText)[2]").sendKeys("Automation Test Description");
 		

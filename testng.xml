@@ -31,11 +31,7 @@
   		<class name="SoFaDog.AndroidAutomation.BecomeCreatorTest"/>
  		<class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/> 
  		<class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>							
- 				
-<!-- 		
- 	<class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>
- 	
- -->		 
+ 				 
     </classes>
   </test> <!-- Test -->
   
