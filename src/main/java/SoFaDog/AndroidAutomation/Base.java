@@ -148,7 +148,7 @@ public class Base {
 			cap = new DesiredCapabilities();
 			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//Browserstack User Key
 			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//Browserstack Password Key
-			//cap.setCapability("app", "bs://03642806cba858c76d7c4f9c812af3ae463b7008");	//Browserstack uploaded App reference, this capability not required if custom Id given
+			cap.setCapability("app", "bs://0bb7730f57815f6b2376c9af48f352056fbf9d74");		//Browserstack uploaded App reference, this capability not required if custom Id given
 			//cap.setCapability("app_url", "bs://0bb7730f57815f6b2376c9af48f352056fbf9d74");
 			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads
 			cap.setCapability("device", "Google Pixel 3 XL");								//Browserstack Emulator Name
