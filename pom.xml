@@ -46,7 +46,6 @@
     		<version>2.6</version>
 		</dependency>
 		
-
 	<!-- this dependency for appium server-->
 		<dependency>
     		<groupId>io.appium</groupId>
