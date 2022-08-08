@@ -38,10 +38,10 @@ public class Base {
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
 	public static AndroidDriver<AndroidElement> driver;
-	public static AppiumDriverLocalService service;
-	public static DesiredCapabilities cap;
+	public static AppiumDriverLocalService 		service;
+	public static DesiredCapabilities 			cap;
 	
-	//Starts the Appium Server by checking that Server is already running or not by calling other Method
+	//Starts the Appium Server by checking that Server is already running or not, by calling other Method
 	public AppiumDriverLocalService startServer() {
 		boolean flag = checkIfServerIsRunnning(4723);
 		if(!flag)
@@ -81,7 +81,7 @@ public class Base {
 	public static void startEmulator() throws IOException, InterruptedException {		
 		if(SoFaDogReal == true)
 		{
-			System.out.println("Test are running on Real device");
+			System.out.println("Test is running on Real device");
 		}
 		else if(SoFaDogCloud == true)
 		{
@@ -89,35 +89,37 @@ public class Base {
 		}
 		else if(SoFaDogCS == true) 
 		{	
+			System.out.println("Test is running on CS Server");
 			//For CS Server, Active following path of Emulator
 			Runtime.getRuntime().exec("/Users/mobile/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 		}
 		else 
 		{
+			System.out.println("Test is running on local Emulator");
 			//Path to run test on local machine
 			Runtime.getRuntime().exec("/Users/kamaljhinjer/Library/Android/sdk/emulator/emulator -avd Emulator_Pixel2XL -netdelay none -netspeed full");
 		}
 	}
 	
-	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName here from Test Class & name of String Argument can be different in this Method and in Test Class
+	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName from Test Class & name of String Argument can be different in this Method and in Test Class
 	public static void capabilities(String appName) throws IOException, InterruptedException{		
 		//Path for global properties file
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/global.properties");
-		Properties prop = new Properties();		//Create object of Properties class  
-		prop.load(fis);							//Load global.properties file
+		Properties prop = new Properties();						//Create object of Properties class  
+		prop.load(fis);											//Load global.properties file
 		
 		//Path to Android application File folder
 		File appDir = new File("src");
-		File app = new File(appDir, (String)prop.get(appName)); //Assign application file Directory & get appName from Properties class object 
+		File app = new File(appDir, (String)prop.get(appName)); //Link Application file Directory & get appName from Properties class object 
 		
 		//Device name given in global.properties file
 		String device = (String)prop.get("deviceName");
-		if(device.contains("Emulator"))		//Start Emulator
+		if(device.contains("Emulator"))							//Start Emulator
 		{
 			startEmulator();
 		}
 		
-		//Path of Chrome Driver for WEBVIEW on local machine
+		//Path of Chrome Driver for WEBVIEW
 		String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		
 		//Set Desired Capabilities
@@ -131,30 +133,31 @@ public class Base {
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);			//Get Device Name
 		}
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());			//Get Application Path
-		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator to perform action in application
+		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator2 to perform action in application
+		cap.setCapability("appium:uiautomator2ServerInstallTimeout", 30000);		//Set Automator2 install timeout on device but not madatory -> 30 Secs
 		cap.setCapability("chromedriverExecutable", chromeDriver);					//Get the Path of Chrome Driver
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 			//Set time in seconds to wait for next action, means timeout
 	}
 	
-	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName here from Test Class & name of String Argument can be different in this Method and in Test Class
+	//Set Cloud Capabilities for Android driver and get the appName from global.properties file, pass appName from Test Class & name of String Argument can be different in this Method and in Test Class
 		public static void cloudCapabilities(String appName) throws IOException, InterruptedException{		
-			//This method called just to print the message written in startEmulator()
+			//This method called just to print the message written in startEmulator Method
 			startEmulator();
 			
-			//Path of Chrome Driver for WEBVIEW on local machine
+			//Path of Chrome Driver for WEBVIEW
 			String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 			
 			//Set Desired Capabilities
 			cap = new DesiredCapabilities();
 			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//Browserstack User Key
 			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//Browserstack Password Key
-			cap.setCapability("app", "bs://0bb7730f57815f6b2376c9af48f352056fbf9d74");		//Browserstack uploaded App reference, this capability not required if custom Id given
+			cap.setCapability("app", "bs://f858d726abe479b8f6938957bc2a3ece927a05ec");		//Browserstack uploaded App reference, this capability not required if custom Id given
 			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads
 			cap.setCapability("device", "Google Pixel 3 XL");								//Browserstack Emulator Name
 			cap.setCapability("os_version", "9.0");											//Browserstack Emulator OS info
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-			cap.setCapability("chromedriverExecutable", chromeDriver);	
-			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		//Browserstack Automation Tool Name
+			cap.setCapability("chromedriverExecutable", chromeDriver);						//Get the Path of Chrome Driver
+			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout
 		}
 	
 	@BeforeTest
@@ -163,15 +166,15 @@ public class Base {
 		
 		if(SoFaDogCloud == true)
 		{
-			System.out.println("Server is running on cloud, so start server manage by cloud itself");
+			System.out.println("Appium Server is running on cloud, so start server manage by cloud itself");
 		}
 		else
 		{
-			//Starts the Server before to <test> tag execution in xml file i.e. before to all classes given in xml file
+			//Starts the Server before to <test> tag execution of testng.xml file i.e. before to all classes given in xml file
 			service=startServer();
 		}
 		
-		//Launch the desired Application by fetching the appName from Global Properties according which is according to string argument passed
+		//Launch the desired Application by fetching the appName from Global Properties file
 		if(sampleTest == true) 
 		{
 			capabilities("sampleApp");	
@@ -232,17 +235,17 @@ public class Base {
 	
 	@BeforeMethod
 	public void beforeMethod() throws IOException, InterruptedException {	
-		System.out.println("Executing Before Method, Starting Test");
+		System.out.println("Entered Before Method, Starting Test");
 	}
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("Executing After Method and Confirming the Test was executed");
+		System.out.println("Entered After Method, Confirming Test code executed");
 	}
 	
 	//Method for creating screenshot by getting the argument from Listener class which get the detail from ITestResult class
 	public static void getScreenshot(String s) throws IOException {
-		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //Cast the type of action driver has to do and output is to give in the form of File
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 						//Cast the type of action driver has to do and output is to give in the form of File
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"/Reports/"+s+".png"));
 	}
 	
