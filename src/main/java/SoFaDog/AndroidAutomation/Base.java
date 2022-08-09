@@ -109,7 +109,8 @@ public class Base {
 		prop.load(fis);											//Load global.properties file
 		
 		//Path to Android application File folder
-		File appDir = new File("src");
+		//File appDir = new File("src");
+		File appDir = new File("/Users/kamaljhinjer/Documents/Z-Android-Memberse-Builds");
 		File app = new File(appDir, (String)prop.get(appName)); //Link Application file Directory & get appName from Properties class object 
 		
 		//Device name given in global.properties file
