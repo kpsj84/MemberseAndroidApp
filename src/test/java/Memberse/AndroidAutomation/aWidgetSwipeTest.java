@@ -42,7 +42,7 @@ public class aWidgetSwipeTest extends Base {
 			//Verify the Text available on Login Option Page
 			Assert.assertEquals(Text, "Login");
 			System.out.println("Swipe Action and Click Action functionality on Widgets screen are working as Expected");
-			System.out.println("This referes to Smoke Testing as well and its QA Pass");
+			System.out.println("This refers to Smoke Testing as well and its QA Pass");
 		}
 
 }
