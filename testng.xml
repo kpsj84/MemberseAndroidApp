@@ -28,7 +28,8 @@
       -->	
       
       <class name="Memberse.AndroidAutomation.aWidgetSwipeTest"/>
-      <class name="Memberse.AndroidAutomation.aLoginTestWithEmail"/>
+      <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
+      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest"/>
       
  <!-- Test which required to register a user can be run on Demand -->  
  		<!-- Old Test Classes 

@@ -16,14 +16,14 @@ public class LoginOptionPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this); //this here means local
 	}
 	
-	@AndroidFindBy(xpath=" ") 
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='11']") 
 	private WebElement SigninwithGoogle;
 		
 	public WebElement SigninwithGoogle(){    
 		return SigninwithGoogle;
 	}
 	
-	@AndroidFindBy(xpath=" ") 
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='12']") 
 	private WebElement SigninwithFacebook;
 		
 	public WebElement SigninwithFacebook(){    
@@ -50,4 +50,5 @@ public class LoginOptionPage {
 	public WebElement LoginButton(){    
 		return LoginButton;
 	}
+	
 }
