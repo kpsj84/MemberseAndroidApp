@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T17:00:05 IST" name="Default suite" finished-at="2022-08-09T17:01:18 IST" duration-ms="72869">
+  <suite started-at="2022-08-11T11:07:41 IST" name="Default suite" finished-at="2022-08-11T11:08:53 IST" duration-ms="72285">
     <groups>
     </groups>
-    <test started-at="2022-08-09T17:00:05 IST" name="Default test" finished-at="2022-08-09T17:01:18 IST" duration-ms="72869">
-      <class name="Memberse.AndroidAutomation.aLoginTestWithEmail">
-        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:00:05 IST" name="startService" finished-at="2022-08-09T17:00:05 IST" duration-ms="26" status="PASS">
+    <test started-at="2022-08-11T11:07:41 IST" name="Default test" finished-at="2022-08-11T11:08:53 IST" duration-ms="72285">
+      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:07:41 IST" name="startService" finished-at="2022-08-11T11:07:41 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:00:05 IST" name="startDriver" finished-at="2022-08-09T17:00:39 IST" duration-ms="33437" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:07:41 IST" name="startDriver" finished-at="2022-08-11T11:08:10 IST" duration-ms="28862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:00:39 IST" name="beforeMethod" finished-at="2022-08-09T17:00:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:08:10 IST" name="beforeMethod" finished-at="2022-08-11T11:08:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LoginTestCasewithEmail()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:00:39 IST" name="LoginTestCasewithEmail" finished-at="2022-08-09T17:01:16 IST" duration-ms="37798" status="PASS">
+        <test-method signature="iLoginWithFacebookTestCase()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:08:10 IST" name="iLoginWithFacebookTestCase" finished-at="2022-08-11T11:08:52 IST" duration-ms="42240" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTestCasewithEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:01:16 IST" name="afterMethod" finished-at="2022-08-09T17:01:16 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- iLoginWithFacebookTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:08:52 IST" name="afterMethod" finished-at="2022-08-11T11:08:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:01:16 IST" name="quitDriver" finished-at="2022-08-09T17:01:18 IST" duration-ms="1557" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:08:52 IST" name="quitDriver" finished-at="2022-08-11T11:08:53 IST" duration-ms="1107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aLoginTestWithEmail@3059cbc]" started-at="2022-08-09T17:01:18 IST" name="stopService" finished-at="2022-08-09T17:01:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithFacebookTest@3059cbc]" started-at="2022-08-11T11:08:53 IST" name="stopService" finished-at="2022-08-11T11:08:53 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aLoginTestWithEmail -->
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -11,7 +11,7 @@ import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
 import SoFaDog.AndroidAutomation.Base;
 
-public class aLoginTestWithEmail extends Base{
+public class aLoginWithEmailTest extends Base{
 	@Test
 	public void LoginTestCasewithEmail() throws InterruptedException {
 		
