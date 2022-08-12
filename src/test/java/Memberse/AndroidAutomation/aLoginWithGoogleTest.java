@@ -1,7 +1,5 @@
 package Memberse.AndroidAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
 
 import MembersePageObjects.LoginOptionPage;
@@ -13,10 +11,9 @@ public class aLoginWithGoogleTest extends Base {
 	@Test
 	public void aLoginWithGoogleTestCase() throws InterruptedException {
 		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@text='CONTINUE']").click();
 		System.out.println("Wait for application to load");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		WidgetScreenPage wsp = new WidgetScreenPage(driver);
 		wsp.SkipButton().click();
@@ -24,8 +21,15 @@ public class aLoginWithGoogleTest extends Base {
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithGoogle().click();
 		
-		Thread.sleep(3000);
-		System.out.println("As if this message print in server logs that means Login with Google Button is clickable and further testing is not possible as Real Google Id is not able to configure on cloud Service");
+		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("qatesting9999@gmail.com");
+		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
+		Thread.sleep(1000);
+		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("Softqa@1313");
+		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
+		
+		System.out.println("As if this message print in server logs that means Login with Google Button is clickable and Webview UI is Responsive");
 	}
 
 }

@@ -105,17 +105,17 @@ public class Base {
 	public static void capabilities(String appName) throws IOException, InterruptedException{		
 		//Path for global properties file
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/global.properties");
-		Properties prop = new Properties();						//Create object of Properties class  
-		prop.load(fis);											//Load global.properties file
+		Properties prop = new Properties();							//Create object of Properties class  
+		prop.load(fis);												//Load global.properties file
 		
 		//Path to Android application File folder
 		//File appDir = new File("src");
 		File appDir = new File("/Users/kamaljhinjer/Documents/Z-Android-Memberse-Builds");
-		File app = new File(appDir, (String)prop.get(appName)); //Link Application file Directory & get appName from Properties class object 
+		File app = new File(appDir, (String)prop.get(appName)); 	//Link Application file Directory & get appName from Properties class object 
 		
 		//Device name given in global.properties file
 		String device = (String)prop.get("deviceName");
-		if(device.contains("Emulator"))							//Start Emulator
+		if(device.contains("Emulator"))								//Start Emulator
 		{
 			startEmulator();
 		}
@@ -135,9 +135,9 @@ public class Base {
 		}
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());			//Get Application Path
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");	//Set Android Automator2 to perform action in application
-		cap.setCapability("appium:uiautomator2ServerInstallTimeout", 30000);		//Set Automator2 install timeout on device but not madatory -> 30 Secs
+		cap.setCapability("appium:uiautomator2ServerInstallTimeout", 30000);		//Set Automator2 install timeout on device but not mandatory -> 30 Secs
 		cap.setCapability("chromedriverExecutable", chromeDriver);					//Get the Path of Chrome Driver
-		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 			//Set time in seconds to wait for next action, means timeout
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 			//Set time in seconds to wait for next action, means timeout -> 3 Minutes
 	}
 	
 	//Set Cloud Capabilities for Android driver and get the appName from global.properties file, pass appName from Test Class & name of String Argument can be different in this Method and in Test Class
@@ -150,15 +150,15 @@ public class Base {
 			
 			//Set Desired Capabilities
 			cap = new DesiredCapabilities();
-			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//Browserstack User Key
-			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//Browserstack Password Key
-			cap.setCapability("app", "bs://f858d726abe479b8f6938957bc2a3ece927a05ec");		//Browserstack uploaded App reference, this capability not required if custom Id given
-			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads
-			cap.setCapability("device", "Google Pixel 3 XL");								//Browserstack Emulator Name
-			cap.setCapability("os_version", "9.0");											//Browserstack Emulator OS info
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		//Browserstack Automation Tool Name
+			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
+			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
+			cap.setCapability("app", "bs://f858d726abe479b8f6938957bc2a3ece927a05ec");		//BrowserStack uploaded App reference, this capability not required if custom Id given
+			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads, not working at present
+			cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
+			cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		//BrowserStack Automation Tool Name
 			cap.setCapability("chromedriverExecutable", chromeDriver);						//Get the Path of Chrome Driver
-			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout
+			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout -> 3 Minutes
 		}
 	
 	@BeforeTest
@@ -211,7 +211,7 @@ public class Base {
 		
 		if(SoFaDogCloud == true)
 		{
-			//Android Driver is redirect to cloud Service (Browserstack)
+			//Android Driver is redirect to cloud Service (BrowserStack)
 			driver = new AndroidDriver<>(new URL("http://hub.browserstack.com/wd/hub"),cap);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}

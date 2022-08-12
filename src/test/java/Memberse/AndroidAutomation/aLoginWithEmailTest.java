@@ -1,7 +1,5 @@
 package Memberse.AndroidAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,10 +13,10 @@ public class aLoginWithEmailTest extends Base{
 	@Test
 	public void LoginTestCasewithEmail() throws InterruptedException {
 		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		//App update Continue Button
 		driver.findElementByXPath("//*[@text='CONTINUE']").click();
 		System.out.println("Wait for application to load");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		WidgetScreenPage wsp = new WidgetScreenPage(driver);
 		wsp.SkipButton().click();
@@ -34,7 +32,7 @@ public class aLoginWithEmailTest extends Base{
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.LoginButton().click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();

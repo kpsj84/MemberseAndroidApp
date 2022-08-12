@@ -1,7 +1,5 @@
 package Memberse.AndroidAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
 
 import MembersePageObjects.AppMenus;
@@ -15,10 +13,9 @@ public class aLoginWithFacebookTest extends Base {
 	@Test
 	public void iLoginWithFacebookTestCase() throws InterruptedException {
 		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@text='CONTINUE']").click();
 		System.out.println("Wait for application to load");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		WidgetScreenPage wsp = new WidgetScreenPage(driver);
 		wsp.SkipButton().click();
