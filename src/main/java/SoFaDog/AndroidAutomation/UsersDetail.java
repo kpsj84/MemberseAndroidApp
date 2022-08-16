@@ -3,14 +3,14 @@ package SoFaDog.AndroidAutomation;
 public class UsersDetail {
 	
 	//Change these credentials to run the test's with new Users
-	public static String RegisterTestNumber = "Aa1";
+	public static String RegisterTestNumber = "aA1";
 	
-	public static String DeleteAccountTestNumber = "Ba1";
+	public static String DeleteAccountTestNumber = "aB1";
 	
-	public static String BecomeCreatorTestNumber = "Ca1";
+	public static String BecomeCreatorTestNumber = "aC1";
 	
-	public static String SubscribeFreeChannelTestNumber = "Da1";
+	public static String SubscribeFreeChannelTestNumber = "aD1";
 	
-	public static String SubscribePaidChannelTestNumber = "Ea1";
+	public static String SubscribePaidChannelTestNumber = "aE1";
 	
 }

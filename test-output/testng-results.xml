@@ -1,41 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-12T11:16:55 IST" name="Default suite" finished-at="2022-08-12T11:17:47 IST" duration-ms="52114">
+  <suite started-at="2022-08-16T11:12:12 IST" name="Default suite" finished-at="2022-08-16T11:12:54 IST" duration-ms="41855">
     <groups>
     </groups>
-    <test started-at="2022-08-12T11:16:55 IST" name="Default test" finished-at="2022-08-12T11:17:47 IST" duration-ms="52114">
-      <class name="Memberse.AndroidAutomation.aEmailFormValidationTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:16:55 IST" name="startService" finished-at="2022-08-12T11:16:55 IST" duration-ms="23" status="PASS">
+    <test started-at="2022-08-16T11:12:12 IST" name="Default test" finished-at="2022-08-16T11:12:54 IST" duration-ms="41855">
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:12 IST" name="startService" finished-at="2022-08-16T11:12:15 IST" duration-ms="2057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:16:55 IST" name="startDriver" finished-at="2022-08-12T11:17:29 IST" duration-ms="34203" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:15 IST" name="startDriver" finished-at="2022-08-16T11:12:30 IST" duration-ms="15391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:17:29 IST" name="beforeMethod" finished-at="2022-08-12T11:17:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:30 IST" name="beforeMethod" finished-at="2022-08-16T11:12:30 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="aEmailFormValidationTestCase()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:17:29 IST" name="aEmailFormValidationTestCase" finished-at="2022-08-12T11:17:46 IST" duration-ms="16589" status="PASS">
+        <test-method signature="aRegisterWithEmailTestCase()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:30 IST" name="aRegisterWithEmailTestCase" finished-at="2022-08-16T11:12:52 IST" duration-ms="21979" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.xpath: //android.widget.EditText[@text='Password']' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:5811:eb83:70e9:e6e3:ea65:b367%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/kamaljhinjer/Documen..., appPackage: dog.fa.so.app.dev, automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., databaseEnabled: false, desired: {app: /Users/kamaljhinjer/Documen..., automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., deviceName: Android Device, newCommandTimeout: 180, platformName: android, uiautomator2ServerInstallTimeout: 30000}, deviceApiLevel: 27, deviceManufacturer: LENOVO, deviceModel: Lenovo TB-8504F, deviceName: HA0KH00V, deviceScreenDensity: 213, deviceScreenSize: 800x1280, deviceUDID: HA0KH00V, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 180, pixelRatio: 1.3312501, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 32, takesScreenshot: true, uiautomator2ServerInstallTimeout: 30000, viewportRect: {height: 1184, left: 0, top: 32, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: dd189c9d-8ee0-402b-8c1c-1ab1959c2ada]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.EditText[@text='Password']' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:5811:eb83:70e9:e6e3:ea65:b367%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/kamaljhinjer/Documen..., appPackage: dog.fa.so.app.dev, automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., databaseEnabled: false, desired: {app: /Users/kamaljhinjer/Documen..., automationName: uiautomator2, chromedriverExecutable: /Users/kamaljhinjer/Documen..., deviceName: Android Device, newCommandTimeout: 180, platformName: android, uiautomator2ServerInstallTimeout: 30000}, deviceApiLevel: 27, deviceManufacturer: LENOVO, deviceModel: Lenovo TB-8504F, deviceName: HA0KH00V, deviceScreenDensity: 213, deviceScreenSize: 800x1280, deviceUDID: HA0KH00V, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 180, pixelRatio: 1.3312501, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 32, takesScreenshot: true, uiautomator2ServerInstallTimeout: 30000, viewportRect: {height: 1184, left: 0, top: 32, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: dd189c9d-8ee0-402b-8c1c-1ab1959c2ada
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at Memberse.AndroidAutomation.aRegisterWithEmailTest.aRegisterWithEmailTestCase(aRegisterWithEmailTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aEmailFormValidationTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:17:46 IST" name="afterMethod" finished-at="2022-08-12T11:17:46 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- aRegisterWithEmailTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:52 IST" name="afterMethod" finished-at="2022-08-16T11:12:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:17:46 IST" name="quitDriver" finished-at="2022-08-12T11:17:47 IST" duration-ms="1257" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:52 IST" name="quitDriver" finished-at="2022-08-16T11:12:52 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aEmailFormValidationTest@3059cbc]" started-at="2022-08-12T11:17:47 IST" name="stopService" finished-at="2022-08-12T11:17:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-16T11:12:52 IST" name="stopService" finished-at="2022-08-16T11:12:54 IST" duration-ms="2095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aEmailFormValidationTest -->
+      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
