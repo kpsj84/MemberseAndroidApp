@@ -21,5 +21,12 @@ public class ProfileMenuPage {
 	public WebElement UserInfo() {
 		return UserInfo;
 	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out']")
+	private WebElement Logout;
+	
+	public WebElement Logout() {
+		return Logout;
+	}
 
 }

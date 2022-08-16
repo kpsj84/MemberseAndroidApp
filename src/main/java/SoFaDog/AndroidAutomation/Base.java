@@ -32,8 +32,8 @@ public class Base {
 	
 	//Flags use to run Test on different environment, make it true where to run
 	public static boolean sampleTest   = false;
-	public static boolean SoFaDogReal  = false;
-	public static boolean SoFaDogCloud = true;
+	public static boolean SoFaDogReal  = true;
+	public static boolean SoFaDogCloud = false;
 	public static boolean SoFaDogCS    = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities

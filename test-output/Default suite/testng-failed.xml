@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aEmailFormValidationTest">
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
         <methods>
-          <include name="aEmailFormValidationTestCase"/>
+          <include name="aRegisterWithEmailTestCase"/>
           <include name="stopService"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
@@ -13,7 +13,7 @@
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aEmailFormValidationTest -->
+      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

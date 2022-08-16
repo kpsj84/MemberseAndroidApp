@@ -51,4 +51,10 @@ public class LoginOptionPage {
 		return SigninwithFacebook;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Register']") 
+	private WebElement Register;
+		
+	public WebElement Register(){    
+		return Register;
+	}
 }
