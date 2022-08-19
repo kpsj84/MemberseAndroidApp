@@ -4,20 +4,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import MembersePageObjects.LoginOptionPage;
-import MembersePageObjects.WidgetScreenPage;
 import SoFaDog.AndroidAutomation.Base;
+import SoFaDog.AndroidAutomation.Utilities;
 
 public class aEmailFormValidationTest extends Base {
 	
 	@Test
 	public void aEmailFormValidationTestCase() throws InterruptedException {
 		
-		driver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load");
-		Thread.sleep(5000);
-		
-		WidgetScreenPage wsp = new WidgetScreenPage(driver);
-		wsp.SkipButton().click();
+		Utilities u = new Utilities(driver);
+		u.Direct2LoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.LoginButton().click();

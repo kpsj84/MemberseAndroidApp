@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import MembersePageObjects.AppMenus;
 import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
-import MembersePageObjects.WidgetScreenPage;
+import MembersePageObjects.TutorialScreenPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 import SoFaDog.AndroidAutomation.Utilities.Direction;
@@ -19,7 +19,7 @@ public class aLogoutTest extends Base {
 				System.out.println("Wait for application to load");
 				Thread.sleep(5000);
 				
-				WidgetScreenPage wsp = new WidgetScreenPage(driver);
+				TutorialScreenPage wsp = new TutorialScreenPage(driver);
 				wsp.SkipButton().click();
 				
 				String userNumber = "40";

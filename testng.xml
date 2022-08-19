@@ -27,7 +27,7 @@
       <class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>	
       -->	
       
-      <class name="Memberse.AndroidAutomation.aWidgetSwipeTest"/>
+      <class name="Memberse.AndroidAutomation.aTutorialSwipeTest"/>
       <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest"/>

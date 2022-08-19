@@ -32,8 +32,8 @@ public class Base {
 	
 	//Flags use to run Test on different environment, make it true where to run
 	public static boolean sampleTest   = false;
-	public static boolean SoFaDogReal  = true;
-	public static boolean SoFaDogCloud = false;
+	public static boolean SoFaDogReal  = false;
+	public static boolean SoFaDogCloud = true;
 	public static boolean SoFaDogCS    = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
@@ -152,7 +152,7 @@ public class Base {
 			cap = new DesiredCapabilities();
 			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
 			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
-			cap.setCapability("app", "bs://f858d726abe479b8f6938957bc2a3ece927a05ec");		//BrowserStack uploaded App reference, this capability not required if custom Id given
+			cap.setCapability("app", "bs://2477fa4b064eb30ebac9181c4f6d493a96289aa6");		//BrowserStack uploaded App reference, this capability not required if custom Id given, Build-503
 			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads, not working at present
 			cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
 			cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info

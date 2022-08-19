@@ -3,7 +3,7 @@ package Memberse.AndroidAutomation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import MembersePageObjects.WidgetScreenPage;
+import MembersePageObjects.TutorialScreenPage;
 import MembersePageObjects.AppMenus;
 import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
@@ -18,7 +18,7 @@ public class aLoginWithEmailTest extends Base{
 		System.out.println("Wait for application to load");
 		Thread.sleep(5000);
 		
-		WidgetScreenPage wsp = new WidgetScreenPage(driver);
+		TutorialScreenPage wsp = new TutorialScreenPage(driver);
 		wsp.SkipButton().click();
 		
 		String userNumber = "40";
