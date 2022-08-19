@@ -8,18 +8,18 @@ import org.testng.annotations.Test;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 
-public class aWidgetSwipeTest extends Base {
+public class aTutorialSwipeTest extends Base {
     
   //Represents as one Test Case
 	@Test
-	public void aWidgetSwipeTestCase() throws InterruptedException {
+	public void aTutorialSwipeTestCase() throws InterruptedException {
 			//Wait upto for next element to available and will execute immediately once element appear
 			//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
 			//App update Continue Button
 			driver.findElementByXPath("//*[@text='CONTINUE']").click();
-			System.out.println("Wait for application to load");
-			Thread.sleep(5000);
+			System.out.println("Wait for application to load, This may take few seconds");
+			Thread.sleep(8000);
 			
 			//Create object of Utilities class for Swipe Action
 			Utilities u = new Utilities(driver);
@@ -34,11 +34,14 @@ public class aWidgetSwipeTest extends Base {
 			System.out.println("Last Swipe Executed");
 			
 			System.out.println("Landing on Login Options Screen");
-			String Text = driver.findElementByXPath("//android.widget.TextView[@text='Login']").getText();
-			System.out.println(Text);
+			String Text1 = driver.findElementByXPath("//android.widget.TextView[@text='Login']").getText();
+			System.out.println(Text1);
+			String Text2 = driver.findElementByXPath("//android.widget.TextView[@text='New to Memberse?']").getText();
+			System.out.println(Text2);
 			
 			//Verify the Text available on Login Option Page
-			Assert.assertEquals(Text, "Login");
+			Assert.assertEquals(Text1, "Login");
+			Assert.assertEquals(Text2, "New to Memberse?");
 			System.out.println("Swipe Action and Click Action functionality on Widgets screen are working as Expected");
 			System.out.println("This refers to Smoke Testing as well and its QA Pass");
 		}

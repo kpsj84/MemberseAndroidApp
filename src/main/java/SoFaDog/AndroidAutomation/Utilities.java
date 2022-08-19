@@ -97,4 +97,15 @@ public class Utilities {
 		    RIGHT;
 		}
 		
+	//Direct skip to Login Options Page
+	public void Direct2LoginOptionPage() throws InterruptedException {
+		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
+		System.out.println("Wait for application to load, This may take few seconds");
+		Thread.sleep(8000);
+		
+		//Next Button clicked on Widget Screen
+		localdriver.findElementByXPath("//*[@text='Skip']").click();
+		System.out.println("Landing on Login Options Screen");
+	}
+		
 }
