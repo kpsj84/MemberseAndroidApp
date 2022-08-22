@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-17T19:04:25 IST" name="Default suite" finished-at="2022-08-17T19:05:26 IST" duration-ms="60755">
+  <suite started-at="2022-08-22T13:26:55 IST" name="Default suite" finished-at="2022-08-22T13:27:58 IST" duration-ms="63190">
     <groups>
     </groups>
-    <test started-at="2022-08-17T19:04:25 IST" name="Default test" finished-at="2022-08-17T19:05:26 IST" duration-ms="60755">
-      <class name="Memberse.AndroidAutomation.aTutorialSwipeTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:04:25 IST" name="startService" finished-at="2022-08-17T19:04:25 IST" duration-ms="22" status="PASS">
+    <test started-at="2022-08-22T13:26:55 IST" name="Default test" finished-at="2022-08-22T13:27:58 IST" duration-ms="63190">
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:26:55 IST" name="startService" finished-at="2022-08-22T13:26:55 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:04:25 IST" name="startDriver" finished-at="2022-08-17T19:05:05 IST" duration-ms="40250" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:26:55 IST" name="startDriver" finished-at="2022-08-22T13:27:21 IST" duration-ms="25893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:05:05 IST" name="beforeMethod" finished-at="2022-08-17T19:05:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:27:21 IST" name="beforeMethod" finished-at="2022-08-22T13:27:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="aTutorialSwipeTestCase()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:05:05 IST" name="aTutorialSwipeTestCase" finished-at="2022-08-17T19:05:24 IST" duration-ms="18497" status="PASS">
+        <test-method signature="aRegisterWithEmailTestCase()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:27:21 IST" name="aRegisterWithEmailTestCase" finished-at="2022-08-22T13:27:57 IST" duration-ms="35754" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTutorialSwipeTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:05:24 IST" name="afterMethod" finished-at="2022-08-17T19:05:24 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- aRegisterWithEmailTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:27:57 IST" name="afterMethod" finished-at="2022-08-22T13:27:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:05:24 IST" name="quitDriver" finished-at="2022-08-17T19:05:26 IST" duration-ms="1924" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:27:57 IST" name="quitDriver" finished-at="2022-08-22T13:27:58 IST" duration-ms="1419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aTutorialSwipeTest@3059cbc]" started-at="2022-08-17T19:05:26 IST" name="stopService" finished-at="2022-08-17T19:05:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aRegisterWithEmailTest@3059cbc]" started-at="2022-08-22T13:27:58 IST" name="stopService" finished-at="2022-08-22T13:27:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aTutorialSwipeTest -->
+      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
