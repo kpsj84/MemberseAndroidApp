@@ -1,5 +1,7 @@
 package Memberse.AndroidAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 
 import MembersePageObjects.AppMenus;
@@ -27,7 +29,7 @@ public class aLogoutTest extends Base {
 				lop.signinWithEmail().sendKeys(email);
 				lop.EmailPassword().sendKeys(password);
 				lop.LoginButton().click();
-				Thread.sleep(7000);
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				
 				AppMenus am = new AppMenus(driver);
 				am.ProfileMenu().click();
@@ -39,7 +41,7 @@ public class aLogoutTest extends Base {
 				pmp.Logout().click();
 				
 				driver.findElementByXPath("//android.widget.Button[@text='YES']").click();
-				Thread.sleep(6000);
+				Thread.sleep(5000);
 				System.out.println(userName + "Logout Test Case Pass");		
 	}
 

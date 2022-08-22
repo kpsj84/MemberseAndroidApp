@@ -17,7 +17,10 @@ public class aLoginWithGoogleTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithGoogle().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		try
+		{
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.EditText").sendKeys("qatesting9999@gmail.com");
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
@@ -25,6 +28,15 @@ public class aLoginWithGoogleTest extends Base {
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.EditText").sendKeys("Softqa@1313");
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+			System.out.println("Execute Finally block");
+		}
 		
 		System.out.println("As if this message print in server logs that means Login with Google Button is clickable and Webview UI is Responsive");
 	}
