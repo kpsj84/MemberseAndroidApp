@@ -6,39 +6,50 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.LoginTest">
+      <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest">
         <methods>
           <include name="stopService"/>
-          <include name="afterClass"/>
           <include name="afterMethod"/>
-          <include name="LoginTestCase"/>
+          <include name="aLoginWithGoogleTestCase"/>
+          <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.LoginTest -->
-      <class name="SoFaDog.AndroidAutomation.LogoutTest">
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithGoogleTest -->
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
         <methods>
+          <include name="aRegisterWithEmailTestCase"/>
           <include name="stopService"/>
-          <include name="afterClass"/>
-          <include name="LogoutTestCase"/>
           <include name="afterMethod"/>
+          <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.LogoutTest -->
-      <class name="SoFaDog.AndroidAutomation.EndToEndTest">
+      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
+      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest">
         <methods>
-          <include name="EndToEndTestCase"/>
           <include name="stopService"/>
-          <include name="afterClass"/>
           <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="aRegisterFormValidationTestCase"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.EndToEndTest -->
+      </class> <!-- Memberse.AndroidAutomation.aRegisterFormValidationTest -->
+      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
+        <methods>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="iLoginWithFacebookTestCase"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

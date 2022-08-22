@@ -1,5 +1,7 @@
 package Memberse.AndroidAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -32,7 +34,7 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		Thread.sleep(7000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a creator']").click();
 		Thread.sleep(3000);

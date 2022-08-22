@@ -22,8 +22,21 @@ public class aLoginWithFacebookTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithFacebook().click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		try
+		{
 		driver.findElementByXPath("//android.widget.Button[@text='Only allow essential cookies']").click();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+			System.out.println("Execute finally Block");
+		}
+		
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.Button[@text='Log in']").click();
