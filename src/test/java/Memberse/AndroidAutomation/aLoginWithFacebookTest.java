@@ -22,7 +22,7 @@ public class aLoginWithFacebookTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithFacebook().click();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		try
 		{
@@ -39,6 +39,7 @@ public class aLoginWithFacebookTest extends Base {
 		
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_password']").sendKeys(password);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.Button[@text='Log in']").click();
 		driver.findElementByXPath("//android.widget.Button[@text='Continue']").click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
