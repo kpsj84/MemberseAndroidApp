@@ -22,7 +22,7 @@ public class aLoginWithFacebookTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithFacebook().click();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		try
 		{
