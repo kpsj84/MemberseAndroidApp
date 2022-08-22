@@ -6,21 +6,16 @@ import org.testng.annotations.Test;
 import MembersePageObjects.AppMenus;
 import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
-import MembersePageObjects.TutorialScreenPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.UsersDetail;
+import SoFaDog.AndroidAutomation.Utilities;
 
 public class aRegisterWithEmailTest extends Base{
 	
 	@Test
 	public void aRegisterWithEmailTestCase() throws InterruptedException {
-		
-		driver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load");
-		Thread.sleep(5000);
-		
-		TutorialScreenPage wsp = new TutorialScreenPage(driver);
-		wsp.SkipButton().click();
+		Utilities u = new Utilities(driver);
+		u.DirectToLoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.Register().click();
@@ -37,7 +32,7 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a creator']").click();
 		Thread.sleep(3000);
@@ -47,7 +42,7 @@ public class aRegisterWithEmailTest extends Base{
 		Thread.sleep(2000);
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
-		pmp.UserInfo().click();
+		pmp.MemberInfo().click();
 		
 		String VerifyEmail = driver.findElementByXPath("//android.widget.EditText[@text='"+email+"']").getText();
 		Assert.assertEquals(email, VerifyEmail);

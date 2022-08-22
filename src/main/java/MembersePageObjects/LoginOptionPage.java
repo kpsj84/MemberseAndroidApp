@@ -16,6 +16,13 @@ public class LoginOptionPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this); //this here means local
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Login']") 
+	private WebElement LoginText;
+		
+	public WebElement LoginText(){    
+		return LoginText;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.EditText[@text='Email']") 
 	private WebElement signinWithEmail;
 		
@@ -56,5 +63,12 @@ public class LoginOptionPage {
 		
 	public WebElement Register(){    
 		return Register;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='New to Memberse?']") 
+	private WebElement NewMemberseText;
+		
+	public WebElement NewMemberseText(){    
+		return NewMemberseText;
 	}
 }

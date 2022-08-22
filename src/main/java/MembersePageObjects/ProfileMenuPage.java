@@ -15,11 +15,11 @@ public class ProfileMenuPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//android.widget.TextView[@text='User Info']")
-	private WebElement UserInfo;
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Member Info']")
+	private WebElement MemberInfo;
 	
-	public WebElement UserInfo() {
-		return UserInfo;
+	public WebElement MemberInfo() {
+		return MemberInfo;
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out']")

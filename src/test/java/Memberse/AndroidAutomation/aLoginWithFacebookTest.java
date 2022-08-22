@@ -1,24 +1,21 @@
 package Memberse.AndroidAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 
 import MembersePageObjects.AppMenus;
 import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
-import MembersePageObjects.TutorialScreenPage;
 import SoFaDog.AndroidAutomation.Base;
+import SoFaDog.AndroidAutomation.Utilities;
 
 public class aLoginWithFacebookTest extends Base {
 	
 	@Test
 	public void iLoginWithFacebookTestCase() throws InterruptedException {
-		
-		driver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load");
-		Thread.sleep(5000);
-		
-		TutorialScreenPage wsp = new TutorialScreenPage(driver);
-		wsp.SkipButton().click();
+		Utilities u = new Utilities(driver);
+		u.DirectToLoginOptionPage();
 		
 		String email = "qatesting9999@gmail.com";
 		String password = "Softqa1313";
@@ -31,13 +28,13 @@ public class aLoginWithFacebookTest extends Base {
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.Button[@text='Log in']").click();
 		driver.findElementByXPath("//android.widget.Button[@text='Continue']").click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
-		pmp.UserInfo().click();
+		pmp.MemberInfo().click();
 		
 		String GetHandle = driver.findElementByXPath("//android.widget.EditText").getText();
 		System.out.println(GetHandle + " is the Logged In User Handle Name, Login with Facebook Test is Passed");

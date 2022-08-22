@@ -1,26 +1,23 @@
 package Memberse.AndroidAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 
 import MembersePageObjects.LoginOptionPage;
-import MembersePageObjects.TutorialScreenPage;
 import SoFaDog.AndroidAutomation.Base;
+import SoFaDog.AndroidAutomation.Utilities;
 
 public class aLoginWithGoogleTest extends Base {
 	
 	@Test
 	public void aLoginWithGoogleTestCase() throws InterruptedException {
-		
-		driver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load");
-		Thread.sleep(5000);
-		
-		TutorialScreenPage wsp = new TutorialScreenPage(driver);
-		wsp.SkipButton().click();
+		Utilities u = new Utilities(driver);
+		u.DirectToLoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithGoogle().click();
-		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.EditText").sendKeys("qatesting9999@gmail.com");
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();

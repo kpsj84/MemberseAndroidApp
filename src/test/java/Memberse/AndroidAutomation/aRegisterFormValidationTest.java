@@ -4,19 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import MembersePageObjects.LoginOptionPage;
-import MembersePageObjects.TutorialScreenPage;
 import SoFaDog.AndroidAutomation.Base;
+import SoFaDog.AndroidAutomation.Utilities;
 
 public class aRegisterFormValidationTest extends Base {
 	
 	@Test
 	public void aRegisterFormValidationTestCase() throws InterruptedException {
-		driver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load");
-		Thread.sleep(5000);
-		
-		TutorialScreenPage wsp = new TutorialScreenPage(driver);
-		wsp.SkipButton().click();
+		Utilities u = new Utilities(driver);
+		u.DirectToLoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.Register().click();

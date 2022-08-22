@@ -13,7 +13,7 @@ public class aEmailFormValidationTest extends Base {
 	public void aEmailFormValidationTestCase() throws InterruptedException {
 		
 		Utilities u = new Utilities(driver);
-		u.Direct2LoginOptionPage();
+		u.DirectToLoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.LoginButton().click();

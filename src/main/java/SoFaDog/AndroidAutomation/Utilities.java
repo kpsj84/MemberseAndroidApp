@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.Dimension;
 
+import MembersePageObjects.WelcomeScreenPage;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -98,14 +99,27 @@ public class Utilities {
 		}
 		
 	//Direct skip to Login Options Page
-	public void Direct2LoginOptionPage() throws InterruptedException {
+	public void DirectToLoginOptionPage() throws InterruptedException {
 		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
 		System.out.println("Wait for application to load, This may take few seconds");
-		Thread.sleep(8000);
+		Thread.sleep(10000);
 		
-		//Next Button clicked on Widget Screen
-		localdriver.findElementByXPath("//*[@text='Skip']").click();
+		//Login Button click on Welcome Screen
+		WelcomeScreenPage wsp = new WelcomeScreenPage(localdriver);
+		wsp.LoginButton().click();
 		System.out.println("Landing on Login Options Screen");
+	}
+	
+	//Direct skip to Login Register Page
+	public void DirectToRegisterPage() throws InterruptedException {
+		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
+		System.out.println("Wait for application to load, This may take few seconds");
+		Thread.sleep(10000);
+			
+		//Signup Button click on Welcome Screen
+		WelcomeScreenPage wsp = new WelcomeScreenPage(localdriver);
+		wsp.SignupButton().click();
+		System.out.println("Landing on Signup Page / Screen");
 	}
 		
 }
