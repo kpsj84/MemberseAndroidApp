@@ -41,7 +41,7 @@ public class aLogoutTest extends Base {
 				pmp.Logout().click();
 				
 				driver.findElementByXPath("//android.widget.Button[@text='YES']").click();
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				System.out.println(userName + "Logout Test Case Pass");		
 	}
 
