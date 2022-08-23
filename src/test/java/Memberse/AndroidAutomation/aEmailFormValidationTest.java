@@ -19,8 +19,10 @@ public class aEmailFormValidationTest extends Base {
 		
 		String ValidateEmail = driver.findElementByXPath("//android.widget.TextView[@text='Email is required']").getText();
 		System.out.println(ValidateEmail);
+		
 		String ValidatePassword = driver.findElementByXPath("//android.widget.TextView[@text='Password is required']").getText();
 		System.out.println(ValidatePassword);
+		
 		Assert.assertEquals(ValidateEmail, "Email is required");
 		Assert.assertEquals(ValidatePassword, "Password is required");
 		Thread.sleep(1000);

@@ -22,7 +22,7 @@ public class aLoginWithFacebookTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.SigninwithFacebook().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		try
 		{
@@ -41,8 +41,15 @@ public class aLoginWithFacebookTest extends Base {
 		driver.findElementByXPath("//android.widget.EditText[@resource-id='m_login_password']").sendKeys(password);
 		Thread.sleep(2000);
 		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.Button").click();
+		
 		driver.findElementByXPath("//android.widget.Button[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();

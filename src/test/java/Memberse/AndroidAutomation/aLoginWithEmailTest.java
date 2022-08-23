@@ -28,7 +28,14 @@ public class aLoginWithEmailTest extends Base{
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
+		lop.RevealPassword().click();
 		lop.LoginButton().click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		AppMenus am = new AppMenus(driver);

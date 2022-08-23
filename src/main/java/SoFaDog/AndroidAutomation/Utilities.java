@@ -110,7 +110,7 @@ public class Utilities {
 		System.out.println("Landing on Login Options Screen");
 	}
 	
-	//Direct skip to Login Register Page
+	//Direct skip to Register Page
 	public void DirectToRegisterPage() throws InterruptedException {
 		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
 		System.out.println("Wait for application to load, This may take few seconds");
@@ -119,7 +119,7 @@ public class Utilities {
 		//Signup Button click on Welcome Screen
 		WelcomeScreenPage wsp = new WelcomeScreenPage(localdriver);
 		wsp.SignupButton().click();
-		System.out.println("Landing on Signup Page / Screen");
+		System.out.println("Landing on Signup Screen / Page");
 	}
 		
 }

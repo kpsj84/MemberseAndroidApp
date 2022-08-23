@@ -30,6 +30,13 @@ public class aLogoutTest extends Base {
 				lop.EmailPassword().sendKeys(password);
 				lop.LoginButton().click();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+				driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 				
 				AppMenus am = new AppMenus(driver);
 				am.ProfileMenu().click();
