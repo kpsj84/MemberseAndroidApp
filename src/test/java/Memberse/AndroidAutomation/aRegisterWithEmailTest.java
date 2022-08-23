@@ -34,14 +34,14 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a creator']").click();
 		Thread.sleep(3000);
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.MemberInfo().click();

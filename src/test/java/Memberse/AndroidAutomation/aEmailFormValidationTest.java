@@ -11,7 +11,6 @@ public class aEmailFormValidationTest extends Base {
 	
 	@Test
 	public void aEmailFormValidationTestCase() throws InterruptedException {
-		
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		

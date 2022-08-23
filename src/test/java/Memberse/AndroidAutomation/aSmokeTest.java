@@ -56,7 +56,7 @@ public class aSmokeTest extends Base {
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			
 			Assert.assertEquals(welcomeText, "Welcome to Memberse");
-			System.out.println("Application Launches fine and GUI is responsive. Smoke Testing is QA Pass");
+			System.out.println("Application launches fine and GUI is responsive. Smoke Testing is QA Pass");
 		}
 
 }
