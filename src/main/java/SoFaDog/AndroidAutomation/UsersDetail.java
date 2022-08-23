@@ -3,7 +3,7 @@ package SoFaDog.AndroidAutomation;
 public class UsersDetail {
 	
 	//Change these credentials to run the test's with new Users
-	public static String RegisterTestNumber = "aA8";
+	public static String RegisterTestNumber = "aA10";
 	
 	public static String DeleteAccountTestNumber = "aB1";
 	

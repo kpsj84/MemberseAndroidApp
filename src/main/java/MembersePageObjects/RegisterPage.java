@@ -22,6 +22,20 @@ public class RegisterPage {
 		return SignupText;
 	}
 	
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='7']")
+	private WebElement RevealPassword ;
+	
+	public WebElement RevealPassword(){    
+		return RevealPassword;
+	}
+	
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='11']")
+	private WebElement RevealConfirmPassword ;
+	
+	public WebElement RevealConfirmPassword(){    
+		return RevealConfirmPassword;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Already a member?']")
 	private WebElement AlreadyMemberText ;
 	

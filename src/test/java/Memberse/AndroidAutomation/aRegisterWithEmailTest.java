@@ -37,7 +37,14 @@ public class aRegisterWithEmailTest extends Base{
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a creator']").click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();

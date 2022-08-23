@@ -37,6 +37,13 @@ public class LoginOptionPage {
 		return EmailPassword;
 	}
 	
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='6']") 
+	private WebElement RevealPassword;
+		
+	public WebElement RevealPassword(){    
+		return RevealPassword;
+	}
+	
 	@AndroidFindBy(xpath="(//*[@text='Login'])[2]") 
 	private WebElement LoginButton;
 		
