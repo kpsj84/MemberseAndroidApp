@@ -83,7 +83,6 @@
   </dependencies>
 
   <build>
-  
   <!-- Code realated to Maven Sure Fire Plugin which directs to classes in Resources package (by giving path to directory) like Listener class etc-->
   	<resources>
   		<resource>

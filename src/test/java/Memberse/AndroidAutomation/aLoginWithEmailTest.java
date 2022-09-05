@@ -18,9 +18,8 @@ public class aLoginWithEmailTest extends Base{
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		
-		String userNumber = "aA40";
-		String userName = "AutoUser"+userNumber;
-		String emailId = "autouser"+userNumber;
+		String userNumber = "c2";
+		String emailId = "kqatest"+userNumber;
 		String emailDomain = "@yopmail.com";
 		String email = emailId+emailDomain;
 		String password = emailId;
@@ -30,14 +29,15 @@ public class aLoginWithEmailTest extends Base{
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
 		lop.LoginButton().click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(13000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
+		Thread.sleep(2000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
@@ -47,7 +47,7 @@ public class aLoginWithEmailTest extends Base{
 		String VerifyEmail = driver.findElementByXPath("//android.widget.EditText[@text='"+email+"']").getText();
 		Assert.assertEquals(email, VerifyEmail);
 		System.out.println("Expected Vs Actual is: "+ email + " Vs " + VerifyEmail);
-		System.out.println(userName + " Login Test Passed");
+		System.out.println("Login Test Passed");
 	}
 
 }

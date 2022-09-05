@@ -18,9 +18,8 @@ public class aLogoutTest extends Base {
 				Utilities u = new Utilities(driver);
 				u.DirectToLoginOptionPage();
 				
-				String userNumber = "aA40";
-				String userName = "AutoUser"+userNumber;
-				String emailId = "autouser"+userNumber;
+				String userNumber = "c2";
+				String emailId = "kqatest"+userNumber;
 				String emailDomain = "@yopmail.com";
 				String email = emailId+emailDomain;
 				String password = emailId;
@@ -33,10 +32,8 @@ public class aLogoutTest extends Base {
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 				driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				
 				
 				AppMenus am = new AppMenus(driver);
 				am.ProfileMenu().click();
@@ -49,7 +46,7 @@ public class aLogoutTest extends Base {
 				
 				driver.findElementByXPath("//android.widget.Button[@text='YES']").click();
 				Thread.sleep(3000);
-				System.out.println(userName + "Logout Test Case Pass");		
+				System.out.println(email + " Logout Test Case Pass");		
 	}
 
 }

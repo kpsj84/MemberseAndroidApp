@@ -28,13 +28,15 @@
       -->	
       
       <class name="Memberse.AndroidAutomation.aSmokeTest"/>
+      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
       <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest"/>
       <class name="Memberse.AndroidAutomation.aLogoutTest"/>
-      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
-      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
+      <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
+      
       
  <!-- Test which required to register a user can be run on Demand -->  
  		<!-- Old Test Classes 

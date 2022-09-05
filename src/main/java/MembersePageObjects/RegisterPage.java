@@ -22,6 +22,13 @@ public class RegisterPage {
 		return SignupText;
 	}
 	
+	@AndroidFindBy(xpath="//*[@text='Email']")
+	private WebElement SignupEmail ;
+	
+	public WebElement SignupEmail(){    
+		return SignupEmail;
+	}
+	
 	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='7']")
 	private WebElement RevealPassword ;
 	

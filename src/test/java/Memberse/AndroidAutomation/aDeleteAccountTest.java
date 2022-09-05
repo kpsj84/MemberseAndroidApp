@@ -3,7 +3,6 @@ package Memberse.AndroidAutomation;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import MembersePageObjects.AppMenus;
@@ -11,11 +10,12 @@ import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
+import SoFaDog.AndroidAutomation.Utilities.Direction;
 
-public class aRegisterWithEmailTest extends Base{
+public class aDeleteAccountTest extends Base {
 	
 	@Test
-	public void aRegisterWithEmailTestCase() throws InterruptedException {
+	public void aDeleteAccountTestCase() throws InterruptedException {
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		
@@ -41,18 +41,17 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		Thread.sleep(3000);
 		
-		ProfileMenuPage pmp = new ProfileMenuPage(driver);
-		pmp.MemberInfo().click();
-		
-		String VerifyEmail = driver.findElementByXPath("//android.widget.EditText[@text='"+email+"']").getText();
-		Assert.assertEquals(email, VerifyEmail);
-		System.out.println("Expected Vs Actual is: "+ email + " Vs " + VerifyEmail);
-		System.out.println("Register Test Passed");
+		u.swipeScreen(Direction.UP);
+		ProfileMenuPage pp = new ProfileMenuPage(driver);
+		pp.DeleteAccount().click();
+		driver.findElementByXPath("(//*[@text='Delete Account'])[2]").click();
+		driver.findElementByXPath("//android.widget.Button[@text='YES']").click();
+		Thread.sleep(3000);
+		System.out.println(email + " Account Deleted Successfully");	
 	}
 	
 	public String getSaltString() {

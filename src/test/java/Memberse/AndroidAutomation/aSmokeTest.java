@@ -40,6 +40,7 @@ public class aSmokeTest extends Base {
 			LoginOptionPage lop = new LoginOptionPage(driver);
 			String loginText = lop.LoginText().getText();
 			Assert.assertEquals(loginText, "Login");
+			lop.signinWithEmail().sendKeys("Hi I am Automation and Smoke Testing is in progress");
 			String memberseText = lop.NewMemberseText().getText();
 			Assert.assertEquals(memberseText, "New to Memberse?");
 			Thread.sleep(1000);
@@ -48,8 +49,10 @@ public class aSmokeTest extends Base {
 			//Signup Button
 			wsp.SignupButton().click();
 			RegisterPage rp = new RegisterPage(driver);
+			Thread.sleep(2000);
 			String signupText = rp.SignupText().getText();
 			Assert.assertEquals(signupText, "Sign up");
+			rp.SignupEmail().sendKeys("Hi I am Automation and Smoke Testing is in progress");
 			String alreadyMemberText = rp.AlreadyMemberText().getText();
 			Assert.assertEquals(alreadyMemberText, "Already a member?");
 			Thread.sleep(1000);

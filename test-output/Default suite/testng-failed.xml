@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
+      <class name="Memberse.AndroidAutomation.aDeleteAccountTest">
         <methods>
           <include name="stopService"/>
           <include name="afterMethod"/>
+          <include name="aDeleteAccountTestCase"/>
           <include name="quitDriver"/>
-          <include name="iLoginWithFacebookTestCase"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
+      </class> <!-- Memberse.AndroidAutomation.aDeleteAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
