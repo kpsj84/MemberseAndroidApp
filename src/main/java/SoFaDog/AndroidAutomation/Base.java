@@ -104,17 +104,17 @@ public class Base {
 	//Set Capabilities for Android driver and get the appName from global.properties file, pass appName from Test Class & name of String Argument can be different in this Method and in Test Class
 	public static void capabilities(String appName) throws IOException, InterruptedException{		
 		//Path for global properties file
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/global.properties");
-		Properties prop = new Properties();							//Create object of Properties class  
-		prop.load(fis);												//Load global.properties file
+		FileInputStream fis1 = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/global.properties");
+		Properties prop1 = new Properties();							//Create object of Properties class  
+		prop1.load(fis1);												//Load global.properties file
 		
 		//Path to Android application File folder
 		//File appDir = new File("src");
 		File appDir = new File("/Users/kamaljhinjer/Documents/Z-Android-Memberse-Builds");
-		File app = new File(appDir, (String)prop.get(appName)); 	//Link Application file Directory & get appName from Properties class object 
+		File app = new File(appDir, (String)prop1.get(appName)); 	//Link Application file Directory & get appName from Properties class object 
 		
 		//Device name given in global.properties file
-		String device = (String)prop.get("deviceName");
+		String device = (String)prop1.get("deviceName");
 		if(device.contains("Emulator"))								//Start Emulator
 		{
 			startEmulator();
@@ -141,25 +141,26 @@ public class Base {
 	}
 	
 	//Set Cloud Capabilities for Android driver and get the appName from global.properties file, pass appName from Test Class & name of String Argument can be different in this Method and in Test Class
-		public static void cloudCapabilities(String appName) throws IOException, InterruptedException{		
-			//This method called just to print the message written in startEmulator Method
-			startEmulator();
+	public static void cloudCapabilities(String appName) throws IOException, InterruptedException{		
+		//This method called just to print the message written in startEmulator Method
+		startEmulator();
 			
-			//Path of Chrome Driver for WEBVIEW
-			String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
+		//Path of Chrome Driver for WEBVIEW
+		String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 			
-			//Set Desired Capabilities
-			cap = new DesiredCapabilities();
-			cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
-			cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
-			cap.setCapability("app", "bs://f7b873155560a25d760831aef69667859c5a0a28");		//BrowserStack uploaded App reference, this capability not required if custom Id given, Build-510
-			cap.setCapability("custom_id", "SoFaDogAndroidAppQA");							//Custom Id for App which remains the same for all build uploads, not working at present
-			cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
-			cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		//BrowserStack Automation Tool Name
-			cap.setCapability("chromedriverExecutable", chromeDriver);						//Get the Path of Chrome Driver
-			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout -> 3 Minutes
-		}
+		//Set Desired Capabilities
+		cap = new DesiredCapabilities();
+		cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
+		cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
+		//cap.setCapability("app", "bs://6e771bcc22b17ec813fe59168e148ba73666dfbe");	//BrowserStack manually uploaded App reference, not required if custom Id given while upload with curl command
+		cap.setCapability("app", "MemberseAndroidApp");									//This is the use of custom_id. here shareable_id to use if other member to test this app, Uploaded QA Build-513
+		//cap.setCapability("app", "kamal_BOZ8Ie/MemberseAndroidApp");					//shareable_id to use like this if other team member to test this app w/o password credentials, 
+		cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
+		cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info
+		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		//BrowserStack Automation Tool Name
+		cap.setCapability("chromedriverExecutable", chromeDriver);						//Get the Path of Chrome Driver
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout -> 3 Minutes
+	}
 	
 	@BeforeTest
 	public void startService() throws IOException, InterruptedException {	

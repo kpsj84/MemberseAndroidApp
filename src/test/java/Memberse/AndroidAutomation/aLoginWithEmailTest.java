@@ -18,7 +18,7 @@ public class aLoginWithEmailTest extends Base{
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		
-		String userNumber = "c2";
+		String userNumber = "creator";
 		String emailId = "kqatest"+userNumber;
 		String emailDomain = "@yopmail.com";
 		String email = emailId+emailDomain;

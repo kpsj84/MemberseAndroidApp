@@ -1,6 +1,7 @@
 package SoFaDog.AndroidAutomation;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
 
@@ -100,9 +101,21 @@ public class Utilities {
 		
 	//Direct skip to Login Options Page
 	public void DirectToLoginOptionPage() throws InterruptedException {
-		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load, This may take few seconds");
-		Thread.sleep(10000);
+		localdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		try
+		{
+			localdriver.findElementByXPath("//*[@text='CONTINUE']").click();	
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+			System.out.println("Wait for application to load, This may take few seconds");
+			Thread.sleep(10000);	
+		}
 		
 		//Login Button click on Welcome Screen
 		WelcomeScreenPage wsp = new WelcomeScreenPage(localdriver);
@@ -112,14 +125,26 @@ public class Utilities {
 	
 	//Direct skip to Register Page
 	public void DirectToRegisterPage() throws InterruptedException {
-		localdriver.findElementByXPath("//*[@text='CONTINUE']").click();
-		System.out.println("Wait for application to load, This may take few seconds");
-		Thread.sleep(10000);
+		localdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		try
+		{
+			localdriver.findElementByXPath("//*[@text='CONTINUE']").click();	
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+			System.out.println("Wait for application to load, This may take few seconds");
+			Thread.sleep(10000);	
+		}
 			
 		//Signup Button click on Welcome Screen
 		WelcomeScreenPage wsp = new WelcomeScreenPage(localdriver);
 		wsp.SignupButton().click();
-		System.out.println("Landing on Signup Screen / Page");
+		System.out.println("Landing on Signup Screen");
 	}
 		
 }
