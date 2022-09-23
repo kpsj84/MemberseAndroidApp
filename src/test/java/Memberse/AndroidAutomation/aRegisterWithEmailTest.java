@@ -31,7 +31,7 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(23, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a Creator']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
