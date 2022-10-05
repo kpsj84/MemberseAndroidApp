@@ -101,7 +101,7 @@ public class Utilities {
 		
 	//Direct skip to Login Options Page
 	public void DirectToLoginOptionPage() throws InterruptedException {
-		localdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		try
 		{
@@ -125,7 +125,7 @@ public class Utilities {
 	
 	//Direct skip to Register Page
 	public void DirectToRegisterPage() throws InterruptedException {
-		localdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		try
 		{
