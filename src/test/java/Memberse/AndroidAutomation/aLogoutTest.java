@@ -18,7 +18,7 @@ public class aLogoutTest extends Base {
 				Utilities u = new Utilities(driver);
 				u.DirectToLoginOptionPage();
 				
-				String userNumber = "c2";
+				String userNumber = "c3";
 				String emailId = "kqatest"+userNumber;
 				String emailDomain = "@yopmail.com";
 				String email = emailId+emailDomain;

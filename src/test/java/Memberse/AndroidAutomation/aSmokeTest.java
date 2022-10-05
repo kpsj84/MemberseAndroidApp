@@ -18,7 +18,7 @@ public class aSmokeTest extends Base {
 	@Test
 	public void aSmokeTestCase() throws InterruptedException {
 		//Wait upto for next element to available and will execute immediately once element appear
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 		try
 		{

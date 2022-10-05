@@ -37,10 +37,10 @@
       <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
       <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
-     <!-- <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest"/>
+      <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest"/>
       <class name="Memberse.AndroidAutomation.aLogoutTest"/>
-      <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>		 -->
+      <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
     </classes>
   </test> <!-- Test -->
   
