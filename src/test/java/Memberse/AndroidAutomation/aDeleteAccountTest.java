@@ -31,7 +31,7 @@ public class aDeleteAccountTest extends Base {
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(23, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a Creator']").click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -58,7 +58,7 @@ public class aDeleteAccountTest extends Base {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
-        while (salt.length() < 10) { // length of the random string.
+        while (salt.length() < 11) { // length of the random string.
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
