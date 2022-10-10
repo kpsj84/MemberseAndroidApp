@@ -34,7 +34,7 @@ public class aDeleteAccountTest extends Base {
 		driver.manage().timeouts().implicitlyWait(23, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a Creator']").click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
