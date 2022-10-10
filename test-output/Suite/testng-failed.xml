@@ -6,39 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest">
-        <methods>
-          <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="aLoginWithGoogleTestCase"/>
-          <include name="quitDriver"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aLoginWithGoogleTest -->
-      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
-        <methods>
-          <include name="aRegisterWithEmailTestCase"/>
-          <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="quitDriver"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
-      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest">
-        <methods>
-          <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="quitDriver"/>
-          <include name="aRegisterFormValidationTestCase"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aRegisterFormValidationTest -->
       <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
         <methods>
           <include name="stopService"/>
@@ -50,6 +17,17 @@
           <include name="startDriver"/>
         </methods>
       </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
+      <class name="Memberse.AndroidAutomation.aLoginWithEmailTest">
+        <methods>
+          <include name="stopService"/>
+          <include name="LoginTestCasewithEmail"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithEmailTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -29,7 +29,7 @@ public class aLoginWithEmailTest extends Base{
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
 		lop.LoginButton().click();
-		Thread.sleep(13000);
+		Thread.sleep(15000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
