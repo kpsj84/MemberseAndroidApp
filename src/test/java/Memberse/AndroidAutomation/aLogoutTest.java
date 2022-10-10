@@ -28,7 +28,7 @@ public class aLogoutTest extends Base {
 				lop.signinWithEmail().sendKeys(email);
 				lop.EmailPassword().sendKeys(password);
 				lop.LoginButton().click();
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 				driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
