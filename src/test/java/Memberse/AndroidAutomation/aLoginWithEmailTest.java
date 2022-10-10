@@ -25,6 +25,7 @@ public class aLoginWithEmailTest extends Base{
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
+		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
