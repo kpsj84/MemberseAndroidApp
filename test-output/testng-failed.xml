@@ -6,28 +6,28 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest">
         <methods>
+          <include name="aRegisterWithEmailTestCase"/>
           <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="quitDriver"/>
-          <include name="iLoginWithFacebookTestCase"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-          <include name="startDriver"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
-      <class name="Memberse.AndroidAutomation.aLoginWithEmailTest">
-        <methods>
-          <include name="stopService"/>
-          <include name="LoginTestCasewithEmail"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aLoginWithEmailTest -->
+      </class> <!-- Memberse.AndroidAutomation.aRegisterWithEmailTest -->
+      <class name="Memberse.AndroidAutomation.aLogoutTest">
+        <methods>
+          <include name="stopService"/>
+          <include name="aLogoutTestCase"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aLogoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

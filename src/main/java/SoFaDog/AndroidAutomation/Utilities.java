@@ -114,7 +114,7 @@ public class Utilities {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(10000);	
+			Thread.sleep(30000);	
 		}
 		
 		//Login Button click on Welcome Screen
@@ -138,7 +138,7 @@ public class Utilities {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(10000);	
+			Thread.sleep(30000);	
 		}
 			
 		//Signup Button click on Welcome Screen
