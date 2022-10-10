@@ -16,6 +16,7 @@ public class aLoginWithGoogleTest extends Base {
 		u.DirectToLoginOptionPage();
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
+		Thread.sleep(15000);
 		lop.SigninwithGoogle().click();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
