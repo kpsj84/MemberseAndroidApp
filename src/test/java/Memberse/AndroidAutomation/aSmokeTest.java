@@ -32,7 +32,7 @@ public class aSmokeTest extends Base {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(10000);
+			Thread.sleep(30000);
 		}
 			
 		//Verify UI of the Welcome Screen
