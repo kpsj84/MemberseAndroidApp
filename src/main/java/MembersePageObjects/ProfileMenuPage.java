@@ -22,6 +22,27 @@ public class ProfileMenuPage {
 		return MemberInfo;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Privacy Policy']")
+	private WebElement PrivacyPolicy;
+	
+	public WebElement PrivacyPolicy() {
+		return PrivacyPolicy;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Terms & Conditions']")
+	private WebElement TermsAndConditions;
+	
+	public WebElement TermsAndConditions() {
+		return TermsAndConditions;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Community Guidelines']")
+	private WebElement CommunityGuidelines;
+	
+	public WebElement CommunityGuidelines() {
+		return CommunityGuidelines;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out']")
 	private WebElement Logout;
 	

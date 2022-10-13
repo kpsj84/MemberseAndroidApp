@@ -41,6 +41,9 @@
       <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest"/>
       <class name="Memberse.AndroidAutomation.aLogoutTest"/>
       <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
+      <class name="Memberse.AndroidAutomation.aTermsAndConditionsTest"/>
+      <class name="Memberse.AndroidAutomation.aCommunityGuidelinesTest"/>
+      <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest"/>
     </classes>
   </test> <!-- Test -->
   
