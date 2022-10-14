@@ -44,6 +44,7 @@
       <class name="Memberse.AndroidAutomation.aTermsAndConditionsTest"/>
       <class name="Memberse.AndroidAutomation.aCommunityGuidelinesTest"/>
       <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest"/>
+      <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
     </classes>
   </test> <!-- Test -->
   
