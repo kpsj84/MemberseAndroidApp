@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T16:52:34 IST" name="Default suite" finished-at="2022-10-14T16:54:29 IST" duration-ms="115087">
+  <suite started-at="2022-10-17T09:52:21 IST" name="Default suite" finished-at="2022-10-17T09:54:37 IST" duration-ms="135478">
     <groups>
     </groups>
-    <test started-at="2022-10-14T16:52:34 IST" name="Default test" finished-at="2022-10-14T16:54:29 IST" duration-ms="115087">
-      <class name="Memberse.AndroidAutomation.aSearchCreatorTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:52:34 IST" name="startService" finished-at="2022-10-14T16:52:34 IST" duration-ms="28" status="PASS">
+    <test started-at="2022-10-17T09:52:21 IST" name="Default test" finished-at="2022-10-17T09:54:37 IST" duration-ms="135478">
+      <class name="Memberse.AndroidAutomation.aTermsAndConditionsTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:52:21 IST" name="startService" finished-at="2022-10-17T09:52:21 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:52:34 IST" name="startDriver" finished-at="2022-10-14T16:53:03 IST" duration-ms="29121" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:52:21 IST" name="startDriver" finished-at="2022-10-17T09:52:50 IST" duration-ms="28215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:53:03 IST" name="beforeMethod" finished-at="2022-10-14T16:53:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:52:50 IST" name="beforeMethod" finished-at="2022-10-17T09:52:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="aSearchCreatorTestCase()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:53:03 IST" name="aSearchCreatorTestCase" finished-at="2022-10-14T16:54:28 IST" duration-ms="84566" status="PASS">
+        <test-method signature="aTermsAndConditionsTestCase()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:52:50 IST" name="aTermsAndConditionsTestCase" finished-at="2022-10-17T09:54:35 IST" duration-ms="105346" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aSearchCreatorTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:54:28 IST" name="afterMethod" finished-at="2022-10-14T16:54:28 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- aTermsAndConditionsTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:54:35 IST" name="afterMethod" finished-at="2022-10-17T09:54:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:54:28 IST" name="quitDriver" finished-at="2022-10-14T16:54:29 IST" duration-ms="1336" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:54:35 IST" name="quitDriver" finished-at="2022-10-17T09:54:37 IST" duration-ms="1842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aSearchCreatorTest@3059cbc]" started-at="2022-10-14T16:54:29 IST" name="stopService" finished-at="2022-10-14T16:54:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aTermsAndConditionsTest@3059cbc]" started-at="2022-10-17T09:54:37 IST" name="stopService" finished-at="2022-10-17T09:54:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aSearchCreatorTest -->
+      </class> <!-- Memberse.AndroidAutomation.aTermsAndConditionsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
