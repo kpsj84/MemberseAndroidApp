@@ -48,7 +48,7 @@ public class aTermsAndConditionsTest extends Base {
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.TermsAndConditions().click();
-		Thread.sleep(7000);
+		Thread.sleep(10000);
 		
 		Set<String> contexts = driver.getContextHandles();
         for(String contextName : contexts)
