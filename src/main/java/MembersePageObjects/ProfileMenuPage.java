@@ -22,6 +22,27 @@ public class ProfileMenuPage {
 		return MemberInfo;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Memberships']")
+	private WebElement MembershipsSubMenu;
+	
+	public WebElement MembershipsSubMenu() {
+		return MembershipsSubMenu;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Watch History']")
+	private WebElement WatchedHistorySubMenu;
+	
+	public WebElement WatchedHistorySubMenu() {
+		return WatchedHistorySubMenu;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Language']")
+	private WebElement LanguageMenu;
+	
+	public WebElement LanguageMenu() {
+		return LanguageMenu;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Privacy Policy']")
 	private WebElement PrivacyPolicy;
 	
@@ -41,6 +62,13 @@ public class ProfileMenuPage {
 	
 	public WebElement CommunityGuidelines() {
 		return CommunityGuidelines;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Become a Creator']")
+	private WebElement BecomeACreatorMenu;
+	
+	public WebElement BecomeACreatorMenu() {
+		return BecomeACreatorMenu;
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Log out']")

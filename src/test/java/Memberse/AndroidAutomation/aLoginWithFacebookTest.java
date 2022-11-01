@@ -13,7 +13,7 @@ import SoFaDog.AndroidAutomation.Utilities;
 public class aLoginWithFacebookTest extends Base {
 	
 	@Test
-	public void iLoginWithFacebookTestCase() throws InterruptedException {
+	public void aLoginWithFacebookTestCase() throws InterruptedException {
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		

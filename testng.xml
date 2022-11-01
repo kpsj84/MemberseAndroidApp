@@ -45,6 +45,11 @@
       <class name="Memberse.AndroidAutomation.aCommunityGuidelinesTest"/>
       <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest"/>
       <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
+      <class name="Memberse.AndroidAutomation.aUserInfoTest"/>
+      <class name="Memberse.AndroidAutomation.aMembershipsTest"/>
+      <class name="Memberse.AndroidAutomation.aWatchedHistoryTest"/>
+      <class name="Memberse.AndroidAutomation.aLanguageTest"/>
+      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>
     </classes>
   </test> <!-- Test -->
   
