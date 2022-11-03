@@ -21,6 +21,7 @@ public class aLoginWithFacebookTest extends Base {
 		String password = "Softqa1313";
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
+		driver.findElementByXPath("(//android.view.ViewGroup[@index='0'])[10]").click();
 		lop.SigninwithFacebook().click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		

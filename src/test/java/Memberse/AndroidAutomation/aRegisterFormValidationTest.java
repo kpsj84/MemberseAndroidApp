@@ -3,7 +3,6 @@ package Memberse.AndroidAutomation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.RegisterPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
@@ -13,11 +12,9 @@ public class aRegisterFormValidationTest extends Base {
 	@Test
 	public void aRegisterFormValidationTestCase() throws InterruptedException {
 		Utilities u = new Utilities(driver);
-		u.DirectToLoginOptionPage();
+		u.DirectToRegisterPage();
 		
-		LoginOptionPage lop = new LoginOptionPage(driver);
-		lop.Register().click();
-		
+		driver.findElementByXPath("//android.view.ViewGroup[6]").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
 		
 		String ValidateEmail = driver.findElementByXPath("//android.widget.TextView[@text='Email is required']").getText();

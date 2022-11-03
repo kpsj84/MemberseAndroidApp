@@ -153,7 +153,7 @@ public class Base {
 		cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
 		cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
 		//cap.setCapability("app", "bs://6e771bcc22b17ec813fe59168e148ba73666dfbe");	//BrowserStack manually uploaded App reference, not required if custom Id given while upload with curl command
-		cap.setCapability("app", "MemberseAndroidApp");									//This is the use of custom_id. here shareable_id to use if other member to test this app, Uploaded QA Build-514
+		cap.setCapability("app", "MemberseAndroidApp");									//This is the use of custom_id. here shareable_id to use if other member to test this app, Uploaded QA Build-515
 		//cap.setCapability("app", "kamal_BOZ8Ie/MemberseAndroidApp");					//shareable_id to use like this if other team member to test this app w/o password credentials, 
 		cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
 		cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info

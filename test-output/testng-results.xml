@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-31T16:18:27 IST" name="Default suite" finished-at="2022-10-31T16:20:27 IST" duration-ms="120732">
+  <suite started-at="2022-11-03T06:59:24 IST" name="Default suite" finished-at="2022-11-03T07:01:02 IST" duration-ms="97628">
     <groups>
     </groups>
-    <test started-at="2022-10-31T16:18:27 IST" name="Default test" finished-at="2022-10-31T16:20:27 IST" duration-ms="120732">
-      <class name="Memberse.AndroidAutomation.aLanguageTest">
-        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:18:27 IST" name="startService" finished-at="2022-10-31T16:18:27 IST" duration-ms="28" status="PASS">
+    <test started-at="2022-11-03T06:59:24 IST" name="Default test" finished-at="2022-11-03T07:01:02 IST" duration-ms="97628">
+      <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest">
+        <test-method is-config="true" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T06:59:24 IST" name="startService" finished-at="2022-11-03T06:59:24 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:18:27 IST" name="startDriver" finished-at="2022-10-31T16:18:57 IST" duration-ms="30441" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T06:59:24 IST" name="startDriver" finished-at="2022-11-03T06:59:54 IST" duration-ms="30176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:18:57 IST" name="beforeMethod" finished-at="2022-10-31T16:18:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T06:59:54 IST" name="beforeMethod" finished-at="2022-11-03T06:59:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="aLanguageTestCase()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:18:57 IST" name="aLanguageTestCase" finished-at="2022-10-31T16:20:26 IST" duration-ms="88984" status="PASS">
+        <test-method signature="aLoginWithGoogleTestCase()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T06:59:54 IST" name="aLoginWithGoogleTestCase" finished-at="2022-11-03T07:00:59 IST" duration-ms="65124" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aLanguageTestCase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:20:26 IST" name="afterMethod" finished-at="2022-10-31T16:20:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- aLoginWithGoogleTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T07:00:59 IST" name="afterMethod" finished-at="2022-11-03T07:00:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:20:26 IST" name="quitDriver" finished-at="2022-10-31T16:20:27 IST" duration-ms="1235" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T07:00:59 IST" name="quitDriver" finished-at="2022-11-03T07:01:02 IST" duration-ms="2118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aLanguageTest@3059cbc]" started-at="2022-10-31T16:20:27 IST" name="stopService" finished-at="2022-10-31T16:20:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aLoginWithGoogleTest@3059cbc]" started-at="2022-11-03T07:01:02 IST" name="stopService" finished-at="2022-11-03T07:01:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aLanguageTest -->
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithGoogleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

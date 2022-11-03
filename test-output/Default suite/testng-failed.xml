@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest">
+      <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest">
         <methods>
           <include name="stopService"/>
-          <include name="aRegisterWithEmailTestCase"/>
           <include name="afterMethod"/>
+          <include name="aLoginWithGoogleTestCase"/>
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
           <include name="startDriver"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aBecomeCreatorTest -->
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithGoogleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
