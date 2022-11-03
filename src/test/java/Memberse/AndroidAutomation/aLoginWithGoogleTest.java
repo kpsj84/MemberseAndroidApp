@@ -17,17 +17,19 @@ public class aLoginWithGoogleTest extends Base {
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		Thread.sleep(15000);
+		
+		driver.findElementByXPath("(//android.view.ViewGroup[@index='0'])[10]").click();
 		lop.SigninwithGoogle().click();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		try
 		{
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
-		driver.findElementByXPath("//android.widget.EditText").sendKeys("qatesting9999@gmail.com");
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("testsingh998@gmail.com");
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
 		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
-		driver.findElementByXPath("//android.widget.EditText").sendKeys("Softqa@1313");
+		driver.findElementByXPath("//android.widget.EditText").sendKeys("test@123#");
 		driver.findElementByXPath("//android.widget.Button[@text='Next']").click();
 		}
 		catch(Exception e)

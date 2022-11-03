@@ -9,6 +9,8 @@ import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.RegisterPage;
 import MembersePageObjects.WelcomeScreenPage;
 import SoFaDog.AndroidAutomation.Base;
+import SoFaDog.AndroidAutomation.Utilities;
+import SoFaDog.AndroidAutomation.Utilities.Direction;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -53,9 +55,12 @@ public class aSmokeTest extends Base {
 		String loginText = lop.LoginText().getText();
 		Assert.assertEquals(loginText, "Login");
 		lop.signinWithEmail().sendKeys("Smoke Testing is in progress");
-		String memberseText = lop.NewMemberseText().getText();
-		Assert.assertEquals(memberseText, "New to Memberse?");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		Utilities u = new Utilities(driver);
+		u.swipeScreen(Direction.UP);
+		//String memberseText = lop.NewMemberseText().getText();
+		//Assert.assertEquals(memberseText, "New to Memberse?");
+		//Thread.sleep(1000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			
 		//Signup Button

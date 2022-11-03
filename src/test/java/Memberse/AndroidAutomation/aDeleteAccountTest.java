@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
 import MembersePageObjects.AppMenus;
-import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.ProfileMenuPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
@@ -17,10 +16,7 @@ public class aDeleteAccountTest extends Base {
 	@Test
 	public void aDeleteAccountTestCase() throws InterruptedException {
 		Utilities u = new Utilities(driver);
-		u.DirectToLoginOptionPage();
-		
-		LoginOptionPage lop = new LoginOptionPage(driver);
-		lop.Register().click();
+		u.DirectToRegisterPage();
 		
 		String autoString = getSaltString();
 		String emailDomain = "@yopmail.com";
@@ -30,6 +26,7 @@ public class aDeleteAccountTest extends Base {
 		driver.findElementByXPath("//android.widget.EditText[@text='Email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
+		driver.findElementByXPath("//android.view.ViewGroup[6]").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
