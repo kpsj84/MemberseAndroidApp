@@ -14,7 +14,7 @@ import SoFaDog.AndroidAutomation.Utilities;
 public class aBecomeCreatorTest extends Base {
 	
 	@Test
-	public void aRegisterWithEmailTestCase() throws InterruptedException {
+	public void aBecomeCreatorTestCase() throws InterruptedException {
 		Utilities u = new Utilities(driver);
 		u.DirectToRegisterPage();
 		

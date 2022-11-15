@@ -15,6 +15,27 @@ public class ProfileMenuPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Manage my Community']")
+	private WebElement manageMyCommunitySubMenu;
+	
+	public WebElement manageMyCommunitySubMenu() {
+		return manageMyCommunitySubMenu;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Posts history']")
+	private WebElement postsHistorySubMenu;
+	
+	public WebElement postsHistorySubMenu() {
+		return postsHistorySubMenu;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Playlists']")
+	private WebElement playlistSubMenu;
+	
+	public WebElement playlistSubMenu() {
+		return playlistSubMenu;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Member Info']")
 	private WebElement MemberInfo;
 	
