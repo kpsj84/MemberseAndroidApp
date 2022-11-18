@@ -25,11 +25,11 @@
       <class name="SoFaDog.AndroidAutomation.DonationPaidTest"/>					
       <class name="SoFaDog.AndroidAutomation.PaidServiceStatusTest"/>	
       <class name="SoFaDog.AndroidAutomation.UploadVideoTest"/>	
-      	<class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
-		<class name="SoFaDog.AndroidAutomation.DeleteAccountTest"/>
-  		<class name="SoFaDog.AndroidAutomation.BecomeCreatorTest"/>
- 		<class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/> 
- 		<class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>	
+      <class name="SoFaDog.AndroidAutomation.RegisterTest"/> 
+	  <class name="SoFaDog.AndroidAutomation.DeleteAccountTest"/>
+  	  <class name="SoFaDog.AndroidAutomation.BecomeCreatorTest"/>
+ 	  <class name="SoFaDog.AndroidAutomation.SubscribeFreeChannel"/> 
+ 	  <class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>	
       -->	
       
       <class name="Memberse.AndroidAutomation.aSmokeTest"/>
@@ -55,7 +55,7 @@
       <class name="Memberse.AndroidAutomation.aPostHistoryPlayTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryPostEditTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryDeleteTest"/>
-      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/>
+      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/> 
     </classes>
   </test> <!-- Test -->
   

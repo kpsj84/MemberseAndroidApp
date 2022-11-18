@@ -33,13 +33,17 @@ public class Base {
 	//Flags use to run Test on different environment, make it true where to run
 	public static boolean sampleTest   = false;
 	public static boolean SoFaDogReal  = false;
-	public static boolean SoFaDogCloud = true;
 	public static boolean SoFaDogCS    = false;
+	public static boolean SoFaDogCloud = true;
+	public static boolean SoFaDogProd  = false;
 	
 	//Initiate Android Driver, Appium Driver Service & Desired Capabilities
 	public static AndroidDriver<AndroidElement> driver;
 	public static AppiumDriverLocalService 		service;
 	public static DesiredCapabilities 			cap;
+	public static String 						environment;
+	public static FileInputStream 				fisEnv;
+	public static Properties 	  				propEnv;
 	
 	//Starts the Appium Server by checking that Server is already running or not, by calling other Method
 	public AppiumDriverLocalService startServer() {
@@ -83,7 +87,7 @@ public class Base {
 		{
 			System.out.println("Test is running on Real device");
 		}
-		else if(SoFaDogCloud == true)
+		else if(SoFaDogCloud == true || SoFaDogProd == true)
 		{
 			System.out.println("Emulator is running on cloud");
 		}
@@ -153,7 +157,7 @@ public class Base {
 		cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							//BrowserStack User Key
 		cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					//BrowserStack Password Key
 		//cap.setCapability("app", "bs://6e771bcc22b17ec813fe59168e148ba73666dfbe");	//BrowserStack manually uploaded App reference, not required if custom Id given while upload with curl command
-		cap.setCapability("app", "MemberseAndroidApp");									//This is the use of custom_id. here shareable_id to use if other member to test this app, Uploaded QA Build-515
+		cap.setCapability("app", "MemberseAndroidApp");									//This is the use of custom_id. here shareable_id to use if other member to test this app, Uploaded QA Build-5.1.3(517)
 		//cap.setCapability("app", "kamal_BOZ8Ie/MemberseAndroidApp");					//shareable_id to use like this if other team member to test this app w/o password credentials, 
 		cap.setCapability("device", "Google Pixel 3 XL");								//BrowserStack Emulator Name
 		cap.setCapability("os_version", "9.0");											//BrowserStack Emulator OS info
@@ -162,11 +166,30 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				//Set time in seconds to wait for next action, means timeout -> 3 Minutes
 	}
 	
+	public static void prodCapabilities(String appName) throws IOException, InterruptedException{		
+		System.out.println("Entered to Prod Capabilities");
+		String chromeDriver = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
+		
+		startEmulator();		
+				
+		cap = new DesiredCapabilities();
+		cap.setCapability("browserstack.user", "kamal_BOZ8Ie");							
+		cap.setCapability("browserstack.key", "FJzpiZvMvStzQQNzQHdD");					
+		//cap.setCapability("app", "bs://6e771bcc22b17ec813fe59168e148ba73666dfbe");	
+		cap.setCapability("app", "MemberseAndroidProdApp");								//Uploaded Prod Build- 509
+		//cap.setCapability("app", "kamal_BOZ8Ie/MemberseAndroidProdApp");				 
+		cap.setCapability("device", "Google Pixel 3 XL");								
+		cap.setCapability("os_version", "9.0");											
+		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");		
+		cap.setCapability("chromedriverExecutable", chromeDriver);						
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 180); 				
+		}
+	
 	@BeforeTest
 	public void startService() throws IOException, InterruptedException {	
-		System.out.println("Entered Before Test, Starting Server & Launching App");
+		System.out.println("Entered Before Test, Starting Server, Getting Environment & Launching App");
 		
-		if(SoFaDogCloud == true)
+		if(SoFaDogCloud == true || SoFaDogProd == true)
 		{
 			System.out.println("Appium Server is running on cloud, so start server manage by cloud itself");
 		}
@@ -185,6 +208,10 @@ public class Base {
 		{
 			cloudCapabilities("SoFaDogApp");
 		}
+		else if(SoFaDogProd == true)
+		{
+			prodCapabilities("SoFaDogApp");
+		}
 		else 
 		{
 			capabilities("SoFaDogApp");
@@ -195,7 +222,7 @@ public class Base {
 	public void stopService() {		
 		System.out.println("Entered After Test & Stoping Server");
 		
-		if(SoFaDogCloud == true)
+		if(SoFaDogCloud == true || SoFaDogProd == true)
 		{
 			System.out.println("Server is running on cloud, so stop server manage by cloud only");
 		}
@@ -210,7 +237,7 @@ public class Base {
 	public AndroidDriver<AndroidElement> startDriver() throws MalformedURLException {
 		System.out.println("Execute Before Class & passing capabilities to driver every time the Test's Start in New Class");
 		
-		if(SoFaDogCloud == true)
+		if(SoFaDogCloud == true || SoFaDogProd == true)
 		{
 			//Android Driver is redirect to cloud Service (BrowserStack)
 			driver = new AndroidDriver<>(new URL("http://hub.browserstack.com/wd/hub"),cap);
@@ -249,6 +276,22 @@ public class Base {
 	public static void getScreenshot(String s) throws IOException {
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 						//Cast the type of action driver has to do and output is to give in the form of File
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"/Reports/"+s+".png"));
+	}
+	
+	//Initiate Environment Selection
+	public void initiateEnvironment() throws IOException {
+		environment = System.getProperty("env");
+		if(environment == null)
+		{
+			environment = "QA";
+			System.out.println("environment was null but set to - " + environment);
+		}
+		fisEnv = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/SoFaDog/AndroidAutomation/"+environment+".properties");
+		propEnv = new Properties();		 
+		propEnv.load(fisEnv);
+		System.out.println("Value's in properties file --> " + propEnv.toString());
+		driver.get((String)propEnv.get("SoFaDogCloud"));
+		driver.get((String)propEnv.get("SoFaDogProd"));
 	}
 	
 }

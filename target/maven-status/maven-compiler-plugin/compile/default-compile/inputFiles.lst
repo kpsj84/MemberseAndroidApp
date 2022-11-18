@@ -1,6 +1,8 @@
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/ChannelPage.java
+/Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/ExplorePage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/SoFaDog/AndroidAutomation/Base.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/SoFaDog/AndroidAutomation/Utilities.java
+/Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/PlaylistPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/LoginOptionPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/Resources/Listeners.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/CreatorMyPostsPage.java
@@ -16,12 +18,14 @@
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/RegisterPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/Resources/ExtentReporterNG.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/AppMenus.java
+/Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/PostsHistoryPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/ExplorePage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/AppMenus.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/LoginOptionPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/DirectMessagePage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/LoginPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/StripeFormPage.java
+/Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/MembersePageObjects/ManageMyCommunityPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/SearchPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/RegisterPage.java
 /Users/kamaljhinjer/Documents/Mac_Coding/QASoFaDog/src/main/java/PageObjects/SamplePage.java
