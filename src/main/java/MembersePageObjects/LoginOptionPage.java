@@ -78,4 +78,11 @@ public class LoginOptionPage {
 	public WebElement NewMemberseText(){    
 		return NewMemberseText;
 	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Agree to  Terms and Conditions']") 
+	private WebElement termsConditionsText;
+		
+	public WebElement termsConditionsText(){    
+		return termsConditionsText;
+	}
 }
