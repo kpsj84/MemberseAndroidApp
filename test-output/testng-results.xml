@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71928" started-at="2022-11-30T14:20:37 IST" finished-at="2022-11-30T14:21:49 IST">
+  <suite name="Default suite" duration-ms="87890" started-at="2022-11-30T15:27:49 IST" finished-at="2022-11-30T15:29:17 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71928" started-at="2022-11-30T14:20:37 IST" finished-at="2022-11-30T14:21:49 IST">
-      <class name="Memberse.AndroidAutomation.aSmokeTest">
-        <test-method status="PASS" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="startService" is-config="true" duration-ms="19" started-at="2022-11-30T14:20:37 IST" finished-at="2022-11-30T14:20:37 IST">
+    <test name="Default test" duration-ms="87890" started-at="2022-11-30T15:27:49 IST" finished-at="2022-11-30T15:29:17 IST">
+      <class name="Memberse.AndroidAutomation.aLogoutTest">
+        <test-method status="PASS" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="startService" is-config="true" duration-ms="18" started-at="2022-11-30T15:27:49 IST" finished-at="2022-11-30T15:27:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="startDriver" is-config="true" duration-ms="35504" started-at="2022-11-30T14:20:37 IST" finished-at="2022-11-30T14:21:13 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="startDriver" is-config="true" duration-ms="35435" started-at="2022-11-30T15:27:49 IST" finished-at="2022-11-30T15:28:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-11-30T14:21:13 IST" finished-at="2022-11-30T14:21:13 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-11-30T15:28:25 IST" finished-at="2022-11-30T15:28:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="aSmokeTestCase()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="aSmokeTestCase" duration-ms="34867" started-at="2022-11-30T14:21:13 IST" finished-at="2022-11-30T14:21:48 IST">
+        <test-method status="PASS" signature="aLogoutTestCase()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="aLogoutTestCase" duration-ms="50930" started-at="2022-11-30T15:28:25 IST" finished-at="2022-11-30T15:29:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aSmokeTestCase -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-11-30T14:21:48 IST" finished-at="2022-11-30T14:21:48 IST">
+        </test-method> <!-- aLogoutTestCase -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="afterMethod" is-config="true" duration-ms="3" started-at="2022-11-30T15:29:16 IST" finished-at="2022-11-30T15:29:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="quitDriver" is-config="true" duration-ms="1434" started-at="2022-11-30T14:21:48 IST" finished-at="2022-11-30T14:21:49 IST">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="quitDriver" is-config="true" duration-ms="1426" started-at="2022-11-30T15:29:16 IST" finished-at="2022-11-30T15:29:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aSmokeTest@103f852]" name="stopService" is-config="true" duration-ms="0" started-at="2022-11-30T14:21:49 IST" finished-at="2022-11-30T14:21:49 IST">
+        <test-method status="PASS" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aLogoutTest@103f852]" name="stopService" is-config="true" duration-ms="1" started-at="2022-11-30T15:29:17 IST" finished-at="2022-11-30T15:29:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aSmokeTest -->
+      </class> <!-- Memberse.AndroidAutomation.aLogoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
