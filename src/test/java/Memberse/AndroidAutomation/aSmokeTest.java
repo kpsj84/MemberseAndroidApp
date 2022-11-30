@@ -1,7 +1,5 @@
 package Memberse.AndroidAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,8 +7,6 @@ import MembersePageObjects.LoginOptionPage;
 import MembersePageObjects.RegisterPage;
 import MembersePageObjects.WelcomeScreenPage;
 import SoFaDog.AndroidAutomation.Base;
-import SoFaDog.AndroidAutomation.Utilities;
-import SoFaDog.AndroidAutomation.Utilities.Direction;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -20,7 +16,7 @@ public class aSmokeTest extends Base {
 	@Test
 	public void aSmokeTestCase() throws InterruptedException {
 		//Wait upto for next element to available and will execute immediately once element appear
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 		try
 		{
@@ -34,7 +30,7 @@ public class aSmokeTest extends Base {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(30000);
+			Thread.sleep(15000);
 		}
 			
 		//Verify UI of the Welcome Screen
@@ -55,24 +51,20 @@ public class aSmokeTest extends Base {
 		String loginText = lop.LoginText().getText();
 		Assert.assertEquals(loginText, "Login");
 		lop.signinWithEmail().sendKeys("Smoke Testing is in progress");
-		Thread.sleep(2000);
-		Utilities u = new Utilities(driver);
-		u.swipeScreen(Direction.UP);
-		//String memberseText = lop.NewMemberseText().getText();
-		//Assert.assertEquals(memberseText, "New to Memberse?");
-		//Thread.sleep(1000);
+		Thread.sleep(1000);
+		String termsText = lop.termsConditionsText().getText();
+		Assert.assertEquals(termsText, "Agree to  Terms and Conditions");
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			
 		//Signup Button
 		wsp.SignupButton().click();
 		RegisterPage rp = new RegisterPage(driver);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		String signupText = rp.SignupText().getText();
 		Assert.assertEquals(signupText, "Sign up");
 		rp.SignupEmail().sendKeys("Smoke Testing is in progress");
 		String alreadyMemberText = rp.AlreadyMemberText().getText();
 		Assert.assertEquals(alreadyMemberText, "Already a member?");
-		Thread.sleep(1000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			
 		Assert.assertEquals(welcomeText, "Welcome to Memberse");
