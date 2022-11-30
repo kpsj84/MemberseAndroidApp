@@ -22,7 +22,7 @@ public class aRegisterWithEmailTest extends Base{
 		String emailDomain = "@yopmail.com";
 		String email = autoString+emailDomain;
 		String password = "12345";
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.EditText[@text='Email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
@@ -38,10 +38,9 @@ public class aRegisterWithEmailTest extends Base{
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.MemberInfo().click();

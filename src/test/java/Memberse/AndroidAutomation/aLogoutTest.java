@@ -25,7 +25,6 @@ public class aLogoutTest extends Base {
 				String password = emailId;
 				
 				LoginOptionPage lop = new LoginOptionPage(driver);
-				Thread.sleep(15000);
 				lop.signinWithEmail().sendKeys(email);
 				lop.EmailPassword().sendKeys(password);
 				lop.LoginButton().click();
@@ -38,15 +37,14 @@ public class aLogoutTest extends Base {
 				
 				AppMenus am = new AppMenus(driver);
 				am.ProfileMenu().click();
-				Thread.sleep(3000);
-				
+				Thread.sleep(1000);
 				u.swipeScreen(Direction.UP);
 				
 				ProfileMenuPage pmp = new ProfileMenuPage(driver);
 				pmp.Logout().click();
 				
 				driver.findElementByXPath("//android.widget.Button[@text='YES']").click();
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				System.out.println(email + " Logout Test Case Pass");		
 	}
 

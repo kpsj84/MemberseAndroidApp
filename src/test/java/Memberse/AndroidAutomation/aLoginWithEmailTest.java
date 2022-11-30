@@ -25,20 +25,18 @@ public class aLoginWithEmailTest extends Base{
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
 		lop.LoginButton().click();
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		

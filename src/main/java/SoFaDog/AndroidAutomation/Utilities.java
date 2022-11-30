@@ -1,7 +1,6 @@
 package SoFaDog.AndroidAutomation;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
 
@@ -101,7 +100,7 @@ public class Utilities {
 		
 	//Direct skip to Login Options Page
 	public void DirectToLoginOptionPage() throws InterruptedException {
-		localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		try
 		{
@@ -114,7 +113,7 @@ public class Utilities {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(30000);	
+			Thread.sleep(20000);	
 		}
 		
 		//Login Button click on Welcome Screen
@@ -125,7 +124,7 @@ public class Utilities {
 	
 	//Direct skip to Register Page
 	public void DirectToRegisterPage() throws InterruptedException {
-		localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//localdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		try
 		{
@@ -138,7 +137,7 @@ public class Utilities {
 		finally
 		{
 			System.out.println("Wait for application to load, This may take few seconds");
-			Thread.sleep(30000);	
+			Thread.sleep(20000);	
 		}
 			
 		//Signup Button click on Welcome Screen
