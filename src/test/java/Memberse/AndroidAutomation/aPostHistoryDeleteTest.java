@@ -25,7 +25,6 @@ public class aPostHistoryDeleteTest extends Base {
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -38,7 +37,6 @@ public class aPostHistoryDeleteTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
@@ -46,11 +44,11 @@ public class aPostHistoryDeleteTest extends Base {
 		pmp.postsHistorySubMenu().click();
 		Thread.sleep(5000); //Trick here, if it is 10sec then open Edit view otherwise delete view
 		
-		driver.findElementsByXPath("//android.view.ViewGroup[@index='0']").get(15).click();
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[4]").click();
 		String verifyMsg1 = driver.findElementByXPath("//android.widget.TextView[@text='Confirm']").getText();
 		Assert.assertEquals(verifyMsg1, "Confirm");
 		driver.findElementByXPath("//android.widget.Button[@text='CANCEL']").click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 
 }

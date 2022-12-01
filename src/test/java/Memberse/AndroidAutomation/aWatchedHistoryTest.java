@@ -20,14 +20,13 @@ public class aWatchedHistoryTest extends Base {
 		Utilities u = new Utilities(driver);
 		u.DirectToLoginOptionPage();
 		
-		String userNumber = "1";
-		String emailId = "autouser"+userNumber;
+		String userNumber = "c3";
+		String emailId = "kqatest"+userNumber;
 		String emailDomain = "@yopmail.com";
 		String email = emailId+emailDomain;
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -36,11 +35,10 @@ public class aWatchedHistoryTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
@@ -49,7 +47,6 @@ public class aWatchedHistoryTest extends Base {
 		Thread.sleep(5000);
 		
 		String Text = null;
-		
 		try
 		{
 			Text = driver.findElementByXPath("//*[@text='No Results']").getText();
@@ -62,7 +59,6 @@ public class aWatchedHistoryTest extends Base {
 		}
 		finally 
 		{
-			Thread.sleep(3000);
 			List<AndroidElement> verifyResult2 = driver.findElementsByXPath("(//android.view.ViewGroup[@index='0'])[9]/android.view.ViewGroup");
 	        int testresult2 = verifyResult2.size();
 	        System.out.println(verifyResult2.size());
@@ -73,8 +69,8 @@ public class aWatchedHistoryTest extends Base {
 	         }
 	         else
 	         {
-	        	 System.out.println("Got Results from the Search field");
-	        	 System.out.println(verifyResult2.size());
+	        	 System.out.println("Got Results from the Search field = " + testresult2);
+	        	 ;
 	         }
 		}
 	}

@@ -1,6 +1,7 @@
 package Memberse.AndroidAutomation;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -28,7 +29,6 @@ public class aSearchCreatorTest extends Base {
 		String email = emailId+emailDomain;
 		String password = emailId;
 		
-		Thread.sleep(5000);
 		LoginOptionPage lop = new LoginOptionPage(driver);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
@@ -38,23 +38,23 @@ public class aSearchCreatorTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		AppMenus am = new AppMenus(driver);
 		am.ExploreMenu().click();
-		Thread.sleep(3000);
 		
 		ExplorePage ep = new ExplorePage(driver);
 		ep.SearchField().click();
 		ep.SearchField().sendKeys("kqatest");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.getKeyboard();
 		driver.pressKey(new KeyEvent(AndroidKey.SEARCH));
 		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-		Thread.sleep(10000);    
-		List<AndroidElement> searchResult = driver.findElementsByXPath("//android.view.ViewGroup[@index='0']");
+		Thread.sleep(10000);  
+		
+		List<AndroidElement> searchResult = driver.findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup");
 		System.out.println(searchResult.size());
 		int verifyResult = searchResult.size();
 		 if(verifyResult == 0)
@@ -65,7 +65,7 @@ public class aSearchCreatorTest extends Base {
 	        }
 	        else
 	        {
-	        	System.out.println("Got Results from the Search field");
+	        	System.out.println("Got Results from the Search field = " + verifyResult);
 	        }
 	}
 

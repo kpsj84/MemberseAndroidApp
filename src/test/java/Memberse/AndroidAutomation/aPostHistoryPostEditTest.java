@@ -27,7 +27,6 @@ public class aPostHistoryPostEditTest extends Base {
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -40,17 +39,15 @@ public class aPostHistoryPostEditTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.postsHistorySubMenu().click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		PostsHistoryPage php = new PostsHistoryPage(driver);
-		Thread.sleep(5000);
-		driver.findElementsByXPath("//android.view.ViewGroup[@index='0']").get(14).click();
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]").click();
 		php.postDescription().clear();
 		String autotext = getSaltString();
 		php.postDescription().sendKeys("This is automated test description - " + autotext);
@@ -59,7 +56,7 @@ public class aPostHistoryPostEditTest extends Base {
 		String verifyMsg1 = driver.findElementByXPath("//android.widget.TextView[@text='Edit Successful']").getText();
 		Assert.assertEquals(verifyMsg1, "Edit Successful");
 		driver.findElementByXPath("//android.widget.Button[@text='OK']").click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 	}
 	
 	public String getSaltString() {

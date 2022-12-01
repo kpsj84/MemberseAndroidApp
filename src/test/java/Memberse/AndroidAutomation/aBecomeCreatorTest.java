@@ -22,14 +22,14 @@ public class aBecomeCreatorTest extends Base {
 		String emailDomain = "@yopmail.com";
 		String email = autoString+emailDomain;
 		String password = "12345";
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		System.out.println(email);
 		driver.findElementByXPath("//android.widget.EditText[@text='Email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.view.ViewGroup[6]").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a Member']").click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -40,7 +40,7 @@ public class aBecomeCreatorTest extends Base {
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.BecomeACreatorMenu().click();
@@ -48,13 +48,13 @@ public class aBecomeCreatorTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.view.ViewGroup[@index='5']").click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@text='CONFIRM']").click();
-		Thread.sleep(7000);
+		Thread.sleep(5000);
 		driver.findElementByXPath("//android.widget.ImageButton[@index='0']").click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		String VerifyText = driver.findElementByXPath("//android.widget.TextView[@text='Manage my Community']").getText();
 		Assert.assertEquals(VerifyText, "Manage my Community");

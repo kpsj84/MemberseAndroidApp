@@ -28,7 +28,6 @@ public class aMembershipsTest extends Base {
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -37,17 +36,16 @@ public class aMembershipsTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.MembershipsSubMenu().click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		String verifyText1 = null;
 		try
@@ -61,10 +59,10 @@ public class aMembershipsTest extends Base {
 		}
 		finally
 		{
-			List<AndroidElement> verifyActive = driver.findElements(By.xpath("(//android.view.ViewGroup[@index='0'])[10]/android.view.ViewGroup"));
+			List<AndroidElement> verifyActive = driver.findElements(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup"));
 			int msglog = verifyActive.size()-1;
 			System.out.println(msglog);
-			if(msglog <1)
+			if(msglog < 1)
 			{
 				System.out.println("Memberships List is Empty");
 			}
@@ -76,14 +74,14 @@ public class aMembershipsTest extends Base {
 		
 		if(verifyText1 == "You have no Memberships yet")
 		{
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@text='Find Communities']")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			String text2 = driver.findElement(By.xpath("//*[@text='Find your Content Creator']")).getText();
 			System.out.println(text2);
 			Assert.assertEquals(text2, "Find your Content Creator");
 			driver.navigate().back();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 		}
 		
 		try
@@ -97,7 +95,7 @@ public class aMembershipsTest extends Base {
 		}
 		finally
 		{
-			List<AndroidElement> verifyCancelled = driver.findElements(By.xpath("(//android.view.ViewGroup)[11]"));
+			List<AndroidElement> verifyCancelled = driver.findElements(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup[2]/android.view.ViewGroup"));
 			int msglog = verifyCancelled.size()-1;
 			if(msglog < 1)
 			{
