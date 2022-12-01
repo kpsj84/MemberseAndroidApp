@@ -29,7 +29,6 @@ public class aUserInfoTest extends Base {
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -38,17 +37,16 @@ public class aUserInfoTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.MemberInfo().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		AndroidElement verifyName = driver.findElementByXPath("//android.widget.EditText[@text='kqatestc3']");
 		String chk1 = verifyName.getText();
@@ -68,9 +66,9 @@ public class aUserInfoTest extends Base {
 		String randomNumber = getSaltString();
 		System.out.println(randomNumber);
 		driver.findElementByXPath("(//android.widget.EditText[@index='0'])[5]").clear();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("(//android.widget.EditText[@index='0'])[5]").sendKeys(randomNumber);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		u.swipeScreen(Direction.UP);
 		driver.findElementByXPath("//*[@text='Save']").click();
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);

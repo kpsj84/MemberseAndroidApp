@@ -30,7 +30,6 @@ public class aCreatePlaylistTest extends Base {
 		String password = emailId;
 		
 		LoginOptionPage lop = new LoginOptionPage(driver);
-		Thread.sleep(15000);
 		lop.signinWithEmail().sendKeys(email);
 		lop.EmailPassword().sendKeys(password);
 		lop.RevealPassword().click();
@@ -43,13 +42,12 @@ public class aCreatePlaylistTest extends Base {
 		driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.playlistSubMenu().click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		PlaylistPage plp = new PlaylistPage(driver);
         plp.createPlayList().click();
@@ -70,17 +68,17 @@ public class aCreatePlaylistTest extends Base {
         //StringSelection str = new StringSelection(fl.getAbsolutePath());
         //Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
         driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         driver.pressKey(new KeyEvent(AndroidKey.ENTER));
         Thread.sleep(5000);
         driver.findElementByXPath("//android.view.ViewGroup[@index='1']").click(); 
-        Thread.sleep(2000);
-        driver.findElementByXPath("//android.view.ViewGroup[@text='Save']").click();
+        Thread.sleep(3000);
+        driver.findElementByXPath("//android.widget.TextView[@text='Save']").click();
         Thread.sleep(6000);
         driver.findElementByXPath("//android.widget.Button[@text='OK']").click();
         Thread.sleep(3000);
-        u.ScrollToText(title);
-        Thread.sleep(3000);
+        //u.ScrollToText(title);
+        //Thread.sleep(3000);
 	}
 	
 	public String getSaltString() {

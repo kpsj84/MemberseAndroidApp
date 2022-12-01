@@ -25,7 +25,6 @@ public class aLanguageTest extends Base {
 	String password = emailId;
 	
 	LoginOptionPage lop = new LoginOptionPage(driver);
-	Thread.sleep(15000);
 	lop.signinWithEmail().sendKeys(email);
 	lop.EmailPassword().sendKeys(password);
 	lop.RevealPassword().click();
@@ -34,17 +33,16 @@ public class aLanguageTest extends Base {
 	driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 	driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
 	driver.findElementByXPath("//android.widget.TextView[@text='Next']").click();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	driver.findElementByXPath("//android.widget.TextView[@text='Close']").click();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-	Thread.sleep(2000);
 	AppMenus am = new AppMenus(driver);
 	am.ProfileMenu().click();
 	
 	ProfileMenuPage pmp = new ProfileMenuPage(driver);
 	pmp.LanguageMenu().click();
-	Thread.sleep(5000);
+	Thread.sleep(3000);
 	
 	driver.findElementByXPath("//*[@text='Português (do Brasil)']").click();
 	String verifyText = driver.findElementByXPath("//*[@text='Idiomas']").getText();

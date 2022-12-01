@@ -24,13 +24,13 @@ public class aStripeConnectionTest extends Base {
 		String emailDomain = "@yopmail.com";
 		String email = autoString+emailDomain;
 		String password = "12345";
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElementByXPath("//android.widget.EditText[@text='Email']").sendKeys(email);
 		driver.findElementByXPath("//android.widget.EditText[@text='Password']").sendKeys(password);
 		driver.findElementByXPath("//android.widget.EditText[@text='Confirm Password']").sendKeys(password);
 		driver.findElementByXPath("//android.view.ViewGroup[6]").click();
 		driver.findElementByXPath("//android.widget.TextView[@text='Continue']").click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='As a Creator']").click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -42,18 +42,18 @@ public class aStripeConnectionTest extends Base {
 		
 		AppMenus am = new AppMenus(driver);
 		am.ProfileMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		ProfileMenuPage pmp = new ProfileMenuPage(driver);
 		pmp.manageMyCommunitySubMenu().click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		u.swipeScreen(Direction.UP);
 		driver.findElementByXPath("//android.widget.TextView[@text='Connect with Stripe']").click();
 		Thread.sleep(10000);
 		
-		/*
 		//Stripe Form
+			/*
 				System.out.println("wait for context");
 				
 				Set<String> contexts = driver.getContextHandles();
