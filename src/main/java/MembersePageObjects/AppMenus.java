@@ -15,29 +15,28 @@ public class AppMenus {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 1 out of 3']")
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 1 out of 4']")
 	private WebElement HomeMenu;
 	
 	public WebElement HomeMenu() {
 		return HomeMenu;
 	}
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 2 out of 3']")
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 2 out of 4']")
 	private WebElement ExploreMenu;
 	
 	public WebElement ExploreMenu() {
 		return ExploreMenu;
 	}
 	
-/*	@AndroidFindBy(xpath="//*[@content-desc=', tab, 3 out of 4']")
-	private WebElement ActivitiesMenu;
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 3 out of 4']")
+	private WebElement MessagesMenu;
 	
-	public WebElement ActivitiesMenu() {
-		return ActivitiesMenu;
+	public WebElement MessagesMenu() {
+		return MessagesMenu;
 	}
-*/
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 3 out of 3']")
+	@AndroidFindBy(xpath="//*[@content-desc=', tab, 4 out of 4']")
 	private WebElement ProfileMenu;
 	
 	public WebElement ProfileMenu() {
