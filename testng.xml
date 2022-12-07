@@ -56,6 +56,9 @@
       <class name="Memberse.AndroidAutomation.aPostHistoryPostEditTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryDeleteTest"/>
       <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/> 
+      <class name="Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest"/> 
+      <class name="Memberse.AndroidAutomation.aPlaylistEditTest"/>
+      <class name="Memberse.AndroidAutomation.aMyFansListTest"/>
     </classes>
   </test> <!-- Test -->
   

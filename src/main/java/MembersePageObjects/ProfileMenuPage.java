@@ -36,6 +36,13 @@ public class ProfileMenuPage {
 		return playlistSubMenu;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='My Fans']")
+	private WebElement myFansSubMenu;
+	
+	public WebElement myFansSubMenu() {
+		return myFansSubMenu;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Member Info']")
 	private WebElement MemberInfo;
 	

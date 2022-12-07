@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest">
+      <class name="Memberse.AndroidAutomation.aMyFansListTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopService"/>
-          <include name="aCreatePlaylistTestCase"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
+          <include name="aMyFansListTestCase"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aCreatePlaylistTest -->
+      </class> <!-- Memberse.AndroidAutomation.aMyFansListTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
