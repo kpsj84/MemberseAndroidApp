@@ -32,6 +32,7 @@
  	  <class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>	
       -->	
       
+      <!-- 
       <class name="Memberse.AndroidAutomation.aSmokeTest"/>
       <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
       <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
@@ -59,6 +60,19 @@
       <class name="Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest"/> 
       <class name="Memberse.AndroidAutomation.aPlaylistEditTest"/>
       <class name="Memberse.AndroidAutomation.aMyFansListTest"/>
+      -->
+      
+      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
+      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
+      <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
+      <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
+      <class name="Memberse.AndroidAutomation.aLogoutTest"/>
+      <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
+      <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
+      <class name="Memberse.AndroidAutomation.aWatchedHistoryTest"/>
+      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/> 
+      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>
+      
     </classes>
   </test> <!-- Test -->
   
