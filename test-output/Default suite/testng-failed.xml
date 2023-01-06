@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SoFaDog.AndroidAutomation.LoginUser">
+      <class name="Memberse.AndroidAutomation.aFeedsFilterTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopService"/>
+          <include name="aFeedsFilterTestCase"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
-          <include name="LoginUserCase"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SoFaDog.AndroidAutomation.LoginUser -->
+      </class> <!-- Memberse.AndroidAutomation.aFeedsFilterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

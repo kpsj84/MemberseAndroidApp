@@ -13,10 +13,87 @@
           <include name="afterMethod"/>
           <include name="quitDriver"/>
           <include name="aStripeConnectionTestCase"/>
+          <include name="beforeMethod"/>
+          <include name="startService"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aStripeConnectionTest -->
+      <class name="Memberse.AndroidAutomation.aDeleteAccountTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="aDeleteAccountTestCase"/>
+          <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aStripeConnectionTest -->
+      </class> <!-- Memberse.AndroidAutomation.aDeleteAccountTest -->
+      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="aCreatePlaylistTestCase"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aCreatePlaylistTest -->
+      <class name="Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="aAddMediaAndPlayPlaylistTestCase"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest -->
+      <class name="Memberse.AndroidAutomation.aWatchedHistoryTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="aWatchedHistoryTestCase"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aWatchedHistoryTest -->
+      <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="aPrivacyPolicyTestCase"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aPrivacyPolicyTest -->
+      <class name="Memberse.AndroidAutomation.aCommunityEditInfoTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="aManageMyCommunityTestCase"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aCommunityEditInfoTest -->
+      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+          <include name="aBecomeCreatorTestCase"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aBecomeCreatorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

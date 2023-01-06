@@ -7,7 +7,7 @@ import MembersePageObjects.LoginOptionPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 
-public class aEmailFormValidationTest extends Base {
+public class aLoginFormValidationTest extends Base {
 	
 	@Test
 	public void aEmailFormValidationTestCase() throws InterruptedException {

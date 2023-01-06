@@ -11,7 +11,7 @@ import MembersePageObjects.ProfileMenuPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 
-public class aRegisterWithEmailTest extends Base{
+public class aSignupWithEmailTest extends Base{
 	
 	@Test
 	public void aRegisterWithEmailTestCase() throws InterruptedException {

@@ -14,7 +14,7 @@ import SoFaDog.AndroidAutomation.Utilities;
 import SoFaDog.AndroidAutomation.Utilities.Direction;
 import io.appium.java_client.android.AndroidElement;
 
-public class aManageMyCommunityTest extends Base {
+public class aCommunityEditInfoTest extends Base {
 	
 	@Test
 	public void aManageMyCommunityTestCase() throws InterruptedException {

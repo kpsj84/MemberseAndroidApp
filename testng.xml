@@ -32,47 +32,43 @@
  	  <class name="SoFaDog.AndroidAutomation.SubscribePaidChannel"/>	
       -->	
       
-      <!-- 
+      <!-- Major Functionality Test Cases-->
       <class name="Memberse.AndroidAutomation.aSmokeTest"/>
-      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
-      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
-      <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
+      <class name="Memberse.AndroidAutomation.aSignupFormValidationTest"/>
+      <class name="Memberse.AndroidAutomation.aSignupWithEmailTest"/>
+      <class name="Memberse.AndroidAutomation.aLoginFormValidationTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithGoogleTest"/>
       <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest"/>
       <class name="Memberse.AndroidAutomation.aLogoutTest"/>
       <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
+      <!-- General Test Cases-->
       <class name="Memberse.AndroidAutomation.aTermsAndConditionsTest"/>
       <class name="Memberse.AndroidAutomation.aCommunityGuidelinesTest"/>
       <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest"/>
+      <!-- Home Menu Test Cases-->
+      <class name="Memberse.AndroidAutomation.aFeedsVerifyTest"/>
+      <class name="Memberse.AndroidAutomation.aFeedsFilterTest"/>
+      <!-- Explore Menu Test Cases-->
       <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
-      <class name="Memberse.AndroidAutomation.aUserInfoTest"/>
-      <class name="Memberse.AndroidAutomation.aMembershipsTest"/>
-      <class name="Memberse.AndroidAutomation.aWatchedHistoryTest"/>
-      <class name="Memberse.AndroidAutomation.aLanguageTest"/>
-      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>
-      <class name="Memberse.AndroidAutomation.aManageMyCommunityTest"/>
+      <!-- Community UI Test Cases-->
+      
+      <!-- Profile Menu Test Cases-->
+      <class name="Memberse.AndroidAutomation.aCommunityEditInfoTest"/>
       <class name="Memberse.AndroidAutomation.aStripeConnectionTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryPlayTest"/>
-      <class name="Memberse.AndroidAutomation.aPostHistoryPostEditTest"/>
+      <class name="Memberse.AndroidAutomation.aPostHistoryEditTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryDeleteTest"/>
       <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/> 
       <class name="Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest"/> 
       <class name="Memberse.AndroidAutomation.aPlaylistEditTest"/>
       <class name="Memberse.AndroidAutomation.aMyFansListTest"/>
-      -->
-      
-      <class name="Memberse.AndroidAutomation.aRegisterFormValidationTest"/>
-      <class name="Memberse.AndroidAutomation.aRegisterWithEmailTest"/>
-      <class name="Memberse.AndroidAutomation.aEmailFormValidationTest"/>
-      <class name="Memberse.AndroidAutomation.aLoginWithEmailTest"/>
-      <class name="Memberse.AndroidAutomation.aLogoutTest"/>
-      <class name="Memberse.AndroidAutomation.aDeleteAccountTest"/>
-      <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
+      <class name="Memberse.AndroidAutomation.aMemberInfoTest"/>
+      <class name="Memberse.AndroidAutomation.aMembershipsTest"/>
       <class name="Memberse.AndroidAutomation.aWatchedHistoryTest"/>
-      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest"/> 
+      <class name="Memberse.AndroidAutomation.aLanguageTest"/>
       <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>
-      
+        
     </classes>
   </test> <!-- Test -->
   
