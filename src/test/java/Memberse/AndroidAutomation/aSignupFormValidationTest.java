@@ -7,7 +7,7 @@ import MembersePageObjects.RegisterPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 
-public class aRegisterFormValidationTest extends Base {
+public class aSignupFormValidationTest extends Base {
 	
 	@Test
 	public void aRegisterFormValidationTestCase() throws InterruptedException {

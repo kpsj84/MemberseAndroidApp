@@ -13,7 +13,7 @@ import MembersePageObjects.ProfileMenuPage;
 import SoFaDog.AndroidAutomation.Base;
 import SoFaDog.AndroidAutomation.Utilities;
 
-public class aPostHistoryPostEditTest extends Base {
+public class aPostHistoryEditTest extends Base {
 	
 	@Test
 	public void aPostHistoryPostEditTestCase() throws InterruptedException {

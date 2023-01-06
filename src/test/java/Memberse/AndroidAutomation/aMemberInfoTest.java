@@ -15,7 +15,7 @@ import SoFaDog.AndroidAutomation.Utilities;
 import SoFaDog.AndroidAutomation.Utilities.Direction;
 import io.appium.java_client.android.AndroidElement;
 
-public class aUserInfoTest extends Base {
+public class aMemberInfoTest extends Base {
 	
 	@Test
 	public void aUserInfoTestCase() throws InterruptedException {	
