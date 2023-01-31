@@ -29,6 +29,13 @@ public class RegisterPage {
 		return SignupEmail;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.EditText[@text='Password']")
+	private WebElement password ;
+	
+	public WebElement password(){    
+		return password;
+	}
+	
 	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='7']")
 	private WebElement RevealPassword ;
 	
@@ -36,11 +43,32 @@ public class RegisterPage {
 		return RevealPassword;
 	}
 	
+	@AndroidFindBy(xpath="//android.widget.EditText[@text='Confirm Password']")
+	private WebElement confirmPassword ;
+	
+	public WebElement confirmPassword(){    
+		return confirmPassword;
+	}
+	
 	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='11']")
 	private WebElement RevealConfirmPassword ;
 	
 	public WebElement RevealConfirmPassword(){    
 		return RevealConfirmPassword;
+	}
+	
+	@AndroidFindBy(xpath="//android.view.ViewGroup[6]")
+	private WebElement signupTerms ;
+	
+	public WebElement signupTerms(){    
+		return signupTerms;
+	}
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
+	private WebElement signupContinue ;
+	
+	public WebElement signupContinue(){    
+		return signupContinue;
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Already a member?']")

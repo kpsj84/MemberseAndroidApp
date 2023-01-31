@@ -15,6 +15,13 @@ public class ManageMyCommunityPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	@AndroidFindBy(xpath="abc")
+	private WebElement pricingTab;
+	
+	public WebElement pricingTab() {
+		return pricingTab;
+	}
+	
 	@AndroidFindBy(xpath="//android.widget.EditText[@index='1']")
 	private WebElement CommunityName;
 	
