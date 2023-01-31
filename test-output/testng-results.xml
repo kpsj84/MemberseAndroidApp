@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="122889" started-at="2023-01-06T14:51:44 IST" finished-at="2023-01-06T14:53:46 IST">
+  <suite name="Default suite" duration-ms="142843" started-at="2023-01-31T14:13:59 IST" finished-at="2023-01-31T14:16:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="122889" started-at="2023-01-06T14:51:44 IST" finished-at="2023-01-06T14:53:46 IST">
-      <class name="Memberse.AndroidAutomation.aFeedsFilterTest">
-        <test-method status="PASS" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="startService" is-config="true" duration-ms="23" started-at="2023-01-06T14:51:44 IST" finished-at="2023-01-06T14:51:44 IST">
+    <test name="Default test" duration-ms="142843" started-at="2023-01-31T14:13:59 IST" finished-at="2023-01-31T14:16:21 IST">
+      <class name="Memberse.AndroidAutomation.aDonationTest">
+        <test-method status="PASS" signature="startService()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="startService" is-config="true" duration-ms="19" started-at="2023-01-31T14:13:59 IST" finished-at="2023-01-31T14:13:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startService -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="startDriver" is-config="true" duration-ms="33593" started-at="2023-01-06T14:51:44 IST" finished-at="2023-01-06T14:52:17 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="startDriver" is-config="true" duration-ms="31259" started-at="2023-01-31T14:13:59 IST" finished-at="2023-01-31T14:14:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-01-06T14:52:17 IST" finished-at="2023-01-06T14:52:17 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-01-31T14:14:30 IST" finished-at="2023-01-31T14:14:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="aFeedsFilterTestCase()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="aFeedsFilterTestCase" duration-ms="87530" started-at="2023-01-06T14:52:17 IST" finished-at="2023-01-06T14:53:45 IST">
+        <test-method status="PASS" signature="aDonationTestCase()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="aDonationTestCase" duration-ms="109396" started-at="2023-01-31T14:14:30 IST" finished-at="2023-01-31T14:16:19 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aFeedsFilterTestCase -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="afterMethod" is-config="true" duration-ms="3" started-at="2023-01-06T14:53:45 IST" finished-at="2023-01-06T14:53:45 IST">
+        </test-method> <!-- aDonationTestCase -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="afterMethod" is-config="true" duration-ms="2" started-at="2023-01-31T14:16:19 IST" finished-at="2023-01-31T14:16:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="quitDriver" is-config="true" duration-ms="1631" started-at="2023-01-06T14:53:45 IST" finished-at="2023-01-06T14:53:46 IST">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="quitDriver" is-config="true" duration-ms="2090" started-at="2023-01-31T14:16:19 IST" finished-at="2023-01-31T14:16:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aFeedsFilterTest@103f852]" name="stopService" is-config="true" duration-ms="1" started-at="2023-01-06T14:53:46 IST" finished-at="2023-01-06T14:53:46 IST">
+        <test-method status="PASS" signature="stopService()[pri:0, instance:Memberse.AndroidAutomation.aDonationTest@103f852]" name="stopService" is-config="true" duration-ms="1" started-at="2023-01-31T14:16:21 IST" finished-at="2023-01-31T14:16:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopService -->
-      </class> <!-- Memberse.AndroidAutomation.aFeedsFilterTest -->
+      </class> <!-- Memberse.AndroidAutomation.aDonationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

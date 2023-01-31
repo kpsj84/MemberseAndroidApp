@@ -49,12 +49,30 @@
       <!-- Home Menu Test Cases-->
       <class name="Memberse.AndroidAutomation.aFeedsVerifyTest"/>
       <class name="Memberse.AndroidAutomation.aFeedsFilterTest"/>
+      <class name="Memberse.AndroidAutomation.aCreateTextPostTest"/>
+      <class name="Memberse.AndroidAutomation.aCreatePhotoPostTest"/>
+      <class name="Memberse.AndroidAutomation.aCreateVideoPostTest"/>
+      <class name="Memberse.AndroidAutomation.aCreateAudioPostTest"/>
       <!-- Explore Menu Test Cases-->
       <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
       <!-- Community UI Test Cases-->
-      
+      <class name="Memberse.AndroidAutomation.aFollowAndUnfollowCommunityTest"/>
+      <class name="Memberse.AndroidAutomation.aShareCommunityTest"/>
+      <class name="Memberse.AndroidAutomation.aReportCommunityTest"/>
+      <class name="Memberse.AndroidAutomation.aJoinCommunityTest"/>
+      <class name="Memberse.AndroidAutomation.aDonationTest"/>
+      <class name="Memberse.AndroidAutomation.aViewTextPostTest"/>
+      <class name="Memberse.AndroidAutomation.aViewPhotoPostTest"/>
+      <class name="Memberse.AndroidAutomation.aPlayVideoPostTest"/>
+      <class name="Memberse.AndroidAutomation.aPlayAudioPostTest"/>
+      <class name="Memberse.AndroidAutomation.aReportPostTest"/>
+      <class name="Memberse.AndroidAutomation.aSharePostTest"/>
+      <class name="Memberse.AndroidAutomation.aLikePostTest"/>
+      <class name="Memberse.AndroidAutomation.aCommentOnPostTest"/>
+      <class name="Memberse.AndroidAutomation.aCommunityTabsTest"/>
       <!-- Profile Menu Test Cases-->
       <class name="Memberse.AndroidAutomation.aCommunityEditInfoTest"/>
+      <class name="Memberse.AndroidAutomation.aCommunityPriceTest"/>
       <class name="Memberse.AndroidAutomation.aStripeConnectionTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryPlayTest"/>
       <class name="Memberse.AndroidAutomation.aPostHistoryEditTest"/>
@@ -67,8 +85,7 @@
       <class name="Memberse.AndroidAutomation.aMembershipsTest"/>
       <class name="Memberse.AndroidAutomation.aWatchedHistoryTest"/>
       <class name="Memberse.AndroidAutomation.aLanguageTest"/>
-      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>
-        
+      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest"/>  
     </classes>
   </test> <!-- Test -->
   

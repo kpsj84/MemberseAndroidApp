@@ -15,7 +15,7 @@ public class AppMenus {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath="//*[@content-desc=', tab, 1 out of 4']")
+	@AndroidFindBy(xpath="//*[@content-desc='selected, , tab, 1 out of 4']")
 	private WebElement HomeMenu;
 	
 	public WebElement HomeMenu() {
