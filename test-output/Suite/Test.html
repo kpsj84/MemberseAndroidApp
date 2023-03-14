@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>40/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 05 17:58:48 IST 2023</td>
+<td>Started on:</td><td>Fri Mar 10 13:13:34 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>2671 seconds (2671953 ms)</td>
+<tr><td>Total time:</td><td>5900 seconds (5900356 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,23 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aWatchedHistoryTest.aWatchedHistoryTestCase()'><b>aWatchedHistoryTestCase</b><br>Test class: Memberse.AndroidAutomation.aWatchedHistoryTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
+<td title='Memberse.AndroidAutomation.aCreateTextPostTest.aCreateTextPostTestCase()'><b>aCreateTextPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreateTextPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aWatchedHistoryTest.aWatchedHistoryTestCase(aWatchedHistoryTest.java:43)
+	at Memberse.AndroidAutomation.aCreateTextPostTest.aCreateTextPostTestCase(aCreateTextPostTest.java:60)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4583b617 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7e64c1a9 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
 	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -108,12 +108,12 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 33 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1981943537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1981943537'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040500590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040500590'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aWatchedHistoryTest.aWatchedHistoryTestCase(aWatchedHistoryTest.java:43)
+	at Memberse.AndroidAutomation.aCreateTextPostTest.aCreateTextPostTestCase(aCreateTextPostTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,16 +142,16 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4583b617 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7e64c1a9 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
 	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -169,48 +169,22 @@ Driver info: driver.version: AndroidDriver
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 33 more
 </pre></div></td>
-<td>60</td>
-<td>Memberse.AndroidAutomation.aWatchedHistoryTest@3439f68d</td></tr>
+<td>85</td>
+<td>Memberse.AndroidAutomation.aCreateTextPostTest@2a40cd94</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aPrivacyPolicyTest.aPrivacyPolicyTestCase()'><b>aPrivacyPolicyTestCase</b><br>Test class: Memberse.AndroidAutomation.aPrivacyPolicyTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aPrivacyPolicyTest.aPrivacyPolicyTestCase(aPrivacyPolicyTest.java:44)
+<td title='Memberse.AndroidAutomation.aFeedsFilterTest.aFeedsFilterTestCase()'><b>aFeedsFilterTestCase</b><br>Test class: Memberse.AndroidAutomation.aFeedsFilterTest</td>
+<td><div><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [kqatestc5&apos;s Community]
+	at Memberse.AndroidAutomation.aFeedsFilterTest.aFeedsFilterTestCase(aFeedsFilterTest.java:61)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1bb740f2 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1148735023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1148735023'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aPrivacyPolicyTest.aPrivacyPolicyTestCase(aPrivacyPolicyTest.java:44)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848760713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848760713'><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [kqatestc5&apos;s Community]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Memberse.AndroidAutomation.aFeedsFilterTest.aFeedsFilterTestCase(aFeedsFilterTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -239,46 +213,20 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1bb740f2 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
 </pre></div></td>
-<td>61</td>
-<td>Memberse.AndroidAutomation.aPrivacyPolicyTest@4f51b3e0</td></tr>
+<td>93</td>
+<td>Memberse.AndroidAutomation.aFeedsFilterTest@530612ba</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase()'><b>aManageMyCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommunityEditInfoTest</td>
+<td title='Memberse.AndroidAutomation.aLoginWithFacebookTest.aLoginWithFacebookTestCase()'><b>aLoginWithFacebookTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithFacebookTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 0430b819ef6d2325bd484aa2011..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 0430b819ef6d2325bd484aa2011..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0430b819ef6d2325bd484aa2011df143019d3ab2
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Next&apos;]}
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18081, chromedriverPorts: [[18111, 18121]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 891Y034WA, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 891Y034WA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 2a828e929ec80dc7d8c112f0f46..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8201, takesScreenshot: true, udid: 891Y034WA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18081, chromedriverPorts: [[18111, 18121]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 891Y034WA, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 891Y034WA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 2a828e929ec80dc7d8c112f0f46..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8201, takesScreenshot: true, udid: 891Y034WA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 2a828e929ec80dc7d8c112f0f460108df15b2f3d
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.Button}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -298,18 +246,18 @@ Session ID: 0430b819ef6d2325bd484aa2011df143019d3ab2
 	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
 	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase(aCommunityEditInfoTest.java:36)
+	at Memberse.AndroidAutomation.aLoginWithFacebookTest.aLoginWithFacebookTestCase(aLoginWithFacebookTest.java:44)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace832743930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace832743930'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395105902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395105902'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 0430b819ef6d2325bd484aa2011..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 0430b819ef6d2325bd484aa2011..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 0430b819ef6d2325bd484aa2011df143019d3ab2
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Next&apos;]}
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18081, chromedriverPorts: [[18111, 18121]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 891Y034WA, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 891Y034WA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 2a828e929ec80dc7d8c112f0f46..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8201, takesScreenshot: true, udid: 891Y034WA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18081, chromedriverPorts: [[18111, 18121]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 891Y034WA, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 891Y034WA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 2a828e929ec80dc7d8c112f0f46..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8201, takesScreenshot: true, udid: 891Y034WA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 2a828e929ec80dc7d8c112f0f460108df15b2f3d
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.Button}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -333,7 +281,7 @@ Session ID: 0430b819ef6d2325bd484aa2011df143019d3ab2
 	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
 	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase(aCommunityEditInfoTest.java:36)
+	at Memberse.AndroidAutomation.aLoginWithFacebookTest.aLoginWithFacebookTestCase(aLoginWithFacebookTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -362,172 +310,314 @@ Session ID: 0430b819ef6d2325bd484aa2011df143019d3ab2
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>55</td>
-<td>Memberse.AndroidAutomation.aCommunityEditInfoTest@5e57643e</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aStripeConnectionTest.aStripeConnectionTestCase()'><b>aStripeConnectionTestCase</b><br>Test class: Memberse.AndroidAutomation.aStripeConnectionTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aStripeConnectionTest.aStripeConnectionTestCase(aStripeConnectionTest.java:44)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@73fbdf68 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1887218054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1887218054'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at Memberse.AndroidAutomation.aStripeConnectionTest.aStripeConnectionTestCase(aStripeConnectionTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@73fbdf68 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@content-desc=&apos;, tab, 4 out of 4&apos;]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
 </pre></div></td>
 <td>58</td>
-<td>Memberse.AndroidAutomation.aStripeConnectionTest@133e16fd</td></tr>
+<td>Memberse.AndroidAutomation.aLoginWithFacebookTest@71d15f18</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCreateAudioPostTest.aCreateAudioPostTestCase()'><b>aCreateAudioPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreateAudioPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreateAudioPostTest.aCreateAudioPostTestCase(aCreateAudioPostTest.java:62)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39133244 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556223230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556223230'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreateAudioPostTest.aCreateAudioPostTestCase(aCreateAudioPostTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39133244 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+</pre></div></td>
+<td>85</td>
+<td>Memberse.AndroidAutomation.aCreateAudioPostTest@58a90037</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCreatePhotoPostTest.aCreatePhotoPostTestCase()'><b>aCreatePhotoPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreatePhotoPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreatePhotoPostTest.aCreatePhotoPostTestCase(aCreatePhotoPostTest.java:62)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@647b9364 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642619282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1642619282'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreatePhotoPostTest.aCreatePhotoPostTestCase(aCreatePhotoPostTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@647b9364 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+</pre></div></td>
+<td>79</td>
+<td>Memberse.AndroidAutomation.aCreatePhotoPostTest@f4168b8</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase()'><b>aManageMyCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommunityEditInfoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text=&apos;Save&apos;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase(aCommunityEditInfoTest.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39a09c0 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text=&apos;Save&apos;]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745010958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1745010958'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text=&apos;Save&apos;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCommunityEditInfoTest.aManageMyCommunityTestCase(aCommunityEditInfoTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39a09c0 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text=&apos;Save&apos;]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+</pre></div></td>
+<td>86</td>
+<td>Memberse.AndroidAutomation.aCommunityEditInfoTest@32464a14</td></tr>
 <tr>
 <td title='Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest.aAddMediaAndPlayPlaylistTestCase()'><b>aAddMediaAndPlayPlaylistTestCase</b><br>Test class: Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ASY0Q89E, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ASY0Q89E, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 78a3dd65ff8258c12a77b744b00..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8205, takesScreenshot: true, udid: 8ASY0Q89E, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ASY0Q89E, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ASY0Q89E, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 78a3dd65ff8258c12a77b744b00..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8205, takesScreenshot: true, udid: 8ASY0Q89E, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 78a3dd65ff8258c12a77b744b006716fb7fbaab2
-*** Element info: {Using=xpath, value=//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[-3]/android.widget.Switch}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest.aAddMediaAndPlayPlaylistTestCase(aAddMediaAndPlayPlaylistTest.java:103)
+<td><div><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [Autolist-3211]
+	at Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest.aAddMediaAndPlayPlaylistTestCase(aAddMediaAndPlayPlaylistTest.java:123)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892928959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1892928959'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ASY0Q89E, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ASY0Q89E, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 78a3dd65ff8258c12a77b744b00..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8205, takesScreenshot: true, udid: 8ASY0Q89E, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ASY0Q89E, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ASY0Q89E, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: 78a3dd65ff8258c12a77b744b00..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8205, takesScreenshot: true, udid: 8ASY0Q89E, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 78a3dd65ff8258c12a77b744b006716fb7fbaab2
-*** Element info: {Using=xpath, value=//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[-3]/android.widget.Switch}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest.aAddMediaAndPlayPlaylistTestCase(aAddMediaAndPlayPlaylistTest.java:103)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646517229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646517229'><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [Autolist-3211]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest.aAddMediaAndPlayPlaylistTestCase(aAddMediaAndPlayPlaylistTest.java:123)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -557,74 +647,48 @@ Session ID: 78a3dd65ff8258c12a77b744b006716fb7fbaab2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>130</td>
-<td>Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest@5e955596</td></tr>
+<td>176</td>
+<td>Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest@6cc7b4de</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aDeleteAccountTest.aDeleteAccountTestCase()'><b>aDeleteAccountTestCase</b><br>Test class: Memberse.AndroidAutomation.aDeleteAccountTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: a326e5c3bd158b3aacde29ba3ae..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: a326e5c3bd158b3aacde29ba3ae..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: a326e5c3bd158b3aacde29ba3aec5eaf4e74b321
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;As a Creator&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aDeleteAccountTest.aDeleteAccountTestCase(aDeleteAccountTest.java:33)
+<td title='Memberse.AndroidAutomation.aCreateVideoPostTest.aCreateVideoPostTestCase()'><b>aCreateVideoPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreateVideoPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreateVideoPostTest.aCreateVideoPostTestCase(aCreateVideoPostTest.java:62)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370709582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1370709582'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@8c43966 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: a326e5c3bd158b3aacde29ba3ae..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 89JY07KKQ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 89JY07KKQ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: a326e5c3bd158b3aacde29ba3ae..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8200, takesScreenshot: true, udid: 89JY07KKQ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: a326e5c3bd158b3aacde29ba3aec5eaf4e74b321
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;As a Creator&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aDeleteAccountTest.aDeleteAccountTestCase(aDeleteAccountTest.java:33)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088381072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088381072'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at Memberse.AndroidAutomation.aCreateVideoPostTest.aCreateVideoPostTestCase(aCreateVideoPostTest.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -653,203 +717,35 @@ Session ID: a326e5c3bd158b3aacde29ba3aec5eaf4e74b321
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@8c43966 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.widget.Switch})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:599c:5663:d923:21b5:c64d:7b76%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 33 more
 </pre></div></td>
-<td>47</td>
-<td>Memberse.AndroidAutomation.aDeleteAccountTest@1d7acb34</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aBecomeCreatorTest.aBecomeCreatorTestCase()'><b>aBecomeCreatorTestCase</b><br>Test class: Memberse.AndroidAutomation.aBecomeCreatorTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e2cb039c684b7d1d7d8fd828cb1..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e2cb039c684b7d1d7d8fd828cb1..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e2cb039c684b7d1d7d8fd828cb108d545a502551
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;As a Member&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aBecomeCreatorTest.aBecomeCreatorTestCase(aBecomeCreatorTest.java:34)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace718150867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace718150867'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e2cb039c684b7d1d7d8fd828cb1..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e2cb039c684b7d1d7d8fd828cb1..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e2cb039c684b7d1d7d8fd828cb108d545a502551
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;As a Member&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aBecomeCreatorTest.aBecomeCreatorTestCase(aBecomeCreatorTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>48</td>
-<td>Memberse.AndroidAutomation.aBecomeCreatorTest@71d15f18</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aCreatePlaylistTest.aCreatePlaylistTestCase()'><b>aCreatePlaylistTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreatePlaylistTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e7cb2e450f064e7ef1051d2ba26..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e7cb2e450f064e7ef1051d2ba26..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e7cb2e450f064e7ef1051d2ba261593444cc11ad
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Next&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aCreatePlaylistTest.aCreatePlaylistTestCase(aCreatePlaylistTest.java:38)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1375111241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1375111241'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ea:8b28:dede:8271%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: dog.fa.so.app.MainActivity, appPackage: dog.fa.so.app.stage, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, bundleID: dog.fa.so.app.stage, bundleId: dog.fa.so.app.stage, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e7cb2e450f064e7ef1051d2ba26..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: google pixel 3 xl, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Pixel 3 XL, deviceName: 8ATY0QREJ, deviceScreenDensity: 560, deviceScreenSize: 1440x2960, deviceUDID: 8ATY0QREJ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Google Pixel 3 XL-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 3.5, platform: ANDROID, platformName: Android, platformVersion: 9, realMobile: true, sessionId: e7cb2e450f064e7ef1051d2ba26..., skipServerInstallation: true, statBarHeight: 171, systemPort: 8202, takesScreenshot: true, udid: 8ATY0QREJ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2450, left: 0, top: 171, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e7cb2e450f064e7ef1051d2ba261593444cc11ad
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Next&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at Memberse.AndroidAutomation.aCreatePlaylistTest.aCreatePlaylistTestCase(aCreatePlaylistTest.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>56</td>
-<td>Memberse.AndroidAutomation.aCreatePlaylistTest@1cab0bfb</td></tr>
+<td>80</td>
+<td>Memberse.AndroidAutomation.aCreateVideoPostTest@3bd94634</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -859,100 +755,205 @@ Session ID: e7cb2e450f064e7ef1051d2ba261593444cc11ad
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aLoginWithFacebookTest.aLoginWithFacebookTestCase()'><b>aLoginWithFacebookTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithFacebookTest</td>
+<td title='Memberse.AndroidAutomation.aSearchCreatorTest.aSearchCreatorTestCase()'><b>aSearchCreatorTestCase</b><br>Test class: Memberse.AndroidAutomation.aSearchCreatorTest</td>
 <td></td>
-<td>67</td>
-<td>Memberse.AndroidAutomation.aLoginWithFacebookTest@69379752</td></tr>
+<td>80</td>
+<td>Memberse.AndroidAutomation.aSearchCreatorTest@74294adb</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aMyFansListTest.aMyFansListTestCase()'><b>aMyFansListTestCase</b><br>Test class: Memberse.AndroidAutomation.aMyFansListTest</td>
+<td title='Memberse.AndroidAutomation.aSharePostTest.aSharePostTestCase()'><b>aSharePostTestCase</b><br>Test class: Memberse.AndroidAutomation.aSharePostTest</td>
 <td></td>
-<td>57</td>
-<td>Memberse.AndroidAutomation.aMyFansListTest@2473b9ce</td></tr>
+<td>96</td>
+<td>Memberse.AndroidAutomation.aSharePostTest@77a57272</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aMemberInfoTest.aUserInfoTestCase()'><b>aUserInfoTestCase</b><br>Test class: Memberse.AndroidAutomation.aMemberInfoTest</td>
+<td title='Memberse.AndroidAutomation.aCommunityPriceTest.aCommunityPriceTestCase()'><b>aCommunityPriceTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommunityPriceTest</td>
 <td></td>
-<td>71</td>
-<td>Memberse.AndroidAutomation.aMemberInfoTest@60438a68</td></tr>
+<td>77</td>
+<td>Memberse.AndroidAutomation.aCommunityPriceTest@4e4aea35</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aLoginWithGoogleTest.aLoginWithGoogleTestCase()'><b>aLoginWithGoogleTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithGoogleTest</td>
+<td title='Memberse.AndroidAutomation.aStripeConnectionTest.aStripeConnectionTestCase()'><b>aStripeConnectionTestCase</b><br>Test class: Memberse.AndroidAutomation.aStripeConnectionTest</td>
 <td></td>
-<td>45</td>
-<td>Memberse.AndroidAutomation.aLoginWithGoogleTest@17baae6e</td></tr>
+<td>184</td>
+<td>Memberse.AndroidAutomation.aStripeConnectionTest@1442d7b5</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aSignupWithEmailTest.aRegisterWithEmailTestCase()'><b>aRegisterWithEmailTestCase</b><br>Test class: Memberse.AndroidAutomation.aSignupWithEmailTest</td>
+<td title='Memberse.AndroidAutomation.aDonationTest.aDonationTestCase()'><b>aDonationTestCase</b><br>Test class: Memberse.AndroidAutomation.aDonationTest</td>
 <td></td>
-<td>56</td>
-<td>Memberse.AndroidAutomation.aSignupWithEmailTest@44f75083</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aLoginFormValidationTest.aEmailFormValidationTestCase()'><b>aEmailFormValidationTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginFormValidationTest</td>
-<td></td>
-<td>31</td>
-<td>Memberse.AndroidAutomation.aLoginFormValidationTest@2698dc7</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aPostHistoryEditTest.aPostHistoryPostEditTestCase()'><b>aPostHistoryPostEditTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryEditTest</td>
-<td></td>
-<td>73</td>
-<td>Memberse.AndroidAutomation.aPostHistoryEditTest@1ad282e0</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aPlaylistEditTest.aPlaylistEditTestCase()'><b>aPlaylistEditTestCase</b><br>Test class: Memberse.AndroidAutomation.aPlaylistEditTest</td>
-<td></td>
-<td>153</td>
-<td>Memberse.AndroidAutomation.aPlaylistEditTest@50de0926</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aLoginWithEmailTest.aLoginWithEmailTestCase()'><b>aLoginWithEmailTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithEmailTest</td>
-<td></td>
-<td>51</td>
-<td>Memberse.AndroidAutomation.aLoginWithEmailTest@43d7741f</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aPostHistoryPlayTest.aPostHistoryPlayTestCase()'><b>aPostHistoryPlayTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryPlayTest</td>
-<td></td>
-<td>76</td>
-<td>Memberse.AndroidAutomation.aPostHistoryPlayTest@51b279c9</td></tr>
+<td>116</td>
+<td>Memberse.AndroidAutomation.aDonationTest@101df177</td></tr>
 <tr>
 <td title='Memberse.AndroidAutomation.aSmokeTest.aSmokeTestCase()'><b>aSmokeTestCase</b><br>Test class: Memberse.AndroidAutomation.aSmokeTest</td>
 <td></td>
-<td>41</td>
-<td>Memberse.AndroidAutomation.aSmokeTest@73d4cc9e</td></tr>
+<td>42</td>
+<td>Memberse.AndroidAutomation.aSmokeTest@133e16fd</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aLogoutTest.aLogoutTestCase()'><b>aLogoutTestCase</b><br>Test class: Memberse.AndroidAutomation.aLogoutTest</td>
+<td title='Memberse.AndroidAutomation.aLoginWithEmailTest.aLoginWithEmailTestCase()'><b>aLoginWithEmailTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithEmailTest</td>
 <td></td>
-<td>52</td>
-<td>Memberse.AndroidAutomation.aLogoutTest@5f71c76a</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aSignupFormValidationTest.aRegisterFormValidationTestCase()'><b>aRegisterFormValidationTestCase</b><br>Test class: Memberse.AndroidAutomation.aSignupFormValidationTest</td>
-<td></td>
-<td>40</td>
-<td>Memberse.AndroidAutomation.aSignupFormValidationTest@6366ebe0</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aMembershipsTest.aMembershipsTestCase()'><b>aMembershipsTestCase</b><br>Test class: Memberse.AndroidAutomation.aMembershipsTest</td>
-<td></td>
-<td>80</td>
-<td>Memberse.AndroidAutomation.aMembershipsTest@140e5a13</td></tr>
+<td>63</td>
+<td>Memberse.AndroidAutomation.aLoginWithEmailTest@3439f68d</td></tr>
 <tr>
 <td title='Memberse.AndroidAutomation.aCommunityGuidelinesTest.aCommunityGuidelinesTestCase()'><b>aCommunityGuidelinesTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommunityGuidelinesTest</td>
 <td></td>
-<td>70</td>
-<td>Memberse.AndroidAutomation.aCommunityGuidelinesTest@1e4a7dd4</td></tr>
-<tr>
-<td title='Memberse.AndroidAutomation.aPostHistoryDeleteTest.aPostHistoryDeleteTestCase()'><b>aPostHistoryDeleteTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryDeleteTest</td>
-<td></td>
-<td>66</td>
-<td>Memberse.AndroidAutomation.aPostHistoryDeleteTest@7f416310</td></tr>
+<td>85</td>
+<td>Memberse.AndroidAutomation.aCommunityGuidelinesTest@2bea5ab4</td></tr>
 <tr>
 <td title='Memberse.AndroidAutomation.aLanguageTest.aLanguageTestCase()'><b>aLanguageTestCase</b><br>Test class: Memberse.AndroidAutomation.aLanguageTest</td>
 <td></td>
+<td>75</td>
+<td>Memberse.AndroidAutomation.aLanguageTest@799d4f69</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aFeedsVerifyTest.aFeedsVerifyTestCase()'><b>aFeedsVerifyTestCase</b><br>Test class: Memberse.AndroidAutomation.aFeedsVerifyTest</td>
+<td></td>
 <td>61</td>
-<td>Memberse.AndroidAutomation.aLanguageTest@dbd940d</td></tr>
+<td>Memberse.AndroidAutomation.aFeedsVerifyTest@2df32bf7</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aDeleteAccountTest.aDeleteAccountTestCase()'><b>aDeleteAccountTestCase</b><br>Test class: Memberse.AndroidAutomation.aDeleteAccountTest</td>
+<td></td>
+<td>73</td>
+<td>Memberse.AndroidAutomation.aDeleteAccountTest@de3a06f</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aJoinCommunityTest.aJoinCommunityTestCase()'><b>aJoinCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aJoinCommunityTest</td>
+<td></td>
+<td>127</td>
+<td>Memberse.AndroidAutomation.aJoinCommunityTest@2f490758</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aViewTextPostTest.aViewTextPostTestCase()'><b>aViewTextPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aViewTextPostTest</td>
+<td></td>
+<td>84</td>
+<td>Memberse.AndroidAutomation.aViewTextPostTest@166fa74d</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aLikePostTest.aLikePostTestCase()'><b>aLikePostTestCase</b><br>Test class: Memberse.AndroidAutomation.aLikePostTest</td>
+<td></td>
+<td>79</td>
+<td>Memberse.AndroidAutomation.aLikePostTest@7181ae3f</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aShareCommunityTest.aShareCommunityTestCase()'><b>aShareCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aShareCommunityTest</td>
+<td></td>
+<td>122</td>
+<td>Memberse.AndroidAutomation.aShareCommunityTest@130f889</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aFollowAndUnfollowCommunityTest.aFollowCommunityTestCase()'><b>aFollowCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aFollowAndUnfollowCommunityTest</td>
+<td></td>
+<td>97</td>
+<td>Memberse.AndroidAutomation.aFollowAndUnfollowCommunityTest@70a9f84e</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aMyFansListTest.aMyFansListTestCase()'><b>aMyFansListTestCase</b><br>Test class: Memberse.AndroidAutomation.aMyFansListTest</td>
+<td></td>
+<td>73</td>
+<td>Memberse.AndroidAutomation.aMyFansListTest@679b62af</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCommunityTabsTest.aCommunityTabsTestCase()'><b>aCommunityTabsTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommunityTabsTest</td>
+<td></td>
+<td>123</td>
+<td>Memberse.AndroidAutomation.aCommunityTabsTest@6e2c9341</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aSignupFormValidationTest.aRegisterFormValidationTestCase()'><b>aRegisterFormValidationTestCase</b><br>Test class: Memberse.AndroidAutomation.aSignupFormValidationTest</td>
+<td></td>
+<td>48</td>
+<td>Memberse.AndroidAutomation.aSignupFormValidationTest@2473b9ce</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPlaylistEditTest.aPlaylistEditTestCase()'><b>aPlaylistEditTestCase</b><br>Test class: Memberse.AndroidAutomation.aPlaylistEditTest</td>
+<td></td>
+<td>183</td>
+<td>Memberse.AndroidAutomation.aPlaylistEditTest@32cf48b7</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aLoginWithGoogleTest.aLoginWithGoogleTestCase()'><b>aLoginWithGoogleTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginWithGoogleTest</td>
+<td></td>
+<td>61</td>
+<td>Memberse.AndroidAutomation.aLoginWithGoogleTest@dbd940d</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPostHistoryDeleteTest.aPostHistoryDeleteTestCase()'><b>aPostHistoryDeleteTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryDeleteTest</td>
+<td></td>
+<td>82</td>
+<td>Memberse.AndroidAutomation.aPostHistoryDeleteTest@76a4d6c</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aSignupWithEmailTest.aRegisterWithEmailTestCase()'><b>aRegisterWithEmailTestCase</b><br>Test class: Memberse.AndroidAutomation.aSignupWithEmailTest</td>
+<td></td>
+<td>69</td>
+<td>Memberse.AndroidAutomation.aSignupWithEmailTest@60438a68</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPlayAudioPostTest.aPlayAudioPostTestCase()'><b>aPlayAudioPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aPlayAudioPostTest</td>
+<td></td>
+<td>76</td>
+<td>Memberse.AndroidAutomation.aPlayAudioPostTest@588df31b</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aViewPhotoPostTest.aViewPhotoPostTestCase()'><b>aViewPhotoPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aViewPhotoPostTest</td>
+<td></td>
+<td>76</td>
+<td>Memberse.AndroidAutomation.aViewPhotoPostTest@40f08448</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aLogoutTest.aLogoutTestCase()'><b>aLogoutTestCase</b><br>Test class: Memberse.AndroidAutomation.aLogoutTest</td>
+<td></td>
+<td>59</td>
+<td>Memberse.AndroidAutomation.aLogoutTest@6c9f5c0d</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aLoginFormValidationTest.aEmailFormValidationTestCase()'><b>aEmailFormValidationTestCase</b><br>Test class: Memberse.AndroidAutomation.aLoginFormValidationTest</td>
+<td></td>
+<td>39</td>
+<td>Memberse.AndroidAutomation.aLoginFormValidationTest@140e5a13</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPlayVideoPostTest.aPlayVideoPostTestCase()'><b>aPlayVideoPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aPlayVideoPostTest</td>
+<td></td>
+<td>80</td>
+<td>Memberse.AndroidAutomation.aPlayVideoPostTest@276438c9</td></tr>
 <tr>
 <td title='Memberse.AndroidAutomation.aTermsAndConditionsTest.aTermsAndConditionsTestCase()'><b>aTermsAndConditionsTestCase</b><br>Test class: Memberse.AndroidAutomation.aTermsAndConditionsTest</td>
 <td></td>
-<td>70</td>
-<td>Memberse.AndroidAutomation.aTermsAndConditionsTest@48a242ce</td></tr>
+<td>81</td>
+<td>Memberse.AndroidAutomation.aTermsAndConditionsTest@76b10754</td></tr>
 <tr>
-<td title='Memberse.AndroidAutomation.aSearchCreatorTest.aSearchCreatorTestCase()'><b>aSearchCreatorTestCase</b><br>Test class: Memberse.AndroidAutomation.aSearchCreatorTest</td>
+<td title='Memberse.AndroidAutomation.aWatchedHistoryTest.aWatchedHistoryTestCase()'><b>aWatchedHistoryTestCase</b><br>Test class: Memberse.AndroidAutomation.aWatchedHistoryTest</td>
 <td></td>
-<td>70</td>
-<td>Memberse.AndroidAutomation.aSearchCreatorTest@4b9e255</td></tr>
+<td>84</td>
+<td>Memberse.AndroidAutomation.aWatchedHistoryTest@45afc369</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCommentOnPostTest.aCommentOnPostTestCase()'><b>aCommentOnPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aCommentOnPostTest</td>
+<td></td>
+<td>78</td>
+<td>Memberse.AndroidAutomation.aCommentOnPostTest@46238e3f</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPostHistoryPlayTest.aPostHistoryPlayTestCase()'><b>aPostHistoryPlayTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryPlayTest</td>
+<td></td>
+<td>88</td>
+<td>Memberse.AndroidAutomation.aPostHistoryPlayTest@1efee8e7</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aCreatePlaylistTest.aCreatePlaylistTestCase()'><b>aCreatePlaylistTestCase</b><br>Test class: Memberse.AndroidAutomation.aCreatePlaylistTest</td>
+<td></td>
+<td>137</td>
+<td>Memberse.AndroidAutomation.aCreatePlaylistTest@517cd4b</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aReportCommunityTest.aReportCommunityTestCase()'><b>aReportCommunityTestCase</b><br>Test class: Memberse.AndroidAutomation.aReportCommunityTest</td>
+<td></td>
+<td>90</td>
+<td>Memberse.AndroidAutomation.aReportCommunityTest@1188e820</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPrivacyPolicyTest.aPrivacyPolicyTestCase()'><b>aPrivacyPolicyTestCase</b><br>Test class: Memberse.AndroidAutomation.aPrivacyPolicyTest</td>
+<td></td>
+<td>87</td>
+<td>Memberse.AndroidAutomation.aPrivacyPolicyTest@3d8314f0</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aReportPostTest.aReportPostTestCase()'><b>aReportPostTestCase</b><br>Test class: Memberse.AndroidAutomation.aReportPostTest</td>
+<td></td>
+<td>72</td>
+<td>Memberse.AndroidAutomation.aReportPostTest@33b37288</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aMemberInfoTest.aUserInfoTestCase()'><b>aUserInfoTestCase</b><br>Test class: Memberse.AndroidAutomation.aMemberInfoTest</td>
+<td></td>
+<td>84</td>
+<td>Memberse.AndroidAutomation.aMemberInfoTest@5cdd8682</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aMembershipsTest.aMembershipsTestCase()'><b>aMembershipsTestCase</b><br>Test class: Memberse.AndroidAutomation.aMembershipsTest</td>
+<td></td>
+<td>92</td>
+<td>Memberse.AndroidAutomation.aMembershipsTest@d6da883</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aBecomeCreatorTest.aBecomeCreatorTestCase()'><b>aBecomeCreatorTestCase</b><br>Test class: Memberse.AndroidAutomation.aBecomeCreatorTest</td>
+<td></td>
+<td>83</td>
+<td>Memberse.AndroidAutomation.aBecomeCreatorTest@49c43f4e</td></tr>
+<tr>
+<td title='Memberse.AndroidAutomation.aPostHistoryEditTest.aPostHistoryPostEditTestCase()'><b>aPostHistoryPostEditTestCase</b><br>Test class: Memberse.AndroidAutomation.aPostHistoryEditTest</td>
+<td></td>
+<td>88</td>
+<td>Memberse.AndroidAutomation.aPostHistoryEditTest@1ee807c6</td></tr>
 </table><p>
 </body>
 </html>

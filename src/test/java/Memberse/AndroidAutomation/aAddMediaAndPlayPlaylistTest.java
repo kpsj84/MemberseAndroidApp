@@ -88,7 +88,9 @@ public class aAddMediaAndPlayPlaylistTest extends Base {
         
         pmp.postsHistorySubMenu().click();
 		Thread.sleep(4000);
-		driver.findElementByXPath("//android.widget.ImageView").click();
+		
+		//Thread.sleep(999999999);
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.ImageView").click();
 		Thread.sleep(4000);
 		Dimension dims = driver.manage().window().getSize();
 		@SuppressWarnings("rawtypes")
