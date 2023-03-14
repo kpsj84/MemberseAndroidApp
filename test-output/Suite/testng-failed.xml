@@ -6,39 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aStripeConnectionTest">
+      <class name="Memberse.AndroidAutomation.aCreateVideoPostTest">
         <methods>
+          <include name="aCreateVideoPostTestCase"/>
           <include name="startDriver"/>
           <include name="stopService"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
-          <include name="aStripeConnectionTestCase"/>
           <include name="beforeMethod"/>
           <include name="startService"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aStripeConnectionTest -->
-      <class name="Memberse.AndroidAutomation.aDeleteAccountTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="aDeleteAccountTestCase"/>
-          <include name="quitDriver"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aDeleteAccountTest -->
-      <class name="Memberse.AndroidAutomation.aCreatePlaylistTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="stopService"/>
-          <include name="aCreatePlaylistTestCase"/>
-          <include name="afterMethod"/>
-          <include name="quitDriver"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aCreatePlaylistTest -->
+      </class> <!-- Memberse.AndroidAutomation.aCreateVideoPostTest -->
       <class name="Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest">
         <methods>
           <include name="startDriver"/>
@@ -50,18 +28,40 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- Memberse.AndroidAutomation.aAddMediaAndPlayPlaylistTest -->
-      <class name="Memberse.AndroidAutomation.aWatchedHistoryTest">
+      <class name="Memberse.AndroidAutomation.aCreateAudioPostTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="aCreateAudioPostTestCase"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aCreateAudioPostTest -->
+      <class name="Memberse.AndroidAutomation.aCreateTextPostTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="aCreateTextPostTestCase"/>
+          <include name="stopService"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="startService"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aCreateTextPostTest -->
+      <class name="Memberse.AndroidAutomation.aLoginWithFacebookTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopService"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
-          <include name="aWatchedHistoryTestCase"/>
-          <include name="startService"/>
           <include name="beforeMethod"/>
+          <include name="startService"/>
+          <include name="aLoginWithFacebookTestCase"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aWatchedHistoryTest -->
-      <class name="Memberse.AndroidAutomation.aPrivacyPolicyTest">
+      </class> <!-- Memberse.AndroidAutomation.aLoginWithFacebookTest -->
+      <class name="Memberse.AndroidAutomation.aCreatePhotoPostTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopService"/>
@@ -69,9 +69,20 @@
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
-          <include name="aPrivacyPolicyTestCase"/>
+          <include name="aCreatePhotoPostTestCase"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aPrivacyPolicyTest -->
+      </class> <!-- Memberse.AndroidAutomation.aCreatePhotoPostTest -->
+      <class name="Memberse.AndroidAutomation.aFeedsFilterTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopService"/>
+          <include name="aFeedsFilterTestCase"/>
+          <include name="afterMethod"/>
+          <include name="quitDriver"/>
+          <include name="beforeMethod"/>
+          <include name="startService"/>
+        </methods>
+      </class> <!-- Memberse.AndroidAutomation.aFeedsFilterTest -->
       <class name="Memberse.AndroidAutomation.aCommunityEditInfoTest">
         <methods>
           <include name="startDriver"/>
@@ -83,17 +94,6 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- Memberse.AndroidAutomation.aCommunityEditInfoTest -->
-      <class name="Memberse.AndroidAutomation.aBecomeCreatorTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="stopService"/>
-          <include name="afterMethod"/>
-          <include name="quitDriver"/>
-          <include name="startService"/>
-          <include name="beforeMethod"/>
-          <include name="aBecomeCreatorTestCase"/>
-        </methods>
-      </class> <!-- Memberse.AndroidAutomation.aBecomeCreatorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

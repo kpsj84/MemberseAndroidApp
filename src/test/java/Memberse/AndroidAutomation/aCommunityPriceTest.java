@@ -52,10 +52,10 @@ public class aCommunityPriceTest extends Base {
 	AndroidElement Price = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.widget.TextView");
 	String ChkPrice = Price.getText();
 	System.out.println(ChkPrice);
-	Assert.assertEquals(ChkPrice,"Monthly Membership Price");
+	Assert.assertEquals(ChkPrice,"Card Payment (Web & Android)");
 	Thread.sleep(2000);
 	
-	WebElement Text1 = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView");
+	WebElement Text1 = driver.findElementByXPath("//*[@text='Stripe connected']");
 	String text2 = Text1.getText();
 	System.out.println(text2);
 	Assert.assertEquals(text2,"Stripe connected");

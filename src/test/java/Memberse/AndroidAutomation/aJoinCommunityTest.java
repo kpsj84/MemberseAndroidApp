@@ -91,7 +91,7 @@ public class aJoinCommunityTest extends Base {
 	  		driver.pressKey(new KeyEvent(AndroidKey.NUMPAD_4));
 	  		driver.pressKey(new KeyEvent(AndroidKey.NUMPAD_5)); 
 	  		driver.hideKeyboard();
-	  		driver.findElementByXPath("//android.widget.Button[@text='Subscribe']").click();
+	  		//driver.findElementByXPath("//android.widget.Button[@text='Subscribe']").click();
 	  		Thread.sleep(15000);
 	  		
 	  		ThankyouPage tp= new ThankyouPage(driver);

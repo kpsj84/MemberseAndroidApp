@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.AndroidAutomation.aDonationTest">
+      <class name="Memberse.AndroidAutomation.aCreatePhotoPostTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopService"/>
-          <include name="aDonationTestCase"/>
           <include name="afterMethod"/>
           <include name="quitDriver"/>
           <include name="startService"/>
           <include name="beforeMethod"/>
+          <include name="aCreatePhotoPostTestCase"/>
         </methods>
-      </class> <!-- Memberse.AndroidAutomation.aDonationTest -->
+      </class> <!-- Memberse.AndroidAutomation.aCreatePhotoPostTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

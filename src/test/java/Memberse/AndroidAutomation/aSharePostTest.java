@@ -61,7 +61,7 @@ public class aSharePostTest extends Base {
 		cpp.postTitle().click();
 		String ct = driver.getClipboardText();
 		System.out.println(ct);
-		String ss = ct.substring(42,63);
+		String ss = ct.substring(32,53);
 		System.out.println(ss);
 		cpp.postTitle().sendKeys(ss);
 	    cpp.postDescription().sendKeys("This is an Auto-QA Post Description");
