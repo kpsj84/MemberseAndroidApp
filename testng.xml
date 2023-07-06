@@ -55,6 +55,8 @@
       <class name="Memberse.AndroidAutomation.aCreateAudioPostTest"/>
       <!-- Explore Menu Test Cases-->
       <class name="Memberse.AndroidAutomation.aSearchCreatorTest"/>
+      <!-- DM Menu Test Cases-->
+      <class name="Memberse.AndroidAutomation.aDMMenuTest"/>
       <!-- Community UI Test Cases-->
       <class name="Memberse.AndroidAutomation.aFollowAndUnfollowCommunityTest"/>
       <class name="Memberse.AndroidAutomation.aShareCommunityTest"/>

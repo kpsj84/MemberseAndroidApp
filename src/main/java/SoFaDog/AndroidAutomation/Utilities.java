@@ -145,5 +145,17 @@ public class Utilities {
 		wsp.SignupButton().click();
 		System.out.println("Landing on Signup Screen");
 	}
+	
+	public void apiDelay() throws InterruptedException {
+		Thread.sleep(13000);
+	}
+	
+	public void loadDelay() throws InterruptedException {
+		Thread.sleep(8000);
+	}
+	
+	public void shortDelay() throws InterruptedException {
+		Thread.sleep(4000);
+	}
 		
 }
